@@ -1,0 +1,62 @@
+{
+  "id": "usgs-tnm-nhdplushr-hu8-19020202",
+  "dct_title_s": "USGS NHDPlus High Resolution (NHDPlus HR) for the Resurrection River-Frontal Resurrection Bay Subbasin (HU-8 19020202)",
+  "dct_description_sm": [
+    "The High Resolution National Hydrography Dataset Plus (NHDPlus HR) is an integrated set of geospatial data layers, including the best available National Hydrography Dataset (NHD), the 10-meter 3D Elevation Program Digital Elevation Model (3DEP DEM), and the National Watershed Boundary Dataset (WBD). The NHDPlus HR combines the NHD, 3DEP DEMs, and WBD to create a stream network with linear referencing, feature naming, \"value added attributes\" (VAAs), elevation-derived catchments, and other features for hydrologic data analysis. The stream network with linear referencing is a system of data relationships applied to hydrographic systems so that one stream reach \"flows\" into another and \"events\" can be tied to and traced along the network. The VAAs provide capabilities for upstream and downstream navigation with linear referencing, analysis, and modeling. The elevation derived catchments are used to associate other landscape attributes, such as land cover, with stream segments."
+  ],
+  "dct_creator_sm": [
+    "Geological Survey (U.S.)"
+  ],
+  "dct_publisher_sm": [
+    "Geological Survey (U.S.)"
+  ],
+  "dct_issued_s": "2019-07-18",
+  "dct_temporal_sm": [
+    "2019"
+  ],
+  "gbl_indexYear_im": [
+    2019
+  ],
+  "dct_language_sm": [
+    "eng"
+  ],
+  "schema_provider_s": "U.S. Geological Survey",
+  "dct_identifier_sm": [
+    "https://www.sciencebase.gov/catalog/item/5d31406ce4b01d82ce84ae72",
+    "https://www.sciencebase.gov/catalog/item/66f45ad9d34e791ae5dfc62a"
+  ],
+  "gbl_resourceClass_sm": [
+    "Datasets"
+  ],
+  "gbl_resourceType_sm": [
+    "Line data",
+    "Polygon data",
+    "Point data",
+    "Raster data"
+  ],
+  "dcat_theme_sm": [
+    "Inland Waters"
+  ],
+  "dcat_keyword_sm": [
+    "The National Map",
+    "NHDPlus High Resolution",
+    "HU-8 Subbasin"
+  ],
+  "dct_format_s": "GeoPackage",
+  "locn_geometry": "ENVELOPE(-151.80979356, -148.40450761, 60.37238078, 59.0396836)",
+  "dcat_bbox": "ENVELOPE(-151.80979356, -148.40450761, 60.37238078, 59.0396836)",
+  "dcat_centroid": "59.70603219,-150.10715058",
+  "pcdm_memberOf_sm": [
+    "usgs-tnm-nhdplushr"
+  ],
+  "dct_rights_sm": [
+    "USGS-authored or produced data and information are considered to be in the U.S. Public Domain."
+  ],
+  "dct_license_sm": [
+    "https://creativecommons.org/publicdomain/mark/1.0/"
+  ],
+  "dct_accessRights_s": "Public",
+  "gbl_mdModified_dt": "2024-09-25T18:47:55Z",
+  "gbl_mdVersion_s": "Aardvark",
+  "dct_references_s": "{\"urn:x-esri:serviceType:ArcGIS#DynamicMapLayer\":\"https://hydro.nationalmap.gov/arcgis/rest/services/NHDPlus_HR/MapServer\",\"http://schema.org/downloadUrl\":[{\"url\":\"https://prd-tnm.s3.amazonaws.com/StagedProducts/Hydrography/NHDPlusHR/VPU/Current/GPKG/NHDPLUS_H_19020202_HU8_GPKG.zip\",\"label\":\"GeoPackage (153.4 MB)\"},{\"url\":\"https://prd-tnm.s3.amazonaws.com/StagedProducts/Hydrography/NHDPlusHR/VPU/Current/GDB/NHDPLUS_H_19020202_HU8_GDB.zip\",\"label\":\"File geodatabase (60.7 MB)\"},{\"url\":\"https://prd-tnm.s3.amazonaws.com/StagedProducts/Hydrography/NHDPlusHR/VPU/Current/Raster/NHDPLUS_H_19020202_HU8_RASTER.zip\",\"label\":\"Rasters (GeoTIFF) (1.9 GB)\"}],\"http://www.opengis.net/cat/csw/csdgm\":\"https://prd-tnm.s3.amazonaws.com/StagedProducts/Hydrography/NHDPlusHR/VPU/Current/GPKG/NHDPLUS_H_19020202_HU8_GPKG.xml\",\"http://schema.org/url\":\"https://www.sciencebase.gov/catalog/item/66f45ad9d34e791ae5dfc62a\",\"http://schema.org/thumbnailUrl\":\"https://prd-tnm.s3.amazonaws.com/StagedProducts/Hydrography/NHDPlusHR/VPU/Current/GPKG/NHDPLUS_H_19020202_HU8_GPKG.jpg\"}"
+}

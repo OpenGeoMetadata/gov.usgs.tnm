@@ -1,0 +1,62 @@
+{
+  "id": "usgs-tnm-nhdplushr-hu4-1102",
+  "dct_title_s": "USGS NHDPlus High Resolution (NHDPlus HR) for the Upper Arkansas Subregion (HU-4 1102)",
+  "dct_description_sm": [
+    "The High Resolution National Hydrography Dataset Plus (NHDPlus HR) is an integrated set of geospatial data layers, including the best available National Hydrography Dataset (NHD), the 10-meter 3D Elevation Program Digital Elevation Model (3DEP DEM), and the National Watershed Boundary Dataset (WBD). The NHDPlus HR combines the NHD, 3DEP DEMs, and WBD to create a stream network with linear referencing, feature naming, \"value added attributes\" (VAAs), elevation-derived catchments, and other features for hydrologic data analysis. The stream network with linear referencing is a system of data relationships applied to hydrographic systems so that one stream reach \"flows\" into another and \"events\" can be tied to and traced along the network. The VAAs provide capabilities for upstream and downstream navigation with linear referencing, analysis, and modeling. The elevation derived catchments are used to associate other landscape attributes, such as land cover, with stream segments."
+  ],
+  "dct_creator_sm": [
+    "Geological Survey (U.S.)"
+  ],
+  "dct_publisher_sm": [
+    "Geological Survey (U.S.)"
+  ],
+  "dct_issued_s": "2018-08-13",
+  "dct_temporal_sm": [
+    "2018"
+  ],
+  "gbl_indexYear_im": [
+    2018
+  ],
+  "dct_language_sm": [
+    "eng"
+  ],
+  "schema_provider_s": "U.S. Geological Survey",
+  "dct_identifier_sm": [
+    "https://www.sciencebase.gov/catalog/item/5d30c28ae4b01d82ce84a9d8",
+    "https://www.sciencebase.gov/catalog/item/66f447d6d34e791ae5dfc512"
+  ],
+  "gbl_resourceClass_sm": [
+    "Datasets"
+  ],
+  "gbl_resourceType_sm": [
+    "Line data",
+    "Polygon data",
+    "Point data",
+    "Raster data"
+  ],
+  "dcat_theme_sm": [
+    "Inland Waters"
+  ],
+  "dcat_keyword_sm": [
+    "The National Map",
+    "NHDPlus High Resolution",
+    "HU-4 Subregion"
+  ],
+  "dct_format_s": "GeoPackage",
+  "locn_geometry": "ENVELOPE(-106.59975823, -102.007431, 39.38324518, 36.89841455)",
+  "dcat_bbox": "ENVELOPE(-106.59975823, -102.007431, 39.38324518, 36.89841455)",
+  "dcat_centroid": "38.14082986,-104.30359462",
+  "pcdm_memberOf_sm": [
+    "usgs-tnm-nhdplushr"
+  ],
+  "dct_rights_sm": [
+    "USGS-authored or produced data and information are considered to be in the U.S. Public Domain."
+  ],
+  "dct_license_sm": [
+    "https://creativecommons.org/publicdomain/mark/1.0/"
+  ],
+  "dct_accessRights_s": "Public",
+  "gbl_mdModified_dt": "2024-09-25T17:26:47Z",
+  "gbl_mdVersion_s": "Aardvark",
+  "dct_references_s": "{\"urn:x-esri:serviceType:ArcGIS#DynamicMapLayer\":\"https://hydro.nationalmap.gov/arcgis/rest/services/NHDPlus_HR/MapServer\",\"http://schema.org/downloadUrl\":[{\"url\":\"https://prd-tnm.s3.amazonaws.com/StagedProducts/Hydrography/NHDPlusHR/VPU/Current/GPKG/NHDPLUS_H_1102_HU4_GPKG.zip\",\"label\":\"GeoPackage (772.2 MB)\"},{\"url\":\"https://prd-tnm.s3.amazonaws.com/StagedProducts/Hydrography/NHDPlusHR/VPU/Current/GDB/NHDPLUS_H_1102_HU4_GDB.zip\",\"label\":\"File geodatabase (351.7 MB)\"},{\"url\":\"https://prd-tnm.s3.amazonaws.com/StagedProducts/Hydrography/NHDPlusHR/VPU/Current/Raster/NHDPLUS_H_1102_HU4_RASTER.zip\",\"label\":\"Rasters (GeoTIFF) (4.5 GB)\"}],\"http://www.opengis.net/cat/csw/csdgm\":\"https://prd-tnm.s3.amazonaws.com/StagedProducts/Hydrography/NHDPlusHR/VPU/Current/GPKG/NHDPLUS_H_1102_HU4_GPKG.xml\",\"http://schema.org/url\":\"https://www.sciencebase.gov/catalog/item/66f447d6d34e791ae5dfc512\",\"http://schema.org/thumbnailUrl\":\"https://prd-tnm.s3.amazonaws.com/StagedProducts/Hydrography/NHDPlusHR/VPU/Current/GPKG/NHDPLUS_H_1102_HU4_GPKG.jpg\"}"
+}

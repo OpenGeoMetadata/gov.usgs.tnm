@@ -1,0 +1,62 @@
+{
+  "id": "usgs-tnm-woodland-nc",
+  "dct_title_s": "USGS Woodland Tint for North Carolina",
+  "dct_description_sm": [
+    "Geospatial data that is a derivative land cover product depicting woodland on topographic maps."
+  ],
+  "dct_creator_sm": [
+    "Geological Survey (U.S.)"
+  ],
+  "dct_publisher_sm": [
+    "Geological Survey (U.S.)"
+  ],
+  "dct_issued_s": "2024-11-26",
+  "dct_temporal_sm": [
+    "2024"
+  ],
+  "gbl_indexYear_im": [
+    2024
+  ],
+  "dct_spatial_sm": [
+    "North Carolina"
+  ],
+  "dct_language_sm": [
+    "eng"
+  ],
+  "schema_provider_s": "U.S. Geological Survey",
+  "dct_identifier_sm": [
+    "https://www.sciencebase.gov/catalog/item/5a83621be4b00f54eb329936",
+    "https://www.sciencebase.gov/catalog/item/5a83621be4b00f54eb329937"
+  ],
+  "gbl_resourceClass_sm": [
+    "Datasets"
+  ],
+  "gbl_resourceType_sm": [
+    "Polygon data"
+  ],
+  "dcat_theme_sm": [
+    "Land Cover"
+  ],
+  "dcat_keyword_sm": [
+    "The National Map",
+    "Woodland Tint",
+    "State"
+  ],
+  "dct_format_s": "Geodatabase",
+  "locn_geometry": "ENVELOPE(-84.32182, -75.40012, 36.58814, 33.75288)",
+  "dcat_bbox": "ENVELOPE(-84.32182, -75.40012, 36.58814, 33.75288)",
+  "dcat_centroid": "35.17051,-79.86097",
+  "pcdm_memberOf_sm": [
+    "usgs-tnm-woodland"
+  ],
+  "dct_rights_sm": [
+    "USGS-authored or produced data and information are considered to be in the U.S. Public Domain."
+  ],
+  "dct_license_sm": [
+    "https://creativecommons.org/publicdomain/mark/1.0/"
+  ],
+  "dct_accessRights_s": "Public",
+  "gbl_mdModified_dt": "2024-11-28T03:26:43Z",
+  "gbl_mdVersion_s": "Aardvark",
+  "dct_references_s": "{\"http://schema.org/downloadUrl\":[{\"url\":\"https://prd-tnm.s3.amazonaws.com/StagedProducts/LndCvr/GDB/LNDCVR_North_Carolina_State_GDB.zip\",\"label\":\"File geodatabase (390.2 MB)\"},{\"url\":\"https://prd-tnm.s3.amazonaws.com/StagedProducts/LndCvr/Shape/LNDCVR_North_Carolina_State_Shape.zip\",\"label\":\"Shapefile (1.2 GB)\"}],\"http://www.opengis.net/cat/csw/csdgm\":\"https://prd-tnm.s3.amazonaws.com/StagedProducts/LndCvr/GDB/LNDCVR_North_Carolina_State_GDB.xml\",\"http://schema.org/url\":\"https://www.sciencebase.gov/catalog/item/5a83621be4b00f54eb329936\",\"http://schema.org/thumbnailUrl\":\"https://prd-tnm.s3.amazonaws.com/StagedProducts/LndCvr/GDB/LNDCVR_North_Carolina_State_GDB.jpg\"}"
+}

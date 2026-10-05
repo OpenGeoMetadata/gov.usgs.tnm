@@ -1,0 +1,62 @@
+{
+  "id": "usgs-tnm-woodland-id",
+  "dct_title_s": "USGS Woodland Tint for Idaho",
+  "dct_description_sm": [
+    "Geospatial data that is a derivative land cover product depicting woodland on topographic maps."
+  ],
+  "dct_creator_sm": [
+    "Geological Survey (U.S.)"
+  ],
+  "dct_publisher_sm": [
+    "Geological Survey (U.S.)"
+  ],
+  "dct_issued_s": "2024-11-26",
+  "dct_temporal_sm": [
+    "2024"
+  ],
+  "gbl_indexYear_im": [
+    2024
+  ],
+  "dct_spatial_sm": [
+    "Idaho"
+  ],
+  "dct_language_sm": [
+    "eng"
+  ],
+  "schema_provider_s": "U.S. Geological Survey",
+  "dct_identifier_sm": [
+    "https://www.sciencebase.gov/catalog/item/5b6fa9e0e4b0f5d57878e71a",
+    "https://www.sciencebase.gov/catalog/item/5b6fa9e6e4b0f5d57878e720"
+  ],
+  "gbl_resourceClass_sm": [
+    "Datasets"
+  ],
+  "gbl_resourceType_sm": [
+    "Polygon data"
+  ],
+  "dcat_theme_sm": [
+    "Land Cover"
+  ],
+  "dcat_keyword_sm": [
+    "The National Map",
+    "Woodland Tint",
+    "State"
+  ],
+  "dct_format_s": "Geodatabase",
+  "locn_geometry": "ENVELOPE(-117.24303, -111.04349, 49.00085, 41.98818)",
+  "dcat_bbox": "ENVELOPE(-117.24303, -111.04349, 49.00085, 41.98818)",
+  "dcat_centroid": "45.494515,-114.14326",
+  "pcdm_memberOf_sm": [
+    "usgs-tnm-woodland"
+  ],
+  "dct_rights_sm": [
+    "USGS-authored or produced data and information are considered to be in the U.S. Public Domain."
+  ],
+  "dct_license_sm": [
+    "https://creativecommons.org/publicdomain/mark/1.0/"
+  ],
+  "dct_accessRights_s": "Public",
+  "gbl_mdModified_dt": "2024-11-28T03:24:47Z",
+  "gbl_mdVersion_s": "Aardvark",
+  "dct_references_s": "{\"http://schema.org/downloadUrl\":[{\"url\":\"https://prd-tnm.s3.amazonaws.com/StagedProducts/LndCvr/GDB/LNDCVR_Idaho_State_GDB.zip\",\"label\":\"File geodatabase (377.7 MB)\"},{\"url\":\"https://prd-tnm.s3.amazonaws.com/StagedProducts/LndCvr/Shape/LNDCVR_Idaho_State_Shape.zip\",\"label\":\"Shapefile (1.1 GB)\"}],\"http://www.opengis.net/cat/csw/csdgm\":\"https://prd-tnm.s3.amazonaws.com/StagedProducts/LndCvr/GDB/LNDCVR_Idaho_State_GDB.xml\",\"http://schema.org/url\":\"https://www.sciencebase.gov/catalog/item/5b6fa9e0e4b0f5d57878e71a\",\"http://schema.org/thumbnailUrl\":\"https://prd-tnm.s3.amazonaws.com/StagedProducts/LndCvr/GDB/LNDCVR_Idaho_State_GDB.jpg\"}"
+}

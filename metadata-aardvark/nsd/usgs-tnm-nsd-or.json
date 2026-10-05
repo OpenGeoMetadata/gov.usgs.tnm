@@ -1,0 +1,65 @@
+{
+  "id": "usgs-tnm-nsd-or",
+  "dct_title_s": "USGS National Structures Dataset (NSD) for Oregon",
+  "dct_description_sm": [
+    "Geospatial data includes structures and other selected map features."
+  ],
+  "dct_creator_sm": [
+    "Geological Survey (U.S.)"
+  ],
+  "dct_publisher_sm": [
+    "Geological Survey (U.S.)"
+  ],
+  "dct_issued_s": "2026-02-27",
+  "dct_temporal_sm": [
+    "2026"
+  ],
+  "gbl_indexYear_im": [
+    2026
+  ],
+  "dct_spatial_sm": [
+    "Oregon"
+  ],
+  "dct_language_sm": [
+    "eng"
+  ],
+  "schema_provider_s": "U.S. Geological Survey",
+  "dct_identifier_sm": [
+    "https://www.sciencebase.gov/catalog/item/59faad79e4b0531197affcc9",
+    "https://www.sciencebase.gov/catalog/item/5caed112e4b0c3b00654dde5",
+    "https://www.sciencebase.gov/catalog/item/6290f14ed34ef70cdba450dc"
+  ],
+  "gbl_resourceClass_sm": [
+    "Datasets"
+  ],
+  "gbl_resourceType_sm": [
+    "Point data",
+    "Polygon data",
+    "Line data"
+  ],
+  "dcat_theme_sm": [
+    "Structure"
+  ],
+  "dcat_keyword_sm": [
+    "The National Map",
+    "National Structures Dataset",
+    "State"
+  ],
+  "dct_format_s": "GeoPackage",
+  "locn_geometry": "ENVELOPE(-124.70354, -116.46326, 46.2991, 41.99208)",
+  "dcat_bbox": "ENVELOPE(-124.70354, -116.46326, 46.2991, 41.99208)",
+  "dcat_centroid": "44.14559,-120.5834",
+  "pcdm_memberOf_sm": [
+    "usgs-tnm-nsd"
+  ],
+  "dct_rights_sm": [
+    "USGS-authored or produced data and information are considered to be in the U.S. Public Domain."
+  ],
+  "dct_license_sm": [
+    "https://creativecommons.org/publicdomain/mark/1.0/"
+  ],
+  "dct_accessRights_s": "Public",
+  "gbl_mdModified_dt": "2026-02-28T03:42:10Z",
+  "gbl_mdVersion_s": "Aardvark",
+  "dct_references_s": "{\"urn:x-esri:serviceType:ArcGIS#DynamicMapLayer\":\"https://carto.nationalmap.gov/arcgis/rest/services/structures/MapServer\",\"http://schema.org/downloadUrl\":[{\"url\":\"https://prd-tnm.s3.amazonaws.com/StagedProducts/Struct/GPKG/STRUCT_Oregon_State_GPKG.zip\",\"label\":\"GeoPackage (341.9 MB)\"},{\"url\":\"https://prd-tnm.s3.amazonaws.com/StagedProducts/Struct/GDB/STRUCT_Oregon_State_GDB.zip\",\"label\":\"File geodatabase (278.9 MB)\"},{\"url\":\"https://prd-tnm.s3.amazonaws.com/StagedProducts/Struct/Shape/STRUCT_Oregon_State_Shape.zip\",\"label\":\"Shapefile (327.1 MB)\"}],\"http://www.opengis.net/cat/csw/csdgm\":\"https://prd-tnm.s3.amazonaws.com/StagedProducts/Struct/GPKG/STRUCT_Oregon_State_GPKG.xml\",\"http://schema.org/url\":\"https://www.sciencebase.gov/catalog/item/6290f14ed34ef70cdba450dc\",\"http://schema.org/thumbnailUrl\":\"https://prd-tnm.s3.amazonaws.com/StagedProducts/Struct/GPKG/STRUCT_Oregon_State_GPKG.jpg\"}"
+}

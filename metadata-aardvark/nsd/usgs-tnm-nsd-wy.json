@@ -1,0 +1,65 @@
+{
+  "id": "usgs-tnm-nsd-wy",
+  "dct_title_s": "USGS National Structures Dataset (NSD) for Wyoming",
+  "dct_description_sm": [
+    "Geospatial data includes structures and other selected map features."
+  ],
+  "dct_creator_sm": [
+    "Geological Survey (U.S.)"
+  ],
+  "dct_publisher_sm": [
+    "Geological Survey (U.S.)"
+  ],
+  "dct_issued_s": "2026-02-26",
+  "dct_temporal_sm": [
+    "2026"
+  ],
+  "gbl_indexYear_im": [
+    2026
+  ],
+  "dct_spatial_sm": [
+    "Wyoming"
+  ],
+  "dct_language_sm": [
+    "eng"
+  ],
+  "schema_provider_s": "U.S. Geological Survey",
+  "dct_identifier_sm": [
+    "https://www.sciencebase.gov/catalog/item/59faad82e4b0531197affce5",
+    "https://www.sciencebase.gov/catalog/item/5caed11ee4b0c3b00654de03",
+    "https://www.sciencebase.gov/catalog/item/6290f158d34ef70cdba450f7"
+  ],
+  "gbl_resourceClass_sm": [
+    "Datasets"
+  ],
+  "gbl_resourceType_sm": [
+    "Point data",
+    "Polygon data",
+    "Line data"
+  ],
+  "dcat_theme_sm": [
+    "Structure"
+  ],
+  "dcat_keyword_sm": [
+    "The National Map",
+    "National Structures Dataset",
+    "State"
+  ],
+  "dct_format_s": "GeoPackage",
+  "locn_geometry": "ENVELOPE(-111.05456, -104.05224, 45.00581, 40.99477)",
+  "dcat_bbox": "ENVELOPE(-111.05456, -104.05224, 45.00581, 40.99477)",
+  "dcat_centroid": "43.00029,-107.5534",
+  "pcdm_memberOf_sm": [
+    "usgs-tnm-nsd"
+  ],
+  "dct_rights_sm": [
+    "USGS-authored or produced data and information are considered to be in the U.S. Public Domain."
+  ],
+  "dct_license_sm": [
+    "https://creativecommons.org/publicdomain/mark/1.0/"
+  ],
+  "dct_accessRights_s": "Public",
+  "gbl_mdModified_dt": "2026-02-27T03:21:29Z",
+  "gbl_mdVersion_s": "Aardvark",
+  "dct_references_s": "{\"urn:x-esri:serviceType:ArcGIS#DynamicMapLayer\":\"https://carto.nationalmap.gov/arcgis/rest/services/structures/MapServer\",\"http://schema.org/downloadUrl\":[{\"url\":\"https://prd-tnm.s3.amazonaws.com/StagedProducts/Struct/GPKG/STRUCT_Wyoming_State_GPKG.zip\",\"label\":\"GeoPackage (79.2 MB)\"},{\"url\":\"https://prd-tnm.s3.amazonaws.com/StagedProducts/Struct/GDB/STRUCT_Wyoming_State_GDB.zip\",\"label\":\"File geodatabase (65.6 MB)\"},{\"url\":\"https://prd-tnm.s3.amazonaws.com/StagedProducts/Struct/Shape/STRUCT_Wyoming_State_Shape.zip\",\"label\":\"Shapefile (76.1 MB)\"}],\"http://www.opengis.net/cat/csw/csdgm\":\"https://prd-tnm.s3.amazonaws.com/StagedProducts/Struct/GPKG/STRUCT_Wyoming_State_GPKG.xml\",\"http://schema.org/url\":\"https://www.sciencebase.gov/catalog/item/6290f158d34ef70cdba450f7\",\"http://schema.org/thumbnailUrl\":\"https://prd-tnm.s3.amazonaws.com/StagedProducts/Struct/GPKG/STRUCT_Wyoming_State_GPKG.jpg\"}"
+}

@@ -1,0 +1,62 @@
+{
+  "id": "usgs-tnm-woodland-vt",
+  "dct_title_s": "USGS Woodland Tint for Vermont",
+  "dct_description_sm": [
+    "Geospatial data that is a derivative land cover product depicting woodland on topographic maps."
+  ],
+  "dct_creator_sm": [
+    "Geological Survey (U.S.)"
+  ],
+  "dct_publisher_sm": [
+    "Geological Survey (U.S.)"
+  ],
+  "dct_issued_s": "2024-11-26",
+  "dct_temporal_sm": [
+    "2024"
+  ],
+  "gbl_indexYear_im": [
+    2024
+  ],
+  "dct_spatial_sm": [
+    "Vermont"
+  ],
+  "dct_language_sm": [
+    "eng"
+  ],
+  "schema_provider_s": "U.S. Geological Survey",
+  "dct_identifier_sm": [
+    "https://www.sciencebase.gov/catalog/item/5b6faa07e4b0f5d57878e782",
+    "https://www.sciencebase.gov/catalog/item/5b6faa07e4b0f5d57878e783"
+  ],
+  "gbl_resourceClass_sm": [
+    "Datasets"
+  ],
+  "gbl_resourceType_sm": [
+    "Polygon data"
+  ],
+  "dcat_theme_sm": [
+    "Land Cover"
+  ],
+  "dcat_keyword_sm": [
+    "The National Map",
+    "Woodland Tint",
+    "State"
+  ],
+  "dct_format_s": "Geodatabase",
+  "locn_geometry": "ENVELOPE(-73.4379, -71.46505, 45.01666, 42.72693)",
+  "dcat_bbox": "ENVELOPE(-73.4379, -71.46505, 45.01666, 42.72693)",
+  "dcat_centroid": "43.871795,-72.451475",
+  "pcdm_memberOf_sm": [
+    "usgs-tnm-woodland"
+  ],
+  "dct_rights_sm": [
+    "USGS-authored or produced data and information are considered to be in the U.S. Public Domain."
+  ],
+  "dct_license_sm": [
+    "https://creativecommons.org/publicdomain/mark/1.0/"
+  ],
+  "dct_accessRights_s": "Public",
+  "gbl_mdModified_dt": "2024-11-28T03:27:38Z",
+  "gbl_mdVersion_s": "Aardvark",
+  "dct_references_s": "{\"http://schema.org/downloadUrl\":[{\"url\":\"https://prd-tnm.s3.amazonaws.com/StagedProducts/LndCvr/GDB/LNDCVR_Vermont_State_GDB.zip\",\"label\":\"File geodatabase (68.9 MB)\"},{\"url\":\"https://prd-tnm.s3.amazonaws.com/StagedProducts/LndCvr/Shape/LNDCVR_Vermont_State_Shape.zip\",\"label\":\"Shapefile (227.0 MB)\"}],\"http://www.opengis.net/cat/csw/csdgm\":\"https://prd-tnm.s3.amazonaws.com/StagedProducts/LndCvr/GDB/LNDCVR_Vermont_State_GDB.xml\",\"http://schema.org/url\":\"https://www.sciencebase.gov/catalog/item/5b6faa07e4b0f5d57878e782\",\"http://schema.org/thumbnailUrl\":\"https://prd-tnm.s3.amazonaws.com/StagedProducts/LndCvr/GDB/LNDCVR_Vermont_State_GDB.jpg\"}"
+}

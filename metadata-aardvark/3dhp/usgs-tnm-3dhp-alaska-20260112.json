@@ -1,0 +1,63 @@
+{
+  "id": "usgs-tnm-3dhp-alaska-20260112",
+  "dct_title_s": "USGS 3D Hydrography Program (3DHP) for Alaska (FY26)",
+  "dct_description_sm": [
+    "The USGS 3D Hydrography Program (3DHP) datasets are an integrated, National, 3D-enabled hydrologic dataset derived from the USGS 3D Elevation Program (3DEP) data. For areas where Elevation-derived Hydrography (EDH) has not yet been collected, 3DHP data is supplemented by hydrographic vector data from the (retired) USGS National Hydrography Dataset (NHD). As further EDH-sourced hydrographic data are collected, they will replace the NHD-sourced data in those areas. 3DHP data ingested from EDH sources includes catchments and flowline network derivative attributes. The dataset is open and non-proprietary. Users should be aware that temporal changes may have occurred since this dataset was collected and that some parts of these data may no longer represent actual surface conditions. Users should not use this dataset for critical applications without a full awareness of its limitations. This dataset is not intended to be used for site-specific and/or regulatory determinations. 3DHP datasets include a three-dimensional (3D) hydrography network generated from - and integrated with - elevation data from the 3DEP to better represent stream gradients and channel conditions, along with waterbodies, hydrologic units, hydrologically enhanced elevation and other surfaces, and more consistent and accurate attributes. The product represents the 3DHP dataset and the schema as of September 30, 2025. Future Annual Staged Product releases will reflect the schema at the time the product is generated and include more EDH-sourced hydrologic data holdings."
+  ],
+  "dct_creator_sm": [
+    "Geological Survey (U.S.)"
+  ],
+  "dct_publisher_sm": [
+    "Geological Survey (U.S.)"
+  ],
+  "dct_issued_s": "2026-01-23",
+  "dct_temporal_sm": [
+    "2026"
+  ],
+  "gbl_indexYear_im": [
+    2026
+  ],
+  "dct_spatial_sm": [
+    "Alaska"
+  ],
+  "dct_language_sm": [
+    "eng"
+  ],
+  "schema_provider_s": "U.S. Geological Survey",
+  "dct_identifier_sm": [
+    "https://www.sciencebase.gov/catalog/item/69743a65d4be0260181a121b",
+    "https://www.sciencebase.gov/catalog/item/69743a66d4be0260181a1220"
+  ],
+  "gbl_resourceClass_sm": [
+    "Datasets"
+  ],
+  "gbl_resourceType_sm": [
+    "Line data",
+    "Polygon data",
+    "Point data"
+  ],
+  "dcat_theme_sm": [
+    "Inland Waters"
+  ],
+  "dcat_keyword_sm": [
+    "The National Map",
+    "3D Hydrography Program"
+  ],
+  "dct_format_s": "GeoPackage",
+  "locn_geometry": "ENVELOPE(-179.99, -129.5, 71.43979, 51.17509)",
+  "dcat_bbox": "ENVELOPE(-179.99, -129.5, 71.43979, 51.17509)",
+  "dcat_centroid": "61.30744,-154.745",
+  "pcdm_memberOf_sm": [
+    "usgs-tnm-3dhp"
+  ],
+  "dct_rights_sm": [
+    "USGS-authored or produced data and information are considered to be in the U.S. Public Domain."
+  ],
+  "dct_license_sm": [
+    "https://creativecommons.org/publicdomain/mark/1.0/"
+  ],
+  "dct_accessRights_s": "Public",
+  "gbl_mdModified_dt": "2026-01-24T03:41:06Z",
+  "gbl_mdVersion_s": "Aardvark",
+  "dct_references_s": "{\"urn:x-esri:serviceType:ArcGIS#DynamicMapLayer\":\"https://hydro.nationalmap.gov/arcgis/rest/services/3DHP_all/MapServer\",\"http://schema.org/downloadUrl\":[{\"url\":\"https://prd-tnm.s3.amazonaws.com/StagedProducts/Hydrography/3DHP/Annual/GPKG/3dhp_all_GPKG_FY26_Alaska_20260112/3dhp_all_Alaska_20260112_GPKG.zip\",\"label\":\"GeoPackage (3.4 GB)\"},{\"url\":\"https://prd-tnm.s3.amazonaws.com/StagedProducts/Hydrography/3DHP/Annual/GDB/3dhp_all_GDB_FY26_Alaska_20260112/3dhp_all_Alaska_20260112_GDB.zip\",\"label\":\"File geodatabase (1.8 GB)\"}],\"http://www.opengis.net/cat/csw/csdgm\":\"https://prd-tnm.s3.amazonaws.com/StagedProducts/Hydrography/3DHP/Annual/GPKG/3dhp_all_GPKG_FY26_Alaska_20260112/3dhp_all_Alaska_20260112_GPKG.xml\",\"http://schema.org/url\":\"https://www.sciencebase.gov/catalog/item/69743a65d4be0260181a121b\",\"http://schema.org/thumbnailUrl\":\"https://prd-tnm.s3.amazonaws.com/StagedProducts/Hydrography/3DHP/Annual/GPKG/3dhp_all_GPKG_FY26_Alaska_20260112/3dhp_all_Alaska_20260112_GPKG.jpg\"}"
+}

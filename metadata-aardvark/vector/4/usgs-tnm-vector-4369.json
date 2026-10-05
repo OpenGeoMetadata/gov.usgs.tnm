@@ -1,0 +1,70 @@
+{
+  "id": "usgs-tnm-vector-4369",
+  "dct_title_s": "USGS Topo Map Vector Data for Bledsoe NE, NM",
+  "dct_description_sm": [
+    "Layers of geospatial data include contours, boundaries, land cover, hydrography, roads, transportation, geographic names, structures, and other selected map features."
+  ],
+  "dct_creator_sm": [
+    "Geological Survey (U.S.)"
+  ],
+  "dct_publisher_sm": [
+    "Geological Survey (U.S.)"
+  ],
+  "dct_issued_s": "2025-08-04",
+  "dct_temporal_sm": [
+    "2025"
+  ],
+  "gbl_indexYear_im": [
+    2025
+  ],
+  "dct_spatial_sm": [
+    "New Mexico"
+  ],
+  "dct_language_sm": [
+    "eng"
+  ],
+  "schema_provider_s": "U.S. Geological Survey",
+  "dct_identifier_sm": [
+    "https://www.sciencebase.gov/catalog/item/59b90754e4b08b1644e0df33",
+    "https://www.sciencebase.gov/catalog/item/59b90762e4b08b1644e0dfef"
+  ],
+  "gbl_resourceClass_sm": [
+    "Datasets"
+  ],
+  "gbl_resourceType_sm": [
+    "Line data",
+    "Polygon data",
+    "Point data"
+  ],
+  "dcat_theme_sm": [
+    "Boundaries",
+    "Elevation",
+    "Inland Waters",
+    "Land Cover",
+    "Location",
+    "Structure",
+    "Transportation"
+  ],
+  "dcat_keyword_sm": [
+    "The National Map",
+    "Topo Map Vector Data",
+    "7.5 x 7.5 minute"
+  ],
+  "dct_format_s": "Geodatabase",
+  "locn_geometry": "ENVELOPE(-103.125, -103, 33.75, 33.625)",
+  "dcat_bbox": "ENVELOPE(-103.125, -103, 33.75, 33.625)",
+  "dcat_centroid": "33.6875,-103.0625",
+  "pcdm_memberOf_sm": [
+    "usgs-tnm-vector"
+  ],
+  "dct_rights_sm": [
+    "USGS-authored or produced data and information are considered to be in the U.S. Public Domain."
+  ],
+  "dct_license_sm": [
+    "https://creativecommons.org/publicdomain/mark/1.0/"
+  ],
+  "dct_accessRights_s": "Public",
+  "gbl_mdModified_dt": "2025-08-05T04:44:15Z",
+  "gbl_mdVersion_s": "Aardvark",
+  "dct_references_s": "{\"http://schema.org/downloadUrl\":[{\"url\":\"https://prd-tnm.s3.amazonaws.com/StagedProducts/TopoMapVector/NM/GDB/VECTOR_Bledsoe_NE_NM_7_5_Min_GDB.zip\",\"label\":\"File geodatabase (1.4 MB)\"},{\"url\":\"https://prd-tnm.s3.amazonaws.com/StagedProducts/TopoMapVector/NM/Shape/VECTOR_Bledsoe_NE_NM_7_5_Min_Shape.zip\",\"label\":\"Shapefile (2.3 MB)\"}],\"http://www.opengis.net/cat/csw/csdgm\":\"https://prd-tnm.s3.amazonaws.com/StagedProducts/TopoMapVector/NM/GDB/VECTOR_Bledsoe_NE_NM_7_5_Min_GDB.xml\",\"http://schema.org/url\":\"https://www.sciencebase.gov/catalog/item/59b90754e4b08b1644e0df33\",\"http://schema.org/thumbnailUrl\":\"https://prd-tnm.s3.amazonaws.com/StagedProducts/TopoMapVector/NM/GDB/VECTOR_Bledsoe_NE_NM_7_5_Min_GDB.jpg\"}"
+}

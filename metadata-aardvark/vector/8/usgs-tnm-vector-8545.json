@@ -1,0 +1,71 @@
+{
+  "id": "usgs-tnm-vector-8545",
+  "dct_title_s": "USGS Topo Map Vector Data for Chimney Butte, WY",
+  "dct_description_sm": [
+    "Layers of geospatial data include contours, boundaries, land cover, hydrography, roads, transportation, geographic names, structures, and other selected map features."
+  ],
+  "dct_creator_sm": [
+    "Geological Survey (U.S.)"
+  ],
+  "dct_publisher_sm": [
+    "Geological Survey (U.S.)"
+  ],
+  "dct_issued_s": "2025-07-26",
+  "dct_temporal_sm": [
+    "2025"
+  ],
+  "gbl_indexYear_im": [
+    2025
+  ],
+  "dct_spatial_sm": [
+    "Wyoming"
+  ],
+  "dct_language_sm": [
+    "eng"
+  ],
+  "schema_provider_s": "U.S. Geological Survey",
+  "dct_identifier_sm": [
+    "https://www.sciencebase.gov/catalog/item/614180a6d34e0df5fb93bb69",
+    "https://www.sciencebase.gov/catalog/item/61418579d34e0df5fb93c7c8",
+    "https://www.sciencebase.gov/catalog/item/675526ced34e092d5f5975b7"
+  ],
+  "gbl_resourceClass_sm": [
+    "Datasets"
+  ],
+  "gbl_resourceType_sm": [
+    "Line data",
+    "Polygon data",
+    "Point data"
+  ],
+  "dcat_theme_sm": [
+    "Boundaries",
+    "Elevation",
+    "Inland Waters",
+    "Land Cover",
+    "Location",
+    "Structure",
+    "Transportation"
+  ],
+  "dcat_keyword_sm": [
+    "The National Map",
+    "Topo Map Vector Data",
+    "7.5 x 7.5 minute"
+  ],
+  "dct_format_s": "GeoPackage",
+  "locn_geometry": "ENVELOPE(-110.25, -110.125, 42.5, 42.375)",
+  "dcat_bbox": "ENVELOPE(-110.25, -110.125, 42.5, 42.375)",
+  "dcat_centroid": "42.4375,-110.1875",
+  "pcdm_memberOf_sm": [
+    "usgs-tnm-vector"
+  ],
+  "dct_rights_sm": [
+    "USGS-authored or produced data and information are considered to be in the U.S. Public Domain."
+  ],
+  "dct_license_sm": [
+    "https://creativecommons.org/publicdomain/mark/1.0/"
+  ],
+  "dct_accessRights_s": "Public",
+  "gbl_mdModified_dt": "2025-07-27T09:24:08Z",
+  "gbl_mdVersion_s": "Aardvark",
+  "dct_references_s": "{\"http://schema.org/downloadUrl\":[{\"url\":\"https://prd-tnm.s3.amazonaws.com/StagedProducts/TopoMapVector/WY/GPKG/VECTOR_Chimney_Butte_WY_7_5_Min_GPKG.zip\",\"label\":\"GeoPackage (1.8 MB)\"},{\"url\":\"https://prd-tnm.s3.amazonaws.com/StagedProducts/TopoMapVector/WY/GDB/VECTOR_Chimney_Butte_WY_7_5_Min_GDB.zip\",\"label\":\"File geodatabase (1.2 MB)\"},{\"url\":\"https://prd-tnm.s3.amazonaws.com/StagedProducts/TopoMapVector/WY/Shape/VECTOR_Chimney_Butte_WY_7_5_Min_Shape.zip\",\"label\":\"Shapefile (1.6 MB)\"}],\"http://www.opengis.net/cat/csw/csdgm\":\"https://prd-tnm.s3.amazonaws.com/StagedProducts/TopoMapVector/WY/GPKG/VECTOR_Chimney_Butte_WY_7_5_Min_GPKG.xml\",\"http://schema.org/url\":\"https://www.sciencebase.gov/catalog/item/675526ced34e092d5f5975b7\",\"http://schema.org/thumbnailUrl\":\"https://prd-tnm.s3.amazonaws.com/StagedProducts/TopoMapVector/WY/GPKG/VECTOR_Chimney_Butte_WY_7_5_Min_GPKG.jpg\"}"
+}

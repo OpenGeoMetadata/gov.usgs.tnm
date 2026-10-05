@@ -1,0 +1,63 @@
+{
+  "id": "usgs-tnm-smallscale-nationp010g",
+  "dct_title_s": "USGS 1:1,000,000-Scale National Boundaries of the United States",
+  "dct_description_sm": [
+    "This map layer portrays the boundaries of the United States, Puerto Rico, and the U.S. Virgin Islands. The map layer was created by extracting county polygon features from the 2006 Census TIGER/Line files produced by the U.S. Census Bureau. These files were then merged into a single file and the county and State boundaries were dissolved, leaving the national boundary. This is a revised version of the July 2012 map layer."
+  ],
+  "dct_creator_sm": [
+    "Geological Survey (U.S.)"
+  ],
+  "dct_publisher_sm": [
+    "Geological Survey (U.S.)"
+  ],
+  "dct_issued_s": "2014-03-01",
+  "dct_temporal_sm": [
+    "2014"
+  ],
+  "gbl_indexYear_im": [
+    2014
+  ],
+  "dct_spatial_sm": [
+    "United States"
+  ],
+  "dct_language_sm": [
+    "eng"
+  ],
+  "schema_provider_s": "U.S. Geological Survey",
+  "dct_identifier_sm": [
+    "https://www.sciencebase.gov/catalog/item/581d0522e4b08da350d52432",
+    "https://www.sciencebase.gov/catalog/item/581d0553e4b08da350d52762"
+  ],
+  "gbl_resourceClass_sm": [
+    "Datasets"
+  ],
+  "gbl_resourceType_sm": [
+    "Line data",
+    "Polygon data",
+    "Point data"
+  ],
+  "dcat_theme_sm": [
+    "Boundaries"
+  ],
+  "dcat_keyword_sm": [
+    "The National Map",
+    "Small-scale Datasets"
+  ],
+  "dct_format_s": "Geodatabase",
+  "locn_geometry": "ENVELOPE(-180, -64, 72, 17)",
+  "dcat_bbox": "ENVELOPE(-180, -64, 72, 17)",
+  "dcat_centroid": "44.5,-122",
+  "pcdm_memberOf_sm": [
+    "usgs-tnm-smallscale"
+  ],
+  "dct_rights_sm": [
+    "USGS-authored or produced data and information are considered to be in the U.S. Public Domain."
+  ],
+  "dct_license_sm": [
+    "https://creativecommons.org/publicdomain/mark/1.0/"
+  ],
+  "dct_accessRights_s": "Public",
+  "gbl_mdModified_dt": "2026-05-18T13:52:01Z",
+  "gbl_mdVersion_s": "Aardvark",
+  "dct_references_s": "{\"http://schema.org/downloadUrl\":[{\"url\":\"https://prd-tnm.s3.amazonaws.com/StagedProducts/Small-scale/data/Boundaries/nationp010g.gdb_nt00935.tar.gz\",\"label\":\"File geodatabase (3.1 MB)\"},{\"url\":\"https://prd-tnm.s3.amazonaws.com/StagedProducts/Small-scale/data/Boundaries/nationp010g.shp_nt00936.tar.gz\",\"label\":\"Shapefile (5.9 MB)\"}],\"http://www.opengis.net/cat/csw/csdgm\":\"https://thor-f5.er.usgs.gov/ngtoc/metadata/waf/small-scale/filegdb101/nationp010g_gdb.xml\",\"http://schema.org/url\":\"https://www.sciencebase.gov/catalog/item/581d0553e4b08da350d52762\",\"http://schema.org/thumbnailUrl\":\"https://prd-tnm.s3.amazonaws.com/StagedProducts/Small-scale/thumbnails/nationp010g_gdb.png\"}"
+}

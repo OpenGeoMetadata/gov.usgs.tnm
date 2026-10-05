@@ -1,0 +1,58 @@
+{
+  "id": "usgs-tnm-3dhp",
+  "dct_title_s": "USGS 3D Hydrography Program (3DHP)",
+  "dct_description_sm": [
+    "The primary goal of the 3D Hydrography Program (3DHP) is to complete the first systematic remapping of the Nation’s hydrography since the original 1:24,000-scale topographic mapping program was active between 1947 and 1992. 3DHP data are being derived from the high-quality elevation data collected by the 3D Elevation Program (3DEP).",
+    "The 3D Hydrography Program replaces the National Hydrography Dataset (NHD), the Watershed Boundary Dataset (WBD), and NHDPlus High Resolution (NHDPlus HR) with a single product that include lakes, streams, catchments, and drainage areas, as well as other hydrologic features. All of these hydrologic features are derived from 3DEP lidar (IfSAR in Alaska) and validated to comply with published specifications (Elevation-Derived Hydrography Specifications)."
+  ],
+  "dct_creator_sm": [
+    "Geological Survey (U.S.)"
+  ],
+  "dct_publisher_sm": [
+    "Geological Survey (U.S.)"
+  ],
+  "dct_temporal_sm": [
+    "2025-2026"
+  ],
+  "gbl_indexYear_im": [
+    2025,
+    2026
+  ],
+  "gbl_dateRange_drsim": [
+    "[2025 TO 2026]"
+  ],
+  "dct_spatial_sm": [
+    "United States"
+  ],
+  "dct_language_sm": [
+    "eng"
+  ],
+  "schema_provider_s": "U.S. Geological Survey",
+  "gbl_resourceClass_sm": [
+    "Collections"
+  ],
+  "gbl_resourceType_sm": [
+    "Line data",
+    "Polygon data",
+    "Point data"
+  ],
+  "dcat_theme_sm": [
+    "Inland Waters"
+  ],
+  "dcat_keyword_sm": [
+    "The National Map",
+    "3D Hydrography Program"
+  ],
+  "locn_geometry": "ENVELOPE(172.3478, -65, 71.4398, 24)",
+  "dcat_bbox": "ENVELOPE(172.3478, -65, 71.4398, 24)",
+  "dct_rights_sm": [
+    "USGS-authored or produced data and information are considered to be in the U.S. Public Domain."
+  ],
+  "dct_license_sm": [
+    "https://creativecommons.org/publicdomain/mark/1.0/"
+  ],
+  "dct_accessRights_s": "Public",
+  "gbl_mdModified_dt": "2026-01-24T03:41:12Z",
+  "gbl_mdVersion_s": "Aardvark",
+  "dct_references_s": "{\"urn:x-esri:serviceType:ArcGIS#DynamicMapLayer\":\"https://hydro.nationalmap.gov/arcgis/rest/services/3DHP_all/MapServer\",\"http://schema.org/url\":\"https://www.usgs.gov/3d-hydrography-program\"}"
+}

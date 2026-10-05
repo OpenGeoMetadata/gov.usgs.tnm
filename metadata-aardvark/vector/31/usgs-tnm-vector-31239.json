@@ -1,0 +1,71 @@
+{
+  "id": "usgs-tnm-vector-31239",
+  "dct_title_s": "USGS Topo Map Vector Data for Myrick, MS",
+  "dct_description_sm": [
+    "Layers of geospatial data include contours, boundaries, land cover, hydrography, roads, transportation, geographic names, structures, and other selected map features."
+  ],
+  "dct_creator_sm": [
+    "Geological Survey (U.S.)"
+  ],
+  "dct_publisher_sm": [
+    "Geological Survey (U.S.)"
+  ],
+  "dct_issued_s": "2025-08-02",
+  "dct_temporal_sm": [
+    "2025"
+  ],
+  "gbl_indexYear_im": [
+    2025
+  ],
+  "dct_spatial_sm": [
+    "Mississippi"
+  ],
+  "dct_language_sm": [
+    "eng"
+  ],
+  "schema_provider_s": "U.S. Geological Survey",
+  "dct_identifier_sm": [
+    "https://www.sciencebase.gov/catalog/item/59a948a5e4b07e1a023d68e0",
+    "https://www.sciencebase.gov/catalog/item/59a948d1e4b07e1a023d69f0",
+    "https://www.sciencebase.gov/catalog/item/6753de98d34eb36ca7d1a605"
+  ],
+  "gbl_resourceClass_sm": [
+    "Datasets"
+  ],
+  "gbl_resourceType_sm": [
+    "Line data",
+    "Polygon data",
+    "Point data"
+  ],
+  "dcat_theme_sm": [
+    "Boundaries",
+    "Elevation",
+    "Inland Waters",
+    "Land Cover",
+    "Location",
+    "Structure",
+    "Transportation"
+  ],
+  "dcat_keyword_sm": [
+    "The National Map",
+    "Topo Map Vector Data",
+    "7.5 x 7.5 minute"
+  ],
+  "dct_format_s": "GeoPackage",
+  "locn_geometry": "ENVELOPE(-89, -88.875, 31.75, 31.625)",
+  "dcat_bbox": "ENVELOPE(-89, -88.875, 31.75, 31.625)",
+  "dcat_centroid": "31.6875,-88.9375",
+  "pcdm_memberOf_sm": [
+    "usgs-tnm-vector"
+  ],
+  "dct_rights_sm": [
+    "USGS-authored or produced data and information are considered to be in the U.S. Public Domain."
+  ],
+  "dct_license_sm": [
+    "https://creativecommons.org/publicdomain/mark/1.0/"
+  ],
+  "dct_accessRights_s": "Public",
+  "gbl_mdModified_dt": "2025-08-03T05:17:50Z",
+  "gbl_mdVersion_s": "Aardvark",
+  "dct_references_s": "{\"http://schema.org/downloadUrl\":[{\"url\":\"https://prd-tnm.s3.amazonaws.com/StagedProducts/TopoMapVector/MS/GPKG/VECTOR_Myrick_MS_7_5_Min_GPKG.zip\",\"label\":\"GeoPackage (9.2 MB)\"},{\"url\":\"https://prd-tnm.s3.amazonaws.com/StagedProducts/TopoMapVector/MS/GDB/VECTOR_Myrick_MS_7_5_Min_GDB.zip\",\"label\":\"File geodatabase (3.8 MB)\"},{\"url\":\"https://prd-tnm.s3.amazonaws.com/StagedProducts/TopoMapVector/MS/Shape/VECTOR_Myrick_MS_7_5_Min_Shape.zip\",\"label\":\"Shapefile (8.4 MB)\"}],\"http://www.opengis.net/cat/csw/csdgm\":\"https://prd-tnm.s3.amazonaws.com/StagedProducts/TopoMapVector/MS/GPKG/VECTOR_Myrick_MS_7_5_Min_GPKG.xml\",\"http://schema.org/url\":\"https://www.sciencebase.gov/catalog/item/6753de98d34eb36ca7d1a605\",\"http://schema.org/thumbnailUrl\":\"https://prd-tnm.s3.amazonaws.com/StagedProducts/TopoMapVector/MS/GPKG/VECTOR_Myrick_MS_7_5_Min_GPKG.jpg\"}"
+}

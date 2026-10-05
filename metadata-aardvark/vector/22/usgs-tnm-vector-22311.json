@@ -1,0 +1,71 @@
+{
+  "id": "usgs-tnm-vector-22311",
+  "dct_title_s": "USGS Topo Map Vector Data for Jacksonport, AR",
+  "dct_description_sm": [
+    "Layers of geospatial data include contours, boundaries, land cover, hydrography, roads, transportation, geographic names, structures, and other selected map features."
+  ],
+  "dct_creator_sm": [
+    "Geological Survey (U.S.)"
+  ],
+  "dct_publisher_sm": [
+    "Geological Survey (U.S.)"
+  ],
+  "dct_issued_s": "2025-07-29",
+  "dct_temporal_sm": [
+    "2025"
+  ],
+  "gbl_indexYear_im": [
+    2025
+  ],
+  "dct_spatial_sm": [
+    "Arkansas"
+  ],
+  "dct_language_sm": [
+    "eng"
+  ],
+  "schema_provider_s": "U.S. Geological Survey",
+  "dct_identifier_sm": [
+    "https://www.sciencebase.gov/catalog/item/5a54e8c9e4b01e7be2426f92",
+    "https://www.sciencebase.gov/catalog/item/5a54e907e4b01e7be2427149",
+    "https://www.sciencebase.gov/catalog/item/674bddd7d34eeb016a1e91d9"
+  ],
+  "gbl_resourceClass_sm": [
+    "Datasets"
+  ],
+  "gbl_resourceType_sm": [
+    "Line data",
+    "Polygon data",
+    "Point data"
+  ],
+  "dcat_theme_sm": [
+    "Boundaries",
+    "Elevation",
+    "Inland Waters",
+    "Land Cover",
+    "Location",
+    "Structure",
+    "Transportation"
+  ],
+  "dcat_keyword_sm": [
+    "The National Map",
+    "Topo Map Vector Data",
+    "7.5 x 7.5 minute"
+  ],
+  "dct_format_s": "GeoPackage",
+  "locn_geometry": "ENVELOPE(-91.375, -91.25, 35.75, 35.625)",
+  "dcat_bbox": "ENVELOPE(-91.375, -91.25, 35.75, 35.625)",
+  "dcat_centroid": "35.6875,-91.3125",
+  "pcdm_memberOf_sm": [
+    "usgs-tnm-vector"
+  ],
+  "dct_rights_sm": [
+    "USGS-authored or produced data and information are considered to be in the U.S. Public Domain."
+  ],
+  "dct_license_sm": [
+    "https://creativecommons.org/publicdomain/mark/1.0/"
+  ],
+  "dct_accessRights_s": "Public",
+  "gbl_mdModified_dt": "2025-07-30T04:29:56Z",
+  "gbl_mdVersion_s": "Aardvark",
+  "dct_references_s": "{\"http://schema.org/downloadUrl\":[{\"url\":\"https://prd-tnm.s3.amazonaws.com/StagedProducts/TopoMapVector/AR/GPKG/VECTOR_Jacksonport_AR_7_5_Min_GPKG.zip\",\"label\":\"GeoPackage (5.5 MB)\"},{\"url\":\"https://prd-tnm.s3.amazonaws.com/StagedProducts/TopoMapVector/AR/GDB/VECTOR_Jacksonport_AR_7_5_Min_GDB.zip\",\"label\":\"File geodatabase (2.4 MB)\"},{\"url\":\"https://prd-tnm.s3.amazonaws.com/StagedProducts/TopoMapVector/AR/Shape/VECTOR_Jacksonport_AR_7_5_Min_Shape.zip\",\"label\":\"Shapefile (4.9 MB)\"}],\"http://www.opengis.net/cat/csw/csdgm\":\"https://prd-tnm.s3.amazonaws.com/StagedProducts/TopoMapVector/AR/GPKG/VECTOR_Jacksonport_AR_7_5_Min_GPKG.xml\",\"http://schema.org/url\":\"https://www.sciencebase.gov/catalog/item/674bddd7d34eeb016a1e91d9\",\"http://schema.org/thumbnailUrl\":\"https://prd-tnm.s3.amazonaws.com/StagedProducts/TopoMapVector/AR/GPKG/VECTOR_Jacksonport_AR_7_5_Min_GPKG.jpg\"}"
+}

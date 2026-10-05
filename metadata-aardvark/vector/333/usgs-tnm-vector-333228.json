@@ -1,0 +1,71 @@
+{
+  "id": "usgs-tnm-vector-333228",
+  "dct_title_s": "USGS Topo Map Vector Data for Valdez D-7 NW, AK",
+  "dct_description_sm": [
+    "Layers of geospatial data include contours, boundaries, land cover, hydrography, roads, transportation, geographic names, structures, and other selected map features."
+  ],
+  "dct_creator_sm": [
+    "Geological Survey (U.S.)"
+  ],
+  "dct_publisher_sm": [
+    "Geological Survey (U.S.)"
+  ],
+  "dct_issued_s": "2025-07-26",
+  "dct_temporal_sm": [
+    "2025"
+  ],
+  "gbl_indexYear_im": [
+    2025
+  ],
+  "dct_spatial_sm": [
+    "Alaska"
+  ],
+  "dct_language_sm": [
+    "eng"
+  ],
+  "schema_provider_s": "U.S. Geological Survey",
+  "dct_identifier_sm": [
+    "https://www.sciencebase.gov/catalog/item/59ccc43ae4b017cf3143d380",
+    "https://www.sciencebase.gov/catalog/item/59ccc43ce4b017cf3143d3a2",
+    "https://www.sciencebase.gov/catalog/item/659650add34e3265ab155968"
+  ],
+  "gbl_resourceClass_sm": [
+    "Datasets"
+  ],
+  "gbl_resourceType_sm": [
+    "Line data",
+    "Polygon data",
+    "Point data"
+  ],
+  "dcat_theme_sm": [
+    "Boundaries",
+    "Elevation",
+    "Inland Waters",
+    "Land Cover",
+    "Location",
+    "Structure",
+    "Transportation"
+  ],
+  "dcat_keyword_sm": [
+    "The National Map",
+    "Topo Map Vector Data",
+    "7.5 x 7.5 minute"
+  ],
+  "dct_format_s": "GeoPackage",
+  "locn_geometry": "ENVELOPE(-146.625, -146.4375, 62, 61.875)",
+  "dcat_bbox": "ENVELOPE(-146.625, -146.4375, 62, 61.875)",
+  "dcat_centroid": "61.9375,-146.53125",
+  "pcdm_memberOf_sm": [
+    "usgs-tnm-vector"
+  ],
+  "dct_rights_sm": [
+    "USGS-authored or produced data and information are considered to be in the U.S. Public Domain."
+  ],
+  "dct_license_sm": [
+    "https://creativecommons.org/publicdomain/mark/1.0/"
+  ],
+  "dct_accessRights_s": "Public",
+  "gbl_mdModified_dt": "2025-07-27T07:40:31Z",
+  "gbl_mdVersion_s": "Aardvark",
+  "dct_references_s": "{\"http://schema.org/downloadUrl\":[{\"url\":\"https://prd-tnm.s3.amazonaws.com/StagedProducts/TopoMapVector/AK/GPKG/VECTOR_Valdez_D-7_NW_AK_7_5_Min_GPKG.zip\",\"label\":\"GeoPackage (7.2 MB)\"},{\"url\":\"https://prd-tnm.s3.amazonaws.com/StagedProducts/TopoMapVector/AK/GDB/VECTOR_Valdez_D-7_NW_AK_7_5_Min_GDB.zip\",\"label\":\"File geodatabase (3.1 MB)\"},{\"url\":\"https://prd-tnm.s3.amazonaws.com/StagedProducts/TopoMapVector/AK/Shape/VECTOR_Valdez_D-7_NW_AK_7_5_Min_Shape.zip\",\"label\":\"Shapefile (6.3 MB)\"}],\"http://www.opengis.net/cat/csw/csdgm\":\"https://prd-tnm.s3.amazonaws.com/StagedProducts/TopoMapVector/AK/GPKG/VECTOR_Valdez_D-7_NW_AK_7_5_Min_GPKG.xml\",\"http://schema.org/url\":\"https://www.sciencebase.gov/catalog/item/659650add34e3265ab155968\",\"http://schema.org/thumbnailUrl\":\"https://prd-tnm.s3.amazonaws.com/StagedProducts/TopoMapVector/AK/GPKG/VECTOR_Valdez_D-7_NW_AK_7_5_Min_GPKG.jpg\"}"
+}

@@ -1,0 +1,55 @@
+{
+  "id": "usgs-tnm-gnis",
+  "dct_title_s": "USGS Geographic Names Information System (GNIS)",
+  "dct_description_sm": [
+    "Place names within the United States and its dependent areas are recorded and available in the Geographic Names Information System (GNIS). It is the responsibility of the Domestic Names Committee (DNC) of the U.S. Board on Geographic Names (BGN) to maintain this system. GNIS is the federal and national standard for geographic names and serves as the official geographic names source for all federal departments and federal digital and printed products."
+  ],
+  "dct_creator_sm": [
+    "Geological Survey (U.S.)"
+  ],
+  "dct_publisher_sm": [
+    "Geological Survey (U.S.)"
+  ],
+  "dct_temporal_sm": [
+    "2026"
+  ],
+  "gbl_indexYear_im": [
+    2026
+  ],
+  "gbl_dateRange_drsim": [
+    "[2026 TO 2026]"
+  ],
+  "dct_spatial_sm": [
+    "United States"
+  ],
+  "dct_language_sm": [
+    "eng"
+  ],
+  "schema_provider_s": "U.S. Geological Survey",
+  "gbl_resourceClass_sm": [
+    "Collections"
+  ],
+  "gbl_resourceType_sm": [
+    "Point data",
+    "Table data"
+  ],
+  "dcat_theme_sm": [
+    "Location"
+  ],
+  "dcat_keyword_sm": [
+    "The National Map",
+    "Geographic Names Information System"
+  ],
+  "locn_geometry": "ENVELOPE(-180, 180, 71.4398, -90)",
+  "dcat_bbox": "ENVELOPE(-180, 180, 71.4398, -90)",
+  "dct_rights_sm": [
+    "USGS-authored or produced data and information are considered to be in the U.S. Public Domain."
+  ],
+  "dct_license_sm": [
+    "https://creativecommons.org/publicdomain/mark/1.0/"
+  ],
+  "dct_accessRights_s": "Public",
+  "gbl_mdModified_dt": "2026-10-01T02:35:34Z",
+  "gbl_mdVersion_s": "Aardvark",
+  "dct_references_s": "{\"urn:x-esri:serviceType:ArcGIS#DynamicMapLayer\":\"https://carto.nationalmap.gov/arcgis/rest/services/geonames/MapServer\",\"http://schema.org/url\":\"https://www.sciencebase.gov/catalog/item/4f70b292e4b058caae3f8e1d\"}"
+}

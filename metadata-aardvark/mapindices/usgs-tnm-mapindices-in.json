@@ -1,0 +1,62 @@
+{
+  "id": "usgs-tnm-mapindices-in",
+  "dct_title_s": "USGS Map Indices for Indiana",
+  "dct_description_sm": [
+    "This data represents the map extent for current and historical USGS topographic maps for the United States and Territories, including 1 X 2 Degree, 1 X 1 Degree, 30 X 60 Minute, 15 X 15 Minute, 7.5 X 7.5 Minute, and 3.75 X 3.75 Minute. The grid was generated using ESRI ArcInfo GIS software."
+  ],
+  "dct_creator_sm": [
+    "Geological Survey (U.S.)"
+  ],
+  "dct_publisher_sm": [
+    "Geological Survey (U.S.)"
+  ],
+  "dct_issued_s": "2026-09-09",
+  "dct_temporal_sm": [
+    "2026"
+  ],
+  "gbl_indexYear_im": [
+    2026
+  ],
+  "dct_spatial_sm": [
+    "Indiana"
+  ],
+  "dct_language_sm": [
+    "eng"
+  ],
+  "schema_provider_s": "U.S. Geological Survey",
+  "dct_identifier_sm": [
+    "https://www.sciencebase.gov/catalog/item/59d98dd9e4b05fe04cc9b137",
+    "https://www.sciencebase.gov/catalog/item/59f53d65e4b063d5d307d898"
+  ],
+  "gbl_resourceClass_sm": [
+    "Datasets"
+  ],
+  "gbl_resourceType_sm": [
+    "Polygon data"
+  ],
+  "dcat_theme_sm": [
+    "Location"
+  ],
+  "dcat_keyword_sm": [
+    "The National Map",
+    "Map Indices",
+    "State"
+  ],
+  "dct_format_s": "Geodatabase",
+  "locn_geometry": "ENVELOPE(-88.09789, -84.78453, 41.76137, 37.77167)",
+  "dcat_bbox": "ENVELOPE(-88.09789, -84.78453, 41.76137, 37.77167)",
+  "dcat_centroid": "39.76652,-86.44121",
+  "pcdm_memberOf_sm": [
+    "usgs-tnm-mapindices"
+  ],
+  "dct_rights_sm": [
+    "USGS-authored or produced data and information are considered to be in the U.S. Public Domain."
+  ],
+  "dct_license_sm": [
+    "https://creativecommons.org/publicdomain/mark/1.0/"
+  ],
+  "dct_accessRights_s": "Public",
+  "gbl_mdModified_dt": "2026-09-10T02:25:47Z",
+  "gbl_mdVersion_s": "Aardvark",
+  "dct_references_s": "{\"urn:x-esri:serviceType:ArcGIS#DynamicMapLayer\":\"https://carto.nationalmap.gov/arcgis/rest/services/map_indices/MapServer\",\"http://schema.org/downloadUrl\":[{\"url\":\"https://prd-tnm.s3.amazonaws.com/StagedProducts/MapIndices/GDB/MAPINDICES_Indiana_State_GDB.zip\",\"label\":\"File geodatabase (0.5 MB)\"},{\"url\":\"https://prd-tnm.s3.amazonaws.com/StagedProducts/MapIndices/Shape/MAPINDICES_Indiana_State_Shape.zip\",\"label\":\"Shapefile (0.5 MB)\"}],\"http://www.opengis.net/cat/csw/csdgm\":\"https://prd-tnm.s3.amazonaws.com/StagedProducts/MapIndices/GDB/MAPINDICES_Indiana_State_GDB.xml\",\"http://schema.org/url\":\"https://www.sciencebase.gov/catalog/item/59f53d65e4b063d5d307d898\",\"http://schema.org/thumbnailUrl\":\"https://prd-tnm.s3.amazonaws.com/StagedProducts/MapIndices/GDB/MAPINDICES_Indiana_State_GDB.jpg\"}"
+}

@@ -1,0 +1,61 @@
+{
+  "id": "usgs-tnm-wbd-hu2-09",
+  "dct_title_s": "USGS Watershed Boundary Dataset (WBD) for the Souris-Red-Rainy Region (HU-2 09)",
+  "dct_description_sm": [
+    "The Watershed Boundary Dataset (WBD) is a comprehensive aggregated collection of hydrologic unit data consistent with the national criteria for delineation and resolution. It defines the areal extent of surface water drainage to a point except in coastal or lake front areas where there could be multiple outlets as stated by the \"Federal Standards and Procedures for the National Watershed Boundary Dataset (WBD)\" \"Standard\" (https://pubs.usgs.gov/tm/11/a3/). Watershed boundaries are determined solely upon science-based hydrologic principles, not favoring any administrative boundaries or special projects, nor particular program or agency. This dataset represents the hydrologic unit boundaries to the 12-digit (6th level) for the entire United States. Some areas may also include additional subdivisions representing the 14- and 16-digit hydrologic unit (HU). At a minimum, the HUs are delineated at 1:24,000-scale in the conterminous United States, 1:25,000-scale in Hawaii, Pacific basin and the Caribbean, and 1:63,360-scale in Alaska, meeting the National Map Accuracy Standards (NMAS). Higher resolution boundaries are being developed where partners and data exist and will be incorporated back into the WBD. WBD data are delivered as a dataset of polygons and corresponding lines that define the boundary of the polygon. WBD polygon attributes include hydrologic unit codes (HUC), size (in the form of acres and square kilometers), name, downstream hydrologic unit code, type of watershed, non-contributing areas, and flow modifications. The HUC describes where the unit is in the country and the level of the unit. WBD line attributes contain the highest level of hydrologic unit for each boundary, line source information and flow modifications."
+  ],
+  "dct_creator_sm": [
+    "Geological Survey (U.S.)"
+  ],
+  "dct_publisher_sm": [
+    "Geological Survey (U.S.)"
+  ],
+  "dct_issued_s": "2025-01-08",
+  "dct_temporal_sm": [
+    "2025"
+  ],
+  "gbl_indexYear_im": [
+    2025
+  ],
+  "dct_language_sm": [
+    "eng"
+  ],
+  "schema_provider_s": "U.S. Geological Survey",
+  "dct_identifier_sm": [
+    "https://www.sciencebase.gov/catalog/item/5a1632b4e4b09fc93dd171ec",
+    "https://www.sciencebase.gov/catalog/item/5a1632b6e4b09fc93dd171f6",
+    "https://www.sciencebase.gov/catalog/item/63dd3d03d34e9fa19a9ad064"
+  ],
+  "gbl_resourceClass_sm": [
+    "Datasets"
+  ],
+  "gbl_resourceType_sm": [
+    "Polygon data",
+    "Line data"
+  ],
+  "dcat_theme_sm": [
+    "Inland Waters"
+  ],
+  "dcat_keyword_sm": [
+    "The National Map",
+    "Watershed Boundary Dataset",
+    "HU-2 Region"
+  ],
+  "dct_format_s": "GeoPackage",
+  "locn_geometry": "ENVELOPE(-114.75333, -89.8593, 50.55243, 45.47608)",
+  "dcat_bbox": "ENVELOPE(-114.75333, -89.8593, 50.55243, 45.47608)",
+  "dcat_centroid": "48.014255,-102.306315",
+  "pcdm_memberOf_sm": [
+    "usgs-tnm-wbd"
+  ],
+  "dct_rights_sm": [
+    "USGS-authored or produced data and information are considered to be in the U.S. Public Domain."
+  ],
+  "dct_license_sm": [
+    "https://creativecommons.org/publicdomain/mark/1.0/"
+  ],
+  "dct_accessRights_s": "Public",
+  "gbl_mdModified_dt": "2025-01-09T03:23:14Z",
+  "gbl_mdVersion_s": "Aardvark",
+  "dct_references_s": "{\"urn:x-esri:serviceType:ArcGIS#DynamicMapLayer\":\"https://hydro.nationalmap.gov/arcgis/rest/services/wbd/MapServer\",\"http://schema.org/downloadUrl\":[{\"url\":\"https://prd-tnm.s3.amazonaws.com/StagedProducts/Hydrography/WBD/HU2/GPKG/WBD_09_HU2_GPKG.zip\",\"label\":\"GeoPackage (122.9 MB)\"},{\"url\":\"https://prd-tnm.s3.amazonaws.com/StagedProducts/Hydrography/WBD/HU2/GDB/WBD_09_HU2_GDB.zip\",\"label\":\"File geodatabase (59.3 MB)\"},{\"url\":\"https://prd-tnm.s3.amazonaws.com/StagedProducts/Hydrography/WBD/HU2/Shape/WBD_09_HU2_Shape.zip\",\"label\":\"Shapefile (121.8 MB)\"}],\"http://www.opengis.net/cat/csw/csdgm\":\"https://prd-tnm.s3.amazonaws.com/StagedProducts/Hydrography/WBD/HU2/GPKG/WBD_09_HU2_GPKG.xml\",\"http://schema.org/url\":\"https://www.sciencebase.gov/catalog/item/63dd3d03d34e9fa19a9ad064\",\"http://schema.org/thumbnailUrl\":\"https://prd-tnm.s3.amazonaws.com/StagedProducts/Hydrography/WBD/HU2/GPKG/WBD_09_HU2_GPKG.jpg\"}"
+}

@@ -1,0 +1,62 @@
+{
+  "id": "usgs-tnm-nhdplushr-hu8-19020201",
+  "dct_title_s": "USGS NHDPlus High Resolution (NHDPlus HR) for the Eastern Prince William Sound Subbasin (HU-8 19020201)",
+  "dct_description_sm": [
+    "The High Resolution National Hydrography Dataset Plus (NHDPlus HR) is an integrated set of geospatial data layers, including the National Hydrography Dataset (NHD), National Watershed Boundary Dataset (WBD), and 3D Elevation Program Digital Elevation Model (3DEP DEM). The NHDPlus HR combines the NHD, 3DEP DEMs, and WBD to a data suite that includes the NHD stream network with linear referencing functionality, the WBD hydrologic units, elevation-derived catchment areas for each stream segment, \"value added attributes\" (VAAs), and other features that enhance hydrologic data analysis and routing."
+  ],
+  "dct_creator_sm": [
+    "Geological Survey (U.S.)"
+  ],
+  "dct_publisher_sm": [
+    "Geological Survey (U.S.)"
+  ],
+  "dct_issued_s": "2022-07-13",
+  "dct_temporal_sm": [
+    "2022"
+  ],
+  "gbl_indexYear_im": [
+    2022
+  ],
+  "dct_language_sm": [
+    "eng"
+  ],
+  "schema_provider_s": "U.S. Geological Survey",
+  "dct_identifier_sm": [
+    "https://www.sciencebase.gov/catalog/item/65e2c412d34e5855ff4d58fe",
+    "https://www.sciencebase.gov/catalog/item/66f45abfd34e791ae5dfc614"
+  ],
+  "gbl_resourceClass_sm": [
+    "Datasets"
+  ],
+  "gbl_resourceType_sm": [
+    "Line data",
+    "Polygon data",
+    "Point data",
+    "Raster data"
+  ],
+  "dcat_theme_sm": [
+    "Inland Waters"
+  ],
+  "dcat_keyword_sm": [
+    "The National Map",
+    "NHDPlus High Resolution",
+    "HU-8 Subbasin"
+  ],
+  "dct_format_s": "GeoPackage",
+  "locn_geometry": "ENVELOPE(-149.17663862, -145.09956564, 61.51892425, 60.13543702)",
+  "dcat_bbox": "ENVELOPE(-149.17663862, -145.09956564, 61.51892425, 60.13543702)",
+  "dcat_centroid": "60.82718064,-147.13810213",
+  "pcdm_memberOf_sm": [
+    "usgs-tnm-nhdplushr"
+  ],
+  "dct_rights_sm": [
+    "USGS-authored or produced data and information are considered to be in the U.S. Public Domain."
+  ],
+  "dct_license_sm": [
+    "https://creativecommons.org/publicdomain/mark/1.0/"
+  ],
+  "dct_accessRights_s": "Public",
+  "gbl_mdModified_dt": "2024-09-25T18:47:31Z",
+  "gbl_mdVersion_s": "Aardvark",
+  "dct_references_s": "{\"urn:x-esri:serviceType:ArcGIS#DynamicMapLayer\":\"https://hydro.nationalmap.gov/arcgis/rest/services/NHDPlus_HR/MapServer\",\"http://schema.org/downloadUrl\":[{\"url\":\"https://prd-tnm.s3.amazonaws.com/StagedProducts/Hydrography/NHDPlusHR/VPU/Current/GPKG/NHDPLUS_H_19020201_HU8_20220713_GPKG.zip\",\"label\":\"GeoPackage (328.3 MB)\"},{\"url\":\"https://prd-tnm.s3.amazonaws.com/StagedProducts/Hydrography/NHDPlusHR/VPU/Current/GDB/NHDPLUS_H_19020201_HU8_20220713_GDB.zip\",\"label\":\"File geodatabase (122.7 MB)\"},{\"url\":\"https://prd-tnm.s3.amazonaws.com/StagedProducts/Hydrography/NHDPlusHR/VPU/Current/Raster/NHDPLUS_H_19020201_HU8_20220713_RASTER.zip\",\"label\":\"Rasters (GeoTIFF) (4.5 GB)\"}],\"http://www.opengis.net/cat/csw/csdgm\":\"https://prd-tnm.s3.amazonaws.com/StagedProducts/Hydrography/NHDPlusHR/VPU/Current/GPKG/NHDPLUS_H_19020201_HU8_20220713_GPKG.xml\",\"http://schema.org/url\":\"https://www.sciencebase.gov/catalog/item/66f45abfd34e791ae5dfc614\",\"http://schema.org/thumbnailUrl\":\"https://prd-tnm.s3.amazonaws.com/StagedProducts/Hydrography/NHDPlusHR/VPU/Current/GPKG/NHDPLUS_H_19020201_HU8_20220713_GPKG.jpg\"}"
+}

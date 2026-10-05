@@ -1,0 +1,2 @@
+# Snapshots of the catalog and bucket listing, which the harvester fetches fresh on every run
+/tmp

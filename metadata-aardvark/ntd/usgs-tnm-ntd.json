@@ -1,0 +1,56 @@
+{
+  "id": "usgs-tnm-ntd",
+  "dct_title_s": "USGS National Transportation Dataset (NTD)",
+  "dct_description_sm": [
+    "USGS Transportation data is a network of geospatially referenced features including roads, trails, airports, and railroads across the United States and its territories. This dataset provides detailed information on the location, classification, and identification of transportation infrastructure, supporting cartographic representation and facilitating geographic analysis. This comprehensive view of national transportation networks aids in infrastructure development and public safety initiatives, enabling informed decision-making by planners, emergency services, and government agencies."
+  ],
+  "dct_creator_sm": [
+    "Geological Survey (U.S.)"
+  ],
+  "dct_publisher_sm": [
+    "Geological Survey (U.S.)"
+  ],
+  "dct_temporal_sm": [
+    "2026"
+  ],
+  "gbl_indexYear_im": [
+    2026
+  ],
+  "gbl_dateRange_drsim": [
+    "[2026 TO 2026]"
+  ],
+  "dct_spatial_sm": [
+    "United States"
+  ],
+  "dct_language_sm": [
+    "eng"
+  ],
+  "schema_provider_s": "U.S. Geological Survey",
+  "gbl_resourceClass_sm": [
+    "Collections"
+  ],
+  "gbl_resourceType_sm": [
+    "Line data",
+    "Point data",
+    "Polygon data"
+  ],
+  "dcat_theme_sm": [
+    "Transportation"
+  ],
+  "dcat_keyword_sm": [
+    "The National Map",
+    "National Transportation Dataset"
+  ],
+  "locn_geometry": "ENVELOPE(144.56343, -64.51267, 71.4398, -14.60181)",
+  "dcat_bbox": "ENVELOPE(144.56343, -64.51267, 71.4398, -14.60181)",
+  "dct_rights_sm": [
+    "USGS-authored or produced data and information are considered to be in the U.S. Public Domain."
+  ],
+  "dct_license_sm": [
+    "https://creativecommons.org/publicdomain/mark/1.0/"
+  ],
+  "dct_accessRights_s": "Public",
+  "gbl_mdModified_dt": "2026-02-14T03:21:03Z",
+  "gbl_mdVersion_s": "Aardvark",
+  "dct_references_s": "{\"urn:x-esri:serviceType:ArcGIS#DynamicMapLayer\":\"https://carto.nationalmap.gov/arcgis/rest/services/transportation/MapServer\",\"http://schema.org/url\":\"https://www.sciencebase.gov/catalog/item/4f70b1f4e4b058caae3f8e16\"}"
+}

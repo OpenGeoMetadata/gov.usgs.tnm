@@ -1,0 +1,62 @@
+{
+  "id": "usgs-tnm-nhd-hu4-0421",
+  "dct_title_s": "USGS National Hydrography Dataset (NHD) for the Wanipitai River-French River Subregion (HU-4 0421)",
+  "dct_description_sm": [
+    "The National Hydrography Dataset (NHD) is a feature-based database that interconnects and uniquely identifies the stream segments or reaches that make up the nation's surface water drainage system. NHD data was originally developed at 1:100,000-scale and exists at that scale for the whole country. This high-resolution NHD, generally developed at 1:24,000/1:12,000 scale, adds detail to the original 1:100,000-scale NHD. (Data for Alaska, Puerto Rico and the Virgin Islands was developed at high-resolution, not 1:100,000 scale.) Local resolution NHD is being developed where partners and data exist. The NHD contains reach codes for networked features, flow direction, names, and centerline representations for areal water bodies. Reaches are also defined on waterbodies and the approximate shorelines of the Great Lakes, the Atlantic and Pacific Oceans and the Gulf of Mexico. The NHD also incorporates the National Spatial Data Infrastructure framework criteria established by the Federal Geographic Data Committee."
+  ],
+  "dct_creator_sm": [
+    "Geological Survey (U.S.)"
+  ],
+  "dct_publisher_sm": [
+    "Geological Survey (U.S.)"
+  ],
+  "dct_issued_s": "2023-11-20",
+  "dct_temporal_sm": [
+    "2023"
+  ],
+  "gbl_indexYear_im": [
+    2023
+  ],
+  "dct_language_sm": [
+    "eng"
+  ],
+  "schema_provider_s": "U.S. Geological Survey",
+  "dct_identifier_sm": [
+    "https://www.sciencebase.gov/catalog/item/61f8b98fd34e622189c32aa8",
+    "https://www.sciencebase.gov/catalog/item/61f8ba4fd34e622189c32c92",
+    "https://www.sciencebase.gov/catalog/item/63216532d34e71c6d67aad90"
+  ],
+  "gbl_resourceClass_sm": [
+    "Datasets"
+  ],
+  "gbl_resourceType_sm": [
+    "Line data",
+    "Polygon data",
+    "Point data"
+  ],
+  "dcat_theme_sm": [
+    "Inland Waters"
+  ],
+  "dcat_keyword_sm": [
+    "The National Map",
+    "National Hydrography Dataset",
+    "HU-4 Subregion"
+  ],
+  "dct_format_s": "GeoPackage",
+  "locn_geometry": "ENVELOPE(-81.46911, -78.93794, 47.49388, 45.75187)",
+  "dcat_bbox": "ENVELOPE(-81.46911, -78.93794, 47.49388, 45.75187)",
+  "dcat_centroid": "46.622875,-80.203525",
+  "pcdm_memberOf_sm": [
+    "usgs-tnm-nhd"
+  ],
+  "dct_rights_sm": [
+    "USGS-authored or produced data and information are considered to be in the U.S. Public Domain."
+  ],
+  "dct_license_sm": [
+    "https://creativecommons.org/publicdomain/mark/1.0/"
+  ],
+  "dct_accessRights_s": "Public",
+  "gbl_mdModified_dt": "2023-11-21T06:15:39Z",
+  "gbl_mdVersion_s": "Aardvark",
+  "dct_references_s": "{\"urn:x-esri:serviceType:ArcGIS#DynamicMapLayer\":\"https://hydro.nationalmap.gov/arcgis/rest/services/nhd/MapServer\",\"http://schema.org/downloadUrl\":[{\"url\":\"https://prd-tnm.s3.amazonaws.com/StagedProducts/Hydrography/NHD/HU4/GPKG/NHD_H_0421_HU4_GPKG.zip\",\"label\":\"GeoPackage (137.8 MB)\"},{\"url\":\"https://prd-tnm.s3.amazonaws.com/StagedProducts/Hydrography/NHD/HU4/GDB/NHD_H_0421_HU4_GDB.zip\",\"label\":\"File geodatabase (59.4 MB)\"},{\"url\":\"https://prd-tnm.s3.amazonaws.com/StagedProducts/Hydrography/NHD/HU4/Shape/NHD_H_0421_HU4_Shape.zip\",\"label\":\"Shapefile (128.6 MB)\"}],\"http://www.opengis.net/cat/csw/csdgm\":\"https://prd-tnm.s3.amazonaws.com/StagedProducts/Hydrography/NHD/HU4/GPKG/NHD_H_0421_HU4_GPKG.xml\",\"http://schema.org/url\":\"https://www.sciencebase.gov/catalog/item/63216532d34e71c6d67aad90\",\"http://schema.org/thumbnailUrl\":\"https://prd-tnm.s3.amazonaws.com/StagedProducts/Hydrography/NHD/HU4/GPKG/NHD_H_0421_HU4_GPKG.jpg\"}"
+}

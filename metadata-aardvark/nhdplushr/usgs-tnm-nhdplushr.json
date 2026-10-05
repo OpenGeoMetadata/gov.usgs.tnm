@@ -1,0 +1,65 @@
+{
+  "id": "usgs-tnm-nhdplushr",
+  "dct_title_s": "USGS NHDPlus High Resolution (NHDPlus HR)",
+  "dct_description_sm": [
+    "The High Resolution National Hydrography Dataset Plus (NHDPlus HR) is an integrated set of geospatial data layers, including the best available National Hydrography Dataset (NHD), the 10-meter 3D Elevation Program Digital Elevation Model (3DEP DEM), and the National Watershed Boundary Dataset (WBD). The NHDPlus HR combines the NHD, 3DEP DEMs, and WBD to create a stream network with linear referencing, feature naming, \"value added attributes\" (VAAs), elevation-derived catchments, and other features for hydrologic data analysis. The stream network with linear referencing is a system of data relationships applied to hydrographic systems so that one stream reach \"flows\" into another and \"events\" can be tied to and traced along the network. The VAAs provide capabilities for upstream and downstream navigation with linear referencing, analysis, and modeling. The elevation derived catchments are used to associate other landscape attributes, such as land cover, with stream segments."
+  ],
+  "dct_creator_sm": [
+    "Geological Survey (U.S.)"
+  ],
+  "dct_publisher_sm": [
+    "Geological Survey (U.S.)"
+  ],
+  "dct_temporal_sm": [
+    "2017-2025"
+  ],
+  "gbl_indexYear_im": [
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+  ],
+  "gbl_dateRange_drsim": [
+    "[2017 TO 2025]"
+  ],
+  "dct_spatial_sm": [
+    "United States"
+  ],
+  "dct_language_sm": [
+    "eng"
+  ],
+  "schema_provider_s": "U.S. Geological Survey",
+  "gbl_resourceClass_sm": [
+    "Collections"
+  ],
+  "gbl_resourceType_sm": [
+    "Line data",
+    "Polygon data",
+    "Point data",
+    "Raster data"
+  ],
+  "dcat_theme_sm": [
+    "Inland Waters"
+  ],
+  "dcat_keyword_sm": [
+    "The National Map",
+    "NHDPlus High Resolution"
+  ],
+  "locn_geometry": "ENVELOPE(144.56684268, -64.5126611, 70.25394954, -14.61019276)",
+  "dcat_bbox": "ENVELOPE(144.56684268, -64.5126611, 70.25394954, -14.61019276)",
+  "dct_rights_sm": [
+    "USGS-authored or produced data and information are considered to be in the U.S. Public Domain."
+  ],
+  "dct_license_sm": [
+    "https://creativecommons.org/publicdomain/mark/1.0/"
+  ],
+  "dct_accessRights_s": "Public",
+  "gbl_mdModified_dt": "2026-02-11T22:08:43Z",
+  "gbl_mdVersion_s": "Aardvark",
+  "dct_references_s": "{\"urn:x-esri:serviceType:ArcGIS#DynamicMapLayer\":\"https://hydro.nationalmap.gov/arcgis/rest/services/NHDPlus_HR/MapServer\",\"http://schema.org/url\":\"https://www.usgs.gov/3d-hydrography-program\"}"
+}

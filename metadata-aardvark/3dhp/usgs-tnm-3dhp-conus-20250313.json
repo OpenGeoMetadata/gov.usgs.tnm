@@ -1,0 +1,63 @@
+{
+  "id": "usgs-tnm-3dhp-conus-20250313",
+  "dct_title_s": "USGS 3D Hydrography Program (3DHP) for the Conterminous United States (FY25)",
+  "dct_description_sm": [
+    "The 3D Hydrography Program (3DHP) data is an integrated, National, 3D-enabled hydrologic dataset derived from the USGS 3D Elevation Program (3DEP) data. For areas where Elevation-derived Hydrography (EDH) has not yet been collected, 3DHP data is supplemented by hydrologic vector data from the National Hydrography Dataset (NHD). As further EDH data is collected, it will replace the NHD data in those areas. 3DHP data ingested from EDH sources includes ‘value added’ catchments and flowline network derivative attributes. All the data is open and non-proprietary. However, users should be aware that temporal changes may have occurred since this dataset was collected and that some parts of this data may no longer represent actual surface conditions. Users should not use this data for critical applications without a full awareness of its limitations. This dataset is not intended to be used for site-specific regulatory determinations. 3DHP datasets include a three-dimensional (3D) hydrography network generated from, and integrated with, elevation data from the 3DEP to better represent stream gradients and channel conditions, along with waterbodies, hydrologic units, hydrologically enhanced elevation and other surfaces, and more consistent and accurate attributes. This product is new in federal fiscal year 2025 (FY25), and consists only of vector data in a series of feature classes. The product represents the 3DHP dataset and the schema in which it is contained as of September 30, 2024 Future Annual Staged Product releases will reflect the schema at the time the product is generated and include more EDH-sourced data holdings."
+  ],
+  "dct_creator_sm": [
+    "Geological Survey (U.S.)"
+  ],
+  "dct_publisher_sm": [
+    "Geological Survey (U.S.)"
+  ],
+  "dct_issued_s": "2025-01-07",
+  "dct_temporal_sm": [
+    "2025"
+  ],
+  "gbl_indexYear_im": [
+    2025
+  ],
+  "dct_spatial_sm": [
+    "United States"
+  ],
+  "dct_language_sm": [
+    "eng"
+  ],
+  "schema_provider_s": "U.S. Geological Survey",
+  "dct_identifier_sm": [
+    "https://www.sciencebase.gov/catalog/item/6798da1ed34ea8c18376e77d",
+    "https://www.sciencebase.gov/catalog/item/6798da21d34ea8c18376e77f"
+  ],
+  "gbl_resourceClass_sm": [
+    "Datasets"
+  ],
+  "gbl_resourceType_sm": [
+    "Line data",
+    "Polygon data",
+    "Point data"
+  ],
+  "dcat_theme_sm": [
+    "Inland Waters"
+  ],
+  "dcat_keyword_sm": [
+    "The National Map",
+    "3D Hydrography Program"
+  ],
+  "dct_format_s": "GeoPackage",
+  "locn_geometry": "ENVELOPE(-125, -65, 50, 24.4)",
+  "dcat_bbox": "ENVELOPE(-125, -65, 50, 24.4)",
+  "dcat_centroid": "37.2,-95",
+  "pcdm_memberOf_sm": [
+    "usgs-tnm-3dhp"
+  ],
+  "dct_rights_sm": [
+    "USGS-authored or produced data and information are considered to be in the U.S. Public Domain."
+  ],
+  "dct_license_sm": [
+    "https://creativecommons.org/publicdomain/mark/1.0/"
+  ],
+  "dct_accessRights_s": "Public",
+  "gbl_mdModified_dt": "2026-01-22T21:52:08Z",
+  "gbl_mdVersion_s": "Aardvark",
+  "dct_references_s": "{\"urn:x-esri:serviceType:ArcGIS#DynamicMapLayer\":\"https://hydro.nationalmap.gov/arcgis/rest/services/3DHP_all/MapServer\",\"http://schema.org/downloadUrl\":[{\"url\":\"https://prd-tnm.s3.amazonaws.com/StagedProducts/Hydrography/3DHP/Annual/GPKG/3dhp_all_GPKG_FY25_CONUS_20250313/3dhp_all_CONUS_20250313_GPKG.zip\",\"label\":\"GeoPackage (22.4 GB)\"},{\"url\":\"https://prd-tnm.s3.amazonaws.com/StagedProducts/Hydrography/3DHP/Annual/GDB/3dhp_all_GDB_FY25_CONUS_20250313/3dhp_all_CONUS_20250313_GDB.zip\",\"label\":\"File geodatabase (12.0 GB)\"}],\"http://www.opengis.net/cat/csw/csdgm\":\"https://prd-tnm.s3.amazonaws.com/StagedProducts/Hydrography/3DHP/Annual/GPKG/3dhp_all_GPKG_FY25_CONUS_20250313/3dhp_all_CONUS_20250313_GPKG.xml\",\"http://schema.org/url\":\"https://www.sciencebase.gov/catalog/item/6798da1ed34ea8c18376e77d\",\"http://schema.org/thumbnailUrl\":\"https://prd-tnm.s3.amazonaws.com/StagedProducts/Hydrography/3DHP/Annual/GPKG/3dhp_all_GPKG_FY25_CONUS_20250313/3dhp_all_CONUS_20250313_GPKG.jpg\"}"
+}

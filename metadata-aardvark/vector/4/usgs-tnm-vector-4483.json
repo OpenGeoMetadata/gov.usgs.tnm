@@ -1,0 +1,71 @@
+{
+  "id": "usgs-tnm-vector-4483",
+  "dct_title_s": "USGS Topo Map Vector Data for Blue Diamond, NV",
+  "dct_description_sm": [
+    "Layers of geospatial data include contours, boundaries, land cover, hydrography, roads, transportation, geographic names, structures, and other selected map features."
+  ],
+  "dct_creator_sm": [
+    "Geological Survey (U.S.)"
+  ],
+  "dct_publisher_sm": [
+    "Geological Survey (U.S.)"
+  ],
+  "dct_issued_s": "2025-08-03",
+  "dct_temporal_sm": [
+    "2025"
+  ],
+  "gbl_indexYear_im": [
+    2025
+  ],
+  "dct_spatial_sm": [
+    "Nevada"
+  ],
+  "dct_language_sm": [
+    "eng"
+  ],
+  "schema_provider_s": "U.S. Geological Survey",
+  "dct_identifier_sm": [
+    "https://www.sciencebase.gov/catalog/item/59b90764e4b08b1644e0e00d",
+    "https://www.sciencebase.gov/catalog/item/59b9076ee4b08b1644e0e0bc",
+    "https://www.sciencebase.gov/catalog/item/675a7d71d34edfeb8710cad6"
+  ],
+  "gbl_resourceClass_sm": [
+    "Datasets"
+  ],
+  "gbl_resourceType_sm": [
+    "Line data",
+    "Polygon data",
+    "Point data"
+  ],
+  "dcat_theme_sm": [
+    "Boundaries",
+    "Elevation",
+    "Inland Waters",
+    "Land Cover",
+    "Location",
+    "Structure",
+    "Transportation"
+  ],
+  "dcat_keyword_sm": [
+    "The National Map",
+    "Topo Map Vector Data",
+    "7.5 x 7.5 minute"
+  ],
+  "dct_format_s": "GeoPackage",
+  "locn_geometry": "ENVELOPE(-115.5, -115.375, 36.125, 36)",
+  "dcat_bbox": "ENVELOPE(-115.5, -115.375, 36.125, 36)",
+  "dcat_centroid": "36.0625,-115.4375",
+  "pcdm_memberOf_sm": [
+    "usgs-tnm-vector"
+  ],
+  "dct_rights_sm": [
+    "USGS-authored or produced data and information are considered to be in the U.S. Public Domain."
+  ],
+  "dct_license_sm": [
+    "https://creativecommons.org/publicdomain/mark/1.0/"
+  ],
+  "dct_accessRights_s": "Public",
+  "gbl_mdModified_dt": "2025-08-04T04:16:24Z",
+  "gbl_mdVersion_s": "Aardvark",
+  "dct_references_s": "{\"http://schema.org/downloadUrl\":[{\"url\":\"https://prd-tnm.s3.amazonaws.com/StagedProducts/TopoMapVector/NV/GPKG/VECTOR_Blue_Diamond_NV_7_5_Min_GPKG.zip\",\"label\":\"GeoPackage (5.0 MB)\"},{\"url\":\"https://prd-tnm.s3.amazonaws.com/StagedProducts/TopoMapVector/NV/GDB/VECTOR_Blue_Diamond_NV_7_5_Min_GDB.zip\",\"label\":\"File geodatabase (2.5 MB)\"},{\"url\":\"https://prd-tnm.s3.amazonaws.com/StagedProducts/TopoMapVector/NV/Shape/VECTOR_Blue_Diamond_NV_7_5_Min_Shape.zip\",\"label\":\"Shapefile (4.5 MB)\"}],\"http://www.opengis.net/cat/csw/csdgm\":\"https://prd-tnm.s3.amazonaws.com/StagedProducts/TopoMapVector/NV/GPKG/VECTOR_Blue_Diamond_NV_7_5_Min_GPKG.xml\",\"http://schema.org/url\":\"https://www.sciencebase.gov/catalog/item/675a7d71d34edfeb8710cad6\",\"http://schema.org/thumbnailUrl\":\"https://prd-tnm.s3.amazonaws.com/StagedProducts/TopoMapVector/NV/GPKG/VECTOR_Blue_Diamond_NV_7_5_Min_GPKG.jpg\"}"
+}

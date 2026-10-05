@@ -1,0 +1,65 @@
+{
+  "id": "usgs-tnm-nsd-nv",
+  "dct_title_s": "USGS National Structures Dataset (NSD) for Nevada",
+  "dct_description_sm": [
+    "Geospatial data includes structures and other selected map features."
+  ],
+  "dct_creator_sm": [
+    "Geological Survey (U.S.)"
+  ],
+  "dct_publisher_sm": [
+    "Geological Survey (U.S.)"
+  ],
+  "dct_issued_s": "2026-02-26",
+  "dct_temporal_sm": [
+    "2026"
+  ],
+  "gbl_indexYear_im": [
+    2026
+  ],
+  "dct_spatial_sm": [
+    "Nevada"
+  ],
+  "dct_language_sm": [
+    "eng"
+  ],
+  "schema_provider_s": "U.S. Geological Survey",
+  "dct_identifier_sm": [
+    "https://www.sciencebase.gov/catalog/item/59faad74e4b0531197affcb5",
+    "https://www.sciencebase.gov/catalog/item/5caed10be4b0c3b00654ddcc",
+    "https://www.sciencebase.gov/catalog/item/6290f143d34ef70cdba450ca"
+  ],
+  "gbl_resourceClass_sm": [
+    "Datasets"
+  ],
+  "gbl_resourceType_sm": [
+    "Point data",
+    "Polygon data",
+    "Line data"
+  ],
+  "dcat_theme_sm": [
+    "Structure"
+  ],
+  "dcat_keyword_sm": [
+    "The National Map",
+    "National Structures Dataset",
+    "State"
+  ],
+  "dct_format_s": "GeoPackage",
+  "locn_geometry": "ENVELOPE(-120.00647, -114.03946, 42.00184, 35.00186)",
+  "dcat_bbox": "ENVELOPE(-120.00647, -114.03946, 42.00184, 35.00186)",
+  "dcat_centroid": "38.50185,-117.022965",
+  "pcdm_memberOf_sm": [
+    "usgs-tnm-nsd"
+  ],
+  "dct_rights_sm": [
+    "USGS-authored or produced data and information are considered to be in the U.S. Public Domain."
+  ],
+  "dct_license_sm": [
+    "https://creativecommons.org/publicdomain/mark/1.0/"
+  ],
+  "dct_accessRights_s": "Public",
+  "gbl_mdModified_dt": "2026-02-27T03:21:28Z",
+  "gbl_mdVersion_s": "Aardvark",
+  "dct_references_s": "{\"urn:x-esri:serviceType:ArcGIS#DynamicMapLayer\":\"https://carto.nationalmap.gov/arcgis/rest/services/structures/MapServer\",\"http://schema.org/downloadUrl\":[{\"url\":\"https://prd-tnm.s3.amazonaws.com/StagedProducts/Struct/GPKG/STRUCT_Nevada_State_GPKG.zip\",\"label\":\"GeoPackage (214.7 MB)\"},{\"url\":\"https://prd-tnm.s3.amazonaws.com/StagedProducts/Struct/GDB/STRUCT_Nevada_State_GDB.zip\",\"label\":\"File geodatabase (169.8 MB)\"},{\"url\":\"https://prd-tnm.s3.amazonaws.com/StagedProducts/Struct/Shape/STRUCT_Nevada_State_Shape.zip\",\"label\":\"Shapefile (204.2 MB)\"}],\"http://www.opengis.net/cat/csw/csdgm\":\"https://prd-tnm.s3.amazonaws.com/StagedProducts/Struct/GPKG/STRUCT_Nevada_State_GPKG.xml\",\"http://schema.org/url\":\"https://www.sciencebase.gov/catalog/item/6290f143d34ef70cdba450ca\",\"http://schema.org/thumbnailUrl\":\"https://prd-tnm.s3.amazonaws.com/StagedProducts/Struct/GPKG/STRUCT_Nevada_State_GPKG.jpg\"}"
+}

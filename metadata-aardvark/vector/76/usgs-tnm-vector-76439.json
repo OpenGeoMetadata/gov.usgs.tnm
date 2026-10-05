@@ -1,0 +1,71 @@
+{
+  "id": "usgs-tnm-vector-76439",
+  "dct_title_s": "USGS Topo Map Vector Data for Bruin Hill, ID",
+  "dct_description_sm": [
+    "Layers of geospatial data include contours, boundaries, land cover, hydrography, roads, transportation, geographic names, structures, and other selected map features."
+  ],
+  "dct_creator_sm": [
+    "Geological Survey (U.S.)"
+  ],
+  "dct_publisher_sm": [
+    "Geological Survey (U.S.)"
+  ],
+  "dct_issued_s": "2025-07-30",
+  "dct_temporal_sm": [
+    "2025"
+  ],
+  "gbl_indexYear_im": [
+    2025
+  ],
+  "dct_spatial_sm": [
+    "Idaho"
+  ],
+  "dct_language_sm": [
+    "eng"
+  ],
+  "schema_provider_s": "U.S. Geological Survey",
+  "dct_identifier_sm": [
+    "https://www.sciencebase.gov/catalog/item/59c0e096e4b091459a5f676a",
+    "https://www.sciencebase.gov/catalog/item/59c0e09ce4b091459a5f6794",
+    "https://www.sciencebase.gov/catalog/item/6755210ad34e092d5f5971e7"
+  ],
+  "gbl_resourceClass_sm": [
+    "Datasets"
+  ],
+  "gbl_resourceType_sm": [
+    "Line data",
+    "Polygon data",
+    "Point data"
+  ],
+  "dcat_theme_sm": [
+    "Boundaries",
+    "Elevation",
+    "Inland Waters",
+    "Land Cover",
+    "Location",
+    "Structure",
+    "Transportation"
+  ],
+  "dcat_keyword_sm": [
+    "The National Map",
+    "Topo Map Vector Data",
+    "7.5 x 7.5 minute"
+  ],
+  "dct_format_s": "GeoPackage",
+  "locn_geometry": "ENVELOPE(-115, -114.875, 46.875, 46.75)",
+  "dcat_bbox": "ENVELOPE(-115, -114.875, 46.875, 46.75)",
+  "dcat_centroid": "46.8125,-114.9375",
+  "pcdm_memberOf_sm": [
+    "usgs-tnm-vector"
+  ],
+  "dct_rights_sm": [
+    "USGS-authored or produced data and information are considered to be in the U.S. Public Domain."
+  ],
+  "dct_license_sm": [
+    "https://creativecommons.org/publicdomain/mark/1.0/"
+  ],
+  "dct_accessRights_s": "Public",
+  "gbl_mdModified_dt": "2025-07-31T04:10:30Z",
+  "gbl_mdVersion_s": "Aardvark",
+  "dct_references_s": "{\"http://schema.org/downloadUrl\":[{\"url\":\"https://prd-tnm.s3.amazonaws.com/StagedProducts/TopoMapVector/ID/GPKG/VECTOR_Bruin_Hill_ID_7_5_Min_GPKG.zip\",\"label\":\"GeoPackage (3.7 MB)\"},{\"url\":\"https://prd-tnm.s3.amazonaws.com/StagedProducts/TopoMapVector/ID/GDB/VECTOR_Bruin_Hill_ID_7_5_Min_GDB.zip\",\"label\":\"File geodatabase (1.8 MB)\"},{\"url\":\"https://prd-tnm.s3.amazonaws.com/StagedProducts/TopoMapVector/ID/Shape/VECTOR_Bruin_Hill_ID_7_5_Min_Shape.zip\",\"label\":\"Shapefile (3.2 MB)\"}],\"http://www.opengis.net/cat/csw/csdgm\":\"https://prd-tnm.s3.amazonaws.com/StagedProducts/TopoMapVector/ID/GPKG/VECTOR_Bruin_Hill_ID_7_5_Min_GPKG.xml\",\"http://schema.org/url\":\"https://www.sciencebase.gov/catalog/item/6755210ad34e092d5f5971e7\",\"http://schema.org/thumbnailUrl\":\"https://prd-tnm.s3.amazonaws.com/StagedProducts/TopoMapVector/ID/GPKG/VECTOR_Bruin_Hill_ID_7_5_Min_GPKG.jpg\"}"
+}

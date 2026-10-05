@@ -1,0 +1,64 @@
+{
+  "id": "usgs-tnm-ntd-national",
+  "dct_title_s": "USGS National Transportation Dataset (NTD) for the United States",
+  "dct_description_sm": [
+    "The USGS Transportation downloadable data from The National Map (TNM) is based on TIGER/Line data provided through U.S. Census Bureau and supplemented with HERE road data to create tile cache base maps. Some of the TIGER/Line data includes limited corrections done by USGS. Transportation data consists of roads, railroads, trails, airports, and other features associated with the transport of people or commerce. The data include the name or route designator, classification, and location. Transportation data support general mapping and geographic information system technology analysis for applications such as traffic safety, congestion mitigation, disaster planning, and emergency response. The National Map transportation data is commonly combined with other data themes, such as boundaries, elevation, hydrography, and structures, to produce general reference base maps. The National Map viewer allows free downloads of public domain transportation data in either Esri File Geodatabase or Shapefile formats. For additional information on the transportation data model, go to https://www.usgs.gov/core-science-systems/national-geospatial-program/national-map."
+  ],
+  "dct_creator_sm": [
+    "Geological Survey (U.S.)"
+  ],
+  "dct_publisher_sm": [
+    "Geological Survey (U.S.)"
+  ],
+  "dct_issued_s": "2026-02-11",
+  "dct_temporal_sm": [
+    "2026"
+  ],
+  "gbl_indexYear_im": [
+    2026
+  ],
+  "dct_spatial_sm": [
+    "United States"
+  ],
+  "dct_language_sm": [
+    "eng"
+  ],
+  "schema_provider_s": "U.S. Geological Survey",
+  "dct_identifier_sm": [
+    "https://www.sciencebase.gov/catalog/item/6384daecd34ed907bf779595",
+    "https://www.sciencebase.gov/catalog/item/64767919d34e4e58932da756"
+  ],
+  "gbl_resourceClass_sm": [
+    "Datasets"
+  ],
+  "gbl_resourceType_sm": [
+    "Line data",
+    "Point data",
+    "Polygon data"
+  ],
+  "dcat_theme_sm": [
+    "Transportation"
+  ],
+  "dcat_keyword_sm": [
+    "The National Map",
+    "National Transportation Dataset",
+    "National"
+  ],
+  "dct_format_s": "GeoPackage",
+  "locn_geometry": "ENVELOPE(144.56343, -64.51267, 71.4398, -14.60181)",
+  "dcat_bbox": "ENVELOPE(144.56343, -64.51267, 71.4398, -14.60181)",
+  "dcat_centroid": "28.418995,-139.97462",
+  "pcdm_memberOf_sm": [
+    "usgs-tnm-ntd"
+  ],
+  "dct_rights_sm": [
+    "USGS-authored or produced data and information are considered to be in the U.S. Public Domain."
+  ],
+  "dct_license_sm": [
+    "https://creativecommons.org/publicdomain/mark/1.0/"
+  ],
+  "dct_accessRights_s": "Public",
+  "gbl_mdModified_dt": "2026-02-12T15:21:43Z",
+  "gbl_mdVersion_s": "Aardvark",
+  "dct_references_s": "{\"urn:x-esri:serviceType:ArcGIS#DynamicMapLayer\":\"https://carto.nationalmap.gov/arcgis/rest/services/transportation/MapServer\",\"http://schema.org/downloadUrl\":[{\"url\":\"https://prd-tnm.s3.amazonaws.com/StagedProducts/Tran/National/GPKG/Transportation_National_GPKG.zip\",\"label\":\"GeoPackage (12.9 GB)\"},{\"url\":\"https://prd-tnm.s3.amazonaws.com/StagedProducts/Tran/National/GDB/Transportation_National_GDB.zip\",\"label\":\"File geodatabase (14.2 GB)\"}],\"http://www.opengis.net/cat/csw/csdgm\":\"https://prd-tnm.s3.amazonaws.com/StagedProducts/Tran/National/GPKG/Transportation_National_GPKG.xml\",\"http://schema.org/url\":\"https://www.sciencebase.gov/catalog/item/64767919d34e4e58932da756\",\"http://schema.org/thumbnailUrl\":\"https://prd-tnm.s3.amazonaws.com/StagedProducts/Tran/National/GPKG/Transportation_National_GPKG.jpg\"}"
+}

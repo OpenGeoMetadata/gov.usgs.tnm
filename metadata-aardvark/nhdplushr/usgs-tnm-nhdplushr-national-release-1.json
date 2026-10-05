@@ -1,0 +1,64 @@
+{
+  "id": "usgs-tnm-nhdplushr-national-release-1",
+  "dct_title_s": "USGS NHDPlus High Resolution (NHDPlus HR) for the United States, Release 1",
+  "dct_description_sm": [
+    "The High Resolution National Hydrography Dataset Plus (NHDPlus HR) is an integrated set of geospatial data layers, including the National Hydrography Dataset (NHD), National Watershed Boundary Dataset (WBD), and 3D Elevation Program Digital Elevation Model (3DEP DEM). The NHDPlus HR combines the NHD, 3DEP DEMs, and WBD to a data suite that includes the NHD stream network with linear referencing functionality, the WBD hydrologic units, elevation-derived catchment areas for each stream segment, \"value added attributes\" (VAAs), and other features that enhance hydrologic data analysis and routing."
+  ],
+  "dct_creator_sm": [
+    "Geological Survey (U.S.)"
+  ],
+  "dct_publisher_sm": [
+    "Geological Survey (U.S.)"
+  ],
+  "dct_issued_s": "2022-07-07",
+  "dct_temporal_sm": [
+    "2022"
+  ],
+  "gbl_indexYear_im": [
+    2022
+  ],
+  "dct_spatial_sm": [
+    "United States"
+  ],
+  "dct_language_sm": [
+    "eng"
+  ],
+  "schema_provider_s": "U.S. Geological Survey",
+  "dct_identifier_sm": [
+    "https://www.sciencebase.gov/catalog/item/62c6050cd34eeb1417baff15"
+  ],
+  "gbl_resourceClass_sm": [
+    "Datasets"
+  ],
+  "gbl_resourceType_sm": [
+    "Line data",
+    "Polygon data",
+    "Point data",
+    "Raster data"
+  ],
+  "dcat_theme_sm": [
+    "Inland Waters"
+  ],
+  "dcat_keyword_sm": [
+    "The National Map",
+    "NHDPlus High Resolution",
+    "National"
+  ],
+  "dct_format_s": "Geodatabase",
+  "locn_geometry": "ENVELOPE(144.56684268, -64.5126611, 70.25394954, -14.61019276)",
+  "dcat_bbox": "ENVELOPE(144.56684268, -64.5126611, 70.25394954, -14.61019276)",
+  "dcat_centroid": "27.82187839,-139.97290921",
+  "pcdm_memberOf_sm": [
+    "usgs-tnm-nhdplushr"
+  ],
+  "dct_rights_sm": [
+    "USGS-authored or produced data and information are considered to be in the U.S. Public Domain."
+  ],
+  "dct_license_sm": [
+    "https://creativecommons.org/publicdomain/mark/1.0/"
+  ],
+  "dct_accessRights_s": "Public",
+  "gbl_mdModified_dt": "2025-01-31T20:52:58Z",
+  "gbl_mdVersion_s": "Aardvark",
+  "dct_references_s": "{\"urn:x-esri:serviceType:ArcGIS#DynamicMapLayer\":\"https://hydro.nationalmap.gov/arcgis/rest/services/NHDPlus_HR/MapServer\",\"http://schema.org/downloadUrl\":[{\"url\":\"https://prd-tnm.s3.amazonaws.com/StagedProducts/Hydrography/NHDPlusHR/National/GDB/NHDPlus_H_National_Release_1_GDB.zip\",\"label\":\"File geodatabase (28.1 GB)\"}],\"http://www.opengis.net/cat/csw/csdgm\":\"https://prd-tnm.s3.amazonaws.com/StagedProducts/Hydrography/NHDPlusHR/National/GDB/NHDPlus_H_National_Release_1_GDB.xml\",\"http://schema.org/url\":\"https://www.sciencebase.gov/catalog/item/62c6050cd34eeb1417baff15\",\"http://schema.org/thumbnailUrl\":\"https://prd-tnm.s3.amazonaws.com/StagedProducts/Hydrography/NHDPlusHR/National/GDB/NHDPlus_H_National_Release_1_GDB.jpg\"}"
+}

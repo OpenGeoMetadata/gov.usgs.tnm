@@ -1,0 +1,62 @@
+{
+  "id": "usgs-tnm-contours",
+  "dct_title_s": "USGS 1/3 Arc-Second Contours",
+  "dct_description_sm": [
+    "These vector contour lines are derived from the 3D Elevation Program using automated and semi-automated processes. They were created to support 1:24,000-scale CONUS and Hawaii, 1:25,000-scale Alaska, and 1:20,000-scale Puerto Rico / US Virgin Island topographic map products, but are also published in this GIS vector format. Contour intervals are assigned by 7.5-minute quadrangle, so this vector dataset is not visually seamless across quadrangle boundaries. The vector lines have elevation attributes (in feet above mean sea level on NAVD88), but this dataset does not carry line symbols or annotation."
+  ],
+  "dct_creator_sm": [
+    "Geological Survey (U.S.)"
+  ],
+  "dct_publisher_sm": [
+    "Geological Survey (U.S.)"
+  ],
+  "dct_temporal_sm": [
+    "2018-2026"
+  ],
+  "gbl_indexYear_im": [
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025,
+    2026
+  ],
+  "gbl_dateRange_drsim": [
+    "[2018 TO 2026]"
+  ],
+  "dct_spatial_sm": [
+    "United States"
+  ],
+  "dct_language_sm": [
+    "eng"
+  ],
+  "schema_provider_s": "U.S. Geological Survey",
+  "gbl_resourceClass_sm": [
+    "Collections"
+  ],
+  "gbl_resourceType_sm": [
+    "Line data"
+  ],
+  "dcat_theme_sm": [
+    "Elevation"
+  ],
+  "dcat_keyword_sm": [
+    "The National Map",
+    "Contours"
+  ],
+  "locn_geometry": "ENVELOPE(172, -64, 72, 17)",
+  "dcat_bbox": "ENVELOPE(172, -64, 72, 17)",
+  "dct_rights_sm": [
+    "USGS-authored or produced data and information are considered to be in the U.S. Public Domain."
+  ],
+  "dct_license_sm": [
+    "https://creativecommons.org/publicdomain/mark/1.0/"
+  ],
+  "dct_accessRights_s": "Public",
+  "gbl_mdModified_dt": "2026-09-12T02:20:08Z",
+  "gbl_mdVersion_s": "Aardvark",
+  "dct_references_s": "{\"urn:x-esri:serviceType:ArcGIS#DynamicMapLayer\":\"https://carto.nationalmap.gov/arcgis/rest/services/contours/MapServer\",\"http://schema.org/url\":\"https://www.usgs.gov/3d-elevation-program/about-3dep-products-services\"}"
+}

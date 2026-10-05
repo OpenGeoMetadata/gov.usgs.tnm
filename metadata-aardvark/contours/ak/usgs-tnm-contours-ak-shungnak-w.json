@@ -1,0 +1,62 @@
+{
+  "id": "usgs-tnm-contours-ak-shungnak-w",
+  "dct_title_s": "USGS 1/3 Arc-Second Contours for Shungnak W, Alaska (1 x 1 Degree)",
+  "dct_description_sm": [
+    "These vector contour lines are derived from the 3D Elevation Program using automated and semi-automated processes. They were created to support 1:24,000-scale CONUS and Hawaii, 1:25,000-scale Alaska, and 1:20,000-scale Puerto Rico / US Virgin Island topographic map products, but are also published in this GIS vector format. Contour intervals are assigned by 7.5-minute quadrangle, so this vector dataset is not visually seamless across quadrangle boundaries. The vector lines have elevation attributes (in feet above mean sea level on NAVD88), but this dataset does not carry line symbols or annotation."
+  ],
+  "dct_creator_sm": [
+    "Geological Survey (U.S.)"
+  ],
+  "dct_publisher_sm": [
+    "Geological Survey (U.S.)"
+  ],
+  "dct_issued_s": "2021-09-29",
+  "dct_temporal_sm": [
+    "2021"
+  ],
+  "gbl_indexYear_im": [
+    2021
+  ],
+  "dct_spatial_sm": [
+    "Alaska"
+  ],
+  "dct_language_sm": [
+    "eng"
+  ],
+  "schema_provider_s": "U.S. Geological Survey",
+  "dct_identifier_sm": [
+    "https://www.sciencebase.gov/catalog/item/5a68b66fe4b06e28e9c7119b",
+    "https://www.sciencebase.gov/catalog/item/5a68b67ce4b06e28e9c71202"
+  ],
+  "gbl_resourceClass_sm": [
+    "Datasets"
+  ],
+  "gbl_resourceType_sm": [
+    "Line data"
+  ],
+  "dcat_theme_sm": [
+    "Elevation"
+  ],
+  "dcat_keyword_sm": [
+    "The National Map",
+    "Contours",
+    "1 x 1 degree"
+  ],
+  "dct_format_s": "Geodatabase",
+  "locn_geometry": "ENVELOPE(-159, -158, 67, 66)",
+  "dcat_bbox": "ENVELOPE(-159, -158, 67, 66)",
+  "dcat_centroid": "66.5,-158.5",
+  "pcdm_memberOf_sm": [
+    "usgs-tnm-contours"
+  ],
+  "dct_rights_sm": [
+    "USGS-authored or produced data and information are considered to be in the U.S. Public Domain."
+  ],
+  "dct_license_sm": [
+    "https://creativecommons.org/publicdomain/mark/1.0/"
+  ],
+  "dct_accessRights_s": "Public",
+  "gbl_mdModified_dt": "2021-09-30T05:21:26Z",
+  "gbl_mdVersion_s": "Aardvark",
+  "dct_references_s": "{\"urn:x-esri:serviceType:ArcGIS#DynamicMapLayer\":\"https://carto.nationalmap.gov/arcgis/rest/services/contours/MapServer\",\"http://schema.org/downloadUrl\":[{\"url\":\"https://prd-tnm.s3.amazonaws.com/StagedProducts/Contours/GDB/ELEV_Shungnak_W_AK_1X1_GDB.zip\",\"label\":\"File geodatabase (51.6 MB)\"},{\"url\":\"https://prd-tnm.s3.amazonaws.com/StagedProducts/Contours/Shape/ELEV_Shungnak_W_AK_1X1_Shape.zip\",\"label\":\"Shapefile (111.1 MB)\"}],\"http://www.opengis.net/cat/csw/csdgm\":\"https://prd-tnm.s3.amazonaws.com/StagedProducts/Contours/GDB/ELEV_Shungnak_W_AK_1X1_GDB.xml\",\"http://schema.org/url\":\"https://www.sciencebase.gov/catalog/item/5a68b67ce4b06e28e9c71202\",\"http://schema.org/thumbnailUrl\":\"https://prd-tnm.s3.amazonaws.com/StagedProducts/Contours/GDB/ELEV_Shungnak_W_AK_1X1_GDB.jpg\"}"
+}

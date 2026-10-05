@@ -1,0 +1,63 @@
+{
+  "id": "usgs-tnm-contours-ky-winchester-w",
+  "dct_title_s": "USGS 1/3 Arc-Second Contours for Winchester W, Kentucky (1 x 1 Degree)",
+  "dct_description_sm": [
+    "These vector contour lines are derived from the 3D Elevation Program using automated and semi-automated processes. They were created to support 1:24,000-scale CONUS and Hawaii, 1:25,000-scale Alaska, and 1:20,000-scale Puerto Rico / US Virgin Island topographic map products, but are also published in this GIS vector format. Contour intervals are assigned by 7.5-minute quadrangle, so this vector dataset is not visually seamless across quadrangle boundaries. The vector lines have elevation attributes (in feet above mean sea level on NAVD88), but this dataset does not carry line symbols or annotation."
+  ],
+  "dct_creator_sm": [
+    "Geological Survey (U.S.)"
+  ],
+  "dct_publisher_sm": [
+    "Geological Survey (U.S.)"
+  ],
+  "dct_issued_s": "2022-11-04",
+  "dct_temporal_sm": [
+    "2022"
+  ],
+  "gbl_indexYear_im": [
+    2022
+  ],
+  "dct_spatial_sm": [
+    "Kentucky"
+  ],
+  "dct_language_sm": [
+    "eng"
+  ],
+  "schema_provider_s": "U.S. Geological Survey",
+  "dct_identifier_sm": [
+    "https://www.sciencebase.gov/catalog/item/5a68b6c5e4b06e28e9c714b8",
+    "https://www.sciencebase.gov/catalog/item/5a68b6dae4b06e28e9c71543",
+    "https://www.sciencebase.gov/catalog/item/6365f1b5d34ebe442507d3e0"
+  ],
+  "gbl_resourceClass_sm": [
+    "Datasets"
+  ],
+  "gbl_resourceType_sm": [
+    "Line data"
+  ],
+  "dcat_theme_sm": [
+    "Elevation"
+  ],
+  "dcat_keyword_sm": [
+    "The National Map",
+    "Contours",
+    "1 x 1 degree"
+  ],
+  "dct_format_s": "GeoPackage",
+  "locn_geometry": "ENVELOPE(-86, -85, 38, 37)",
+  "dcat_bbox": "ENVELOPE(-86, -85, 38, 37)",
+  "dcat_centroid": "37.5,-85.5",
+  "pcdm_memberOf_sm": [
+    "usgs-tnm-contours"
+  ],
+  "dct_rights_sm": [
+    "USGS-authored or produced data and information are considered to be in the U.S. Public Domain."
+  ],
+  "dct_license_sm": [
+    "https://creativecommons.org/publicdomain/mark/1.0/"
+  ],
+  "dct_accessRights_s": "Public",
+  "gbl_mdModified_dt": "2022-11-05T05:16:41Z",
+  "gbl_mdVersion_s": "Aardvark",
+  "dct_references_s": "{\"urn:x-esri:serviceType:ArcGIS#DynamicMapLayer\":\"https://carto.nationalmap.gov/arcgis/rest/services/contours/MapServer\",\"http://schema.org/downloadUrl\":[{\"url\":\"https://prd-tnm.s3.amazonaws.com/StagedProducts/Contours/GPKG/ELEV_Winchester_W_KY_1X1_GPKG.zip\",\"label\":\"GeoPackage (200.2 MB)\"},{\"url\":\"https://prd-tnm.s3.amazonaws.com/StagedProducts/Contours/GDB/ELEV_Winchester_W_KY_1X1_GDB.zip\",\"label\":\"File geodatabase (78.5 MB)\"},{\"url\":\"https://prd-tnm.s3.amazonaws.com/StagedProducts/Contours/Shape/ELEV_Winchester_W_KY_1X1_Shape.zip\",\"label\":\"Shapefile (187.4 MB)\"}],\"http://www.opengis.net/cat/csw/csdgm\":\"https://prd-tnm.s3.amazonaws.com/StagedProducts/Contours/GPKG/ELEV_Winchester_W_KY_1X1_GPKG.xml\",\"http://schema.org/url\":\"https://www.sciencebase.gov/catalog/item/6365f1b5d34ebe442507d3e0\",\"http://schema.org/thumbnailUrl\":\"https://prd-tnm.s3.amazonaws.com/StagedProducts/Contours/GPKG/ELEV_Winchester_W_KY_1X1_GPKG.jpg\"}"
+}

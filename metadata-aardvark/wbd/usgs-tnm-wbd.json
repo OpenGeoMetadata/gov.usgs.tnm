@@ -1,0 +1,56 @@
+{
+  "id": "usgs-tnm-wbd",
+  "dct_title_s": "USGS Watershed Boundary Dataset (WBD)",
+  "dct_description_sm": [
+    "The Watershed Boundary Dataset (WBD) is a comprehensive aggregated collection of hydrologic unit data consistent with the national criteria for delineation and resolution. It defines the areal extent of surface water drainage to a point except in coastal or lake front areas where there could be multiple outlets as stated by the \"Federal Standards and Procedures for the National Watershed Boundary Dataset (WBD)\" \"Standard\" (https://pubs.usgs.gov/tm/11/a3/). Watershed boundaries are determined solely upon science-based hydrologic principles, not favoring any administrative boundaries or special projects, nor particular program or agency. This dataset represents the hydrologic unit boundaries to the 12-digit (6th level) for the entire United States. Some areas may also include additional subdivisions representing the 14- and 16-digit hydrologic unit (HU). At a minimum, the HUs are delineated at 1:24,000-scale in the conterminous United States, 1:25,000-scale in Hawaii, Pacific basin and the Caribbean, and 1:63,360-scale in Alaska, meeting the National Map Accuracy Standards (NMAS). Higher resolution boundaries are being developed where partners and data exist and will be incorporated back into the WBD. WBD data are delivered as a dataset of polygons and corresponding lines that define the boundary of the polygon. WBD polygon attributes include hydrologic unit codes (HUC), size (in the form of acres and square kilometers), name, downstream hydrologic unit code, type of watershed, non-contributing areas, and flow modifications. The HUC describes where the unit is in the country and the level of the unit. WBD line attributes contain the highest level of hydrologic unit for each boundary, line source information and flow modifications."
+  ],
+  "dct_creator_sm": [
+    "Geological Survey (U.S.)"
+  ],
+  "dct_publisher_sm": [
+    "Geological Survey (U.S.)"
+  ],
+  "dct_temporal_sm": [
+    "2025-2026"
+  ],
+  "gbl_indexYear_im": [
+    2025,
+    2026
+  ],
+  "gbl_dateRange_drsim": [
+    "[2025 TO 2026]"
+  ],
+  "dct_spatial_sm": [
+    "United States"
+  ],
+  "dct_language_sm": [
+    "eng"
+  ],
+  "schema_provider_s": "U.S. Geological Survey",
+  "gbl_resourceClass_sm": [
+    "Collections"
+  ],
+  "gbl_resourceType_sm": [
+    "Polygon data",
+    "Line data"
+  ],
+  "dcat_theme_sm": [
+    "Inland Waters"
+  ],
+  "dcat_keyword_sm": [
+    "The National Map",
+    "Watershed Boundary Dataset"
+  ],
+  "locn_geometry": "ENVELOPE(144.5669, -64.51266, 71.4396, -14.6101)",
+  "dcat_bbox": "ENVELOPE(144.5669, -64.51266, 71.4396, -14.6101)",
+  "dct_rights_sm": [
+    "USGS-authored or produced data and information are considered to be in the U.S. Public Domain."
+  ],
+  "dct_license_sm": [
+    "https://creativecommons.org/publicdomain/mark/1.0/"
+  ],
+  "dct_accessRights_s": "Public",
+  "gbl_mdModified_dt": "2026-09-03T02:20:21Z",
+  "gbl_mdVersion_s": "Aardvark",
+  "dct_references_s": "{\"urn:x-esri:serviceType:ArcGIS#DynamicMapLayer\":\"https://hydro.nationalmap.gov/arcgis/rest/services/wbd/MapServer\",\"http://schema.org/url\":\"https://www.sciencebase.gov/catalog/item/51361e87e4b03b8ec4025c22\"}"
+}

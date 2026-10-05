@@ -1,0 +1,54 @@
+{
+  "id": "usgs-tnm-mapindices",
+  "dct_title_s": "USGS Map Indices",
+  "dct_description_sm": [
+    "The map indices (plural of index) are a systematic arrangement designed to help users locate and access topographic maps produced by the USGS. Most USGS map series divide the United States into quadrangles bounded by two lines of latitude and two lines of longitude. For example, a 7.5-minute map covers an area that spans 7.5 minutes of latitude and 7.5 minutes of longitude, and it is typically named after the most prominent feature within the quadrangle. Other maps may cover a larger area, such as a county, state, national park, or place of special interest. There are three Map Series quadrangle indices available for download: 7.5-minute (1:24,000/25,000-scale), 15-minute (1:62,500/63,360-scale), and 1:100,000-scale series."
+  ],
+  "dct_creator_sm": [
+    "Geological Survey (U.S.)"
+  ],
+  "dct_publisher_sm": [
+    "Geological Survey (U.S.)"
+  ],
+  "dct_temporal_sm": [
+    "2026"
+  ],
+  "gbl_indexYear_im": [
+    2026
+  ],
+  "gbl_dateRange_drsim": [
+    "[2026 TO 2026]"
+  ],
+  "dct_spatial_sm": [
+    "United States"
+  ],
+  "dct_language_sm": [
+    "eng"
+  ],
+  "schema_provider_s": "U.S. Geological Survey",
+  "gbl_resourceClass_sm": [
+    "Collections"
+  ],
+  "gbl_resourceType_sm": [
+    "Polygon data"
+  ],
+  "dcat_theme_sm": [
+    "Location"
+  ],
+  "dcat_keyword_sm": [
+    "The National Map",
+    "Map Indices"
+  ],
+  "locn_geometry": "ENVELOPE(144.56343, -64.51267, 71.4398, -14.60181)",
+  "dcat_bbox": "ENVELOPE(144.56343, -64.51267, 71.4398, -14.60181)",
+  "dct_rights_sm": [
+    "USGS-authored or produced data and information are considered to be in the U.S. Public Domain."
+  ],
+  "dct_license_sm": [
+    "https://creativecommons.org/publicdomain/mark/1.0/"
+  ],
+  "dct_accessRights_s": "Public",
+  "gbl_mdModified_dt": "2026-09-10T02:25:55Z",
+  "gbl_mdVersion_s": "Aardvark",
+  "dct_references_s": "{\"urn:x-esri:serviceType:ArcGIS#DynamicMapLayer\":\"https://carto.nationalmap.gov/arcgis/rest/services/map_indices/MapServer\",\"http://schema.org/url\":\"https://www.sciencebase.gov/catalog/item/53d7cd8ee4b06f0f87b7427b\"}"
+}
