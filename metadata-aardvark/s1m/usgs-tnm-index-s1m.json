@@ -1,0 +1,56 @@
+{
+  "id": "usgs-tnm-index-s1m",
+  "dct_title_s": "Index to USGS 3DEP Seamless 1-Meter DEM (S1M) Cells",
+  "dct_creator_sm": [
+    "Geological Survey (U.S.)"
+  ],
+  "dct_publisher_sm": [
+    "Geological Survey (U.S.)"
+  ],
+  "dct_temporal_sm": [
+    "2025-2026"
+  ],
+  "gbl_indexYear_im": [
+    2025,
+    2026
+  ],
+  "gbl_dateRange_drsim": [
+    "[2025 TO 2026]"
+  ],
+  "dct_spatial_sm": [
+    "United States"
+  ],
+  "dct_language_sm": [
+    "eng"
+  ],
+  "schema_provider_s": "U.S. Geological Survey",
+  "gbl_resourceClass_sm": [
+    "Maps"
+  ],
+  "gbl_resourceType_sm": [
+    "Index maps"
+  ],
+  "dcat_theme_sm": [
+    "Elevation"
+  ],
+  "dcat_keyword_sm": [
+    "The National Map",
+    "3D Elevation Program"
+  ],
+  "dct_format_s": "GeoJSON",
+  "locn_geometry": "ENVELOPE(-122.12894615, -66.78104242, 47.53405693, 25.89230754)",
+  "dcat_bbox": "ENVELOPE(-122.12894615, -66.78104242, 47.53405693, 25.89230754)",
+  "pcdm_memberOf_sm": [
+    "usgs-tnm-s1m"
+  ],
+  "dct_rights_sm": [
+    "This index map is dedicated to the public domain under CC0 1.0. The data it outlines is in the U.S. Public Domain."
+  ],
+  "dct_license_sm": [
+    "https://creativecommons.org/publicdomain/zero/1.0/"
+  ],
+  "dct_accessRights_s": "Public",
+  "gbl_mdModified_dt": "2026-10-14T02:10:51Z",
+  "gbl_mdVersion_s": "Aardvark",
+  "dct_references_s": "{\"https://openindexmaps.org\":\"https://raw.githubusercontent.com/OpenGeoMetadata/gov.usgs.tnm/main/index-maps/usgs-tnm-index-s1m.geojson\",\"http://schema.org/downloadUrl\":[{\"url\":\"https://raw.githubusercontent.com/OpenGeoMetadata/gov.usgs.tnm/main/index-maps/usgs-tnm-index-s1m.geojson\",\"label\":\"GeoJSON (10.9 MB)\"}]}"
+}

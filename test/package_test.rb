@@ -64,7 +64,15 @@ class PackageTest < Minitest::Test
      'USGS Contours for Brandon W, Manitoba 20121105 1 x 1 degree Shapefile', 'contours-mb-brandon-w-321263', :shp],
     ['Combined Vector', "#{S3}/TopoMapVector/DC/GPKG/VECTOR_Washington_West_DC_7_5_Min_GPKG.zip",
      'USGS Topo Map Vector Data (Vector) 47611 Washington West DC (published 20250730) GeoPackage', 'vector-47611', :gpkg],
-    ['Combined Vector', "#{S3}/Vector/FileGDB101/VECTOR_321168_Albany_E_1X1.zip", '', 'vector-1x1-321168', :gdb]
+    ['Combined Vector', "#{S3}/Vector/FileGDB101/VECTOR_321168_Albany_E_1X1.zip", '', 'vector-1x1-321168', :gdb],
+    ['National Elevation Dataset (NED) 1/3 arc-second',
+     "#{S3}/Elevation/13/TIFF/historical/n42w092/USGS_13_n42w092_20120601.tif", '', 'dem13-n42w092', :cog],
+    ['National Elevation Dataset (NED) 1 arc-second',
+     "#{S3}/Elevation/1/TIFF/historical/n18w065/USGS_1_n18w065_20260722.tif", '', 'dem1-n18w065', :cog],
+    ['National Elevation Dataset (NED) Alaska 2 arc-second',
+     "#{S3}/Elevation/2/TIFF/historical/n52e177/USGS_2_n52e177_20210819.tif", '', 'dem2-n52e177', :cog],
+    ['Seamless 1-m DEM (S1M)', "#{S3}/Elevation/S1M/n09w02/n0910w0250/S1M_n0910w0250_20251128.tif", '',
+     's1m-n0910w0250', :cog]
   ].freeze
 
   def test_file_names_say_what_area_each_file_covers_and_its_format
@@ -117,6 +125,28 @@ class PackageTest < Minitest::Test
     bucket = Bucket.new({ Bucket.key(url) => 1_234 })
 
     assert_equal 1, packages.first.resolve(bucket).downloads.size
+  end
+
+  # The catalog lists a 3DEP tile's dated versions, and the record is of the undated copy of the latest one, a COG
+  def test_a_tiles_versions_are_one_package_of_its_current_copy
+    tag = 'National Elevation Dataset (NED) 1/3 arc-second'
+    base = "#{S3}/Elevation/13/TIFF"
+    current = "#{base}/current/n42w092/USGS_13_n42w092.tif"
+    [%w[20250101 20120601], %w[20120601 20250101]].each do |dates|
+      products = dates.map do |date|
+        product(tag, "#{base}/historical/n42w092/USGS_13_n42w092_#{date}.tif",
+                published: "#{date[0, 4]}-#{date[4, 2]}-#{date[6, 2]}", metaUrl: "https://www.sciencebase.gov/catalog/item/#{date}")
+      end
+      packages = group(*products)
+      package = packages.first.resolve(Bucket.new({ Bucket.key(current) => 457_391_406 }))
+
+      assert_equal 1, packages.size
+      assert_equal 'usgs-tnm-dem13-n42w092', package.id
+      assert_equal [[current, :cog, 457_391_406]],
+                   package.downloads.map { |download| [download.url, download.format, download.size] }
+      assert_equal '2025-01-01', package.published
+      assert_equal ['https://www.sciencebase.gov/catalog/item/20250101'], package.sciencebase_urls
+    end
   end
 
   # Should one format be listed twice, the file published last is kept

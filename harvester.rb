@@ -7,6 +7,7 @@ require_relative 'catalog'
 require_relative 'datasets'
 require_relative 'extents'
 require_relative 'http_client'
+require_relative 'index_map'
 require_relative 'mapper'
 require_relative 'package'
 
@@ -21,6 +22,11 @@ class Harvester
   METADATA_DIR = 'metadata-aardvark'
   WITHDRAWN_FILE = 'withdrawn.json'
   SNAPSHOT_DIR = 'tmp/snapshot'
+
+  # Index maps' GeoJSON is kept out of metadata-aardvark/, which holds only records, and their records say it's
+  # where GitHub serves it
+  INDEX_MAP_DIR = 'index-maps'
+  INDEX_MAP_URL = 'https://raw.githubusercontent.com/OpenGeoMetadata/gov.usgs.tnm/main/index-maps'
 
   WITHDRAWALS_SCHEMA = 'https://opengeometadata.org/schema/ogm-withdrawals-1.0.json'
 
@@ -40,23 +46,30 @@ class Harvester
 
   # Records are filed by dataset, and the datasets with thousands of packages are bucketed further, which keeps
   # every directory under GitHub's 1,000-entry listing limit: quadrangles by the thousands of their GNIS cell, NHD's
-  # hydrologic units by region, and contour tiles by state. A record's path follows from its id.
+  # hydrologic units by region, contour tiles by state, DEM tiles by their degree of latitude, and S1M's cells by
+  # the 100-kilometer square they're in, as USGS files them. A record's path follows from its id.
   def self.directories(id)
     slug, rest = id.delete_prefix(Package::ID_PREFIX).split('-', 2)
     case slug
     when 'vector' then [slug, rest.match?(/\A\d+\z/) ? (rest.to_i / 1000).to_s : rest.split('-').first]
     when 'nhd' then (region = rest[/\Ahu\d-(\d{2})/, 1]) ? [slug, region] : [slug]
     when 'contours' then rest == 'national' ? [slug] : [slug, rest.split('-').first]
+    when 'dem13', 'dem1', 'dem2' then [slug, rest[0, 3]]
+    when 's1m' then [slug, "#{rest[0, 3]}#{rest[5, 3]}"]
     else [slug]
     end
   end
 
-  attr_reader :source, :metadata_dir, :withdrawn_file, :snapshot_dir, :dry_run, :force, :max_shrink, :today, :log
+  attr_reader :source, :metadata_dir, :index_map_dir, :index_map_url, :withdrawn_file, :snapshot_dir, :dry_run,
+              :force, :max_shrink, :today, :log
 
-  def initialize(source: nil, metadata_dir: METADATA_DIR, withdrawn_file: WITHDRAWN_FILE, snapshot_dir: SNAPSHOT_DIR,
+  def initialize(source: nil, metadata_dir: METADATA_DIR, index_map_dir: INDEX_MAP_DIR, index_map_url: INDEX_MAP_URL,
+                 withdrawn_file: WITHDRAWN_FILE, snapshot_dir: SNAPSHOT_DIR,
                  dry_run: false, force: false, max_shrink: MAX_SHRINK, today: Date.today, log: $stdout, http: nil)
     @source = source
     @metadata_dir = metadata_dir
+    @index_map_dir = index_map_dir
+    @index_map_url = index_map_url.chomp('/')
     @withdrawn_file = withdrawn_file
     @snapshot_dir = snapshot_dir
     @dry_run = dry_run
@@ -84,6 +97,7 @@ class Harvester
       counts[write_json(record_path(package.id), record)] += 1
     end
     collections = write_collections(published, counts)
+    IndexMap.build(published).each { |index_map| counts[:"index_maps_#{write_index_map(index_map)}"] += 1 }
     unavailable = packages.reject(&:available?).to_h { |package| [package.id, package] }
     counts.merge!(withdraw(removals(existing, published, unavailable), published.map(&:id).to_set | collections))
 
@@ -161,7 +175,7 @@ class Harvester
   def existing_records
     Dir.glob(File.join(metadata_dir, '**', "#{Package::ID_PREFIX}*.json")).to_h do |path|
       [File.basename(path, '.json'), path]
-    end.reject { |id, _path| collection_ids.include?(id) }
+    end.reject { |id, _path| collection_ids.include?(id) || id.start_with?(IndexMap::ID_PREFIX) }
   end
 
   # @return [Set] the ids of the collections written
@@ -171,6 +185,17 @@ class Harvester
       counts[:"collections_#{status}"] += 1
       [Mapper.collection_id(dataset), status]
     end.keys.to_set
+  end
+
+  # Writes an index map's GeoJSON, and the record that points to it, beside its dataset's collection record
+  # @return [Symbol] :created, :updated, or :unchanged, for whichever of the two changed most
+  def write_index_map(index_map)
+    geojson = index_map.geojson
+    file = "#{index_map.id}.geojson"
+    record = index_map.record("#{index_map_url}/#{file}", geojson.bytesize)
+    statuses = [write_file(File.join(index_map_dir, file), geojson),
+                write_json(File.join(metadata_dir, index_map.dataset.slug, "#{index_map.id}.json"), record)]
+    %i[created updated unchanged].find { |status| statuses.include?(status) }
   end
 
   def write_json(path, data)
@@ -258,7 +283,8 @@ class Harvester
     published.map { |package| package.dataset.slug }.tally.sort.each { |slug, count| log.puts "  #{slug}: #{count} packages" }
     log.puts "Records: #{counts[:created]} created, #{counts[:updated]} updated, #{counts[:unchanged]} unchanged; " \
              "collections: #{counts[:collections_created]} created, #{counts[:collections_updated]} updated, " \
-             "#{counts[:collections_unchanged]} unchanged"
+             "#{counts[:collections_unchanged]} unchanged; index maps: #{counts[:index_maps_created]} created, " \
+             "#{counts[:index_maps_updated]} updated, #{counts[:index_maps_unchanged]} unchanged"
     log.puts "Skipped: #{counts[:unavailable]} packages with no files on the download server, " \
              "#{counts[:without_extent]} without an extent, #{counts[:namesakes]} older namesakes"
     log.puts "Withdrawn: #{counts[:withdrawn]} (#{counts[:without_files]} without files, #{counts[:superseded]} " \
@@ -280,7 +306,7 @@ if __FILE__ == $0
   $stdout.sync = true
   begin
     Harvester.run(source: ENV['SOURCE'].to_s.empty? ? nil : ENV['SOURCE'], dry_run: !ENV['DRY_RUN'].to_s.empty?,
-                  force: !ENV['FORCE'].to_s.empty?)
+                  force: !ENV['FORCE'].to_s.empty?, index_map_url: ENV.fetch('INDEX_MAP_URL', Harvester::INDEX_MAP_URL))
   rescue Harvester::Error, Catalog::Error, Bucket::Error, Snapshot::Error, HttpClient::Error => e
     warn "Harvest stopped: #{e.message}"
     exit 1

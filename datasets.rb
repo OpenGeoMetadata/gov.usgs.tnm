@@ -12,9 +12,9 @@ module Datasets
                         :partitions)
 
   # Each description is The National Map's own description of the dataset, word for word, in its paragraphs. It
-  # describes NHD, NHDPlus HR and WBD only as what 3DHP replaces, contours only as part of 3DEP, and Combined Vector
-  # as the map template that styles it, so they have none here, and their collections take the summary their
-  # packages share.
+  # describes NHD, NHDPlus HR and WBD only as what 3DHP replaces, contours and the DEMs only as part of 3DEP, and
+  # Combined Vector as the map template that styles it, so they have none here, and their collections take the
+  # summary their packages share.
   ALL = [
     Dataset.new(
       slug: 'nbd', tags: ['National Boundary Dataset (NBD)'],
@@ -166,6 +166,36 @@ module Datasets
       resource_types: ['Line data', 'Polygon data', 'Point data'], services: {},
       url: 'https://www.sciencebase.gov/catalog/item/5135fc88e4b03b8ec4025bc9',
       partitions: { 'prodFormats' => ['FileGDB', 'FileGDB 10.1', 'Shapefile', 'GeoPackage'] }
+    ),
+    # 3DEP's seamless DEMs, as tiles that are each their own Cloud Optimized GeoTIFF. The COG is what a viewer
+    # previews, so they need no service.
+    Dataset.new(
+      slug: 'dem13', tags: ['National Elevation Dataset (NED) 1/3 arc-second'],
+      name: 'USGS 3DEP 1/3 Arc-Second DEM', keyword: '3D Elevation Program',
+      description: nil,
+      themes: ['Elevation'], resource_types: ['Digital elevation models', 'Raster data'], services: {},
+      url: 'https://www.usgs.gov/3d-elevation-program/about-3dep-products-services', partitions: nil
+    ),
+    Dataset.new(
+      slug: 'dem1', tags: ['National Elevation Dataset (NED) 1 arc-second'],
+      name: 'USGS 3DEP 1 Arc-Second DEM', keyword: '3D Elevation Program',
+      description: nil,
+      themes: ['Elevation'], resource_types: ['Digital elevation models', 'Raster data'], services: {},
+      url: 'https://www.usgs.gov/3d-elevation-program/about-3dep-products-services', partitions: nil
+    ),
+    Dataset.new(
+      slug: 'dem2', tags: ['National Elevation Dataset (NED) Alaska 2 arc-second'],
+      name: 'USGS 3DEP 2 Arc-Second DEM', keyword: '3D Elevation Program',
+      description: nil,
+      themes: ['Elevation'], resource_types: ['Digital elevation models', 'Raster data'], services: {},
+      url: 'https://www.usgs.gov/3d-elevation-program/about-3dep-products-services', partitions: nil
+    ),
+    Dataset.new(
+      slug: 's1m', tags: ['Seamless 1-m DEM (S1M)'],
+      name: 'USGS 3DEP Seamless 1-Meter DEM (S1M)', keyword: '3D Elevation Program',
+      description: nil,
+      themes: ['Elevation'], resource_types: ['Digital elevation models', 'Raster data'], services: {},
+      url: 'https://www.usgs.gov/3d-elevation-program/about-3dep-products-services', partitions: nil
     )
   ].freeze
 

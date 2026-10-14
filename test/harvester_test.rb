@@ -24,6 +24,7 @@ class HarvesterTest < Minitest::Test
   def setup
     @tmp_dir = Dir.mktmpdir
     @metadata_dir = File.join(@tmp_dir, 'metadata-aardvark')
+    @index_map_dir = File.join(@tmp_dir, 'index-maps')
     @withdrawn_file = File.join(@tmp_dir, 'withdrawn.json')
     @sources = 0
   end
@@ -43,8 +44,8 @@ class HarvesterTest < Minitest::Test
   end
 
   def harvest(source, **options)
-    Harvester.run(source: source, metadata_dir: @metadata_dir, withdrawn_file: @withdrawn_file, today: TODAY,
-                  log: StringIO.new, **options)
+    Harvester.run(source: source, metadata_dir: @metadata_dir, index_map_dir: @index_map_dir, withdrawn_file: @withdrawn_file,
+                  today: TODAY, log: StringIO.new, **options)
   end
 
   def record_path(id)
@@ -114,6 +115,21 @@ class HarvesterTest < Minitest::Test
     assert_equal 0, counts[:updated]
     assert_equal RECORDS, counts[:unchanged]
     assert_equal COLLECTIONS, counts[:collections_unchanged]
+    assert_equal IndexMap::DATASETS.size, counts[:index_maps_unchanged]
+    assert_equal 0, counts[:withdrawn], 'index maps are not packages to withdraw'
+  end
+
+  def test_writes_an_index_map_of_each_dems_tiles_and_a_record_beside_its_collection
+    counts = harvest(snapshot)
+    geojson = JSON.parse(File.read(File.join(@index_map_dir, 'usgs-tnm-index-dem13.geojson')))
+    record = JSON.parse(File.read(File.join(@metadata_dir, 'dem13', 'usgs-tnm-index-dem13.json')))
+
+    assert_equal IndexMap::DATASETS.size, counts[:index_maps_created]
+    assert_equal 'FeatureCollection', geojson['type']
+    assert_equal 'https://raw.githubusercontent.com/OpenGeoMetadata/gov.usgs.tnm/main/index-maps/usgs-tnm-index-dem13.geojson',
+                 JSON.parse(record['dct_references_s'])['https://openindexmaps.org']
+    assert File.exist?(File.join(@metadata_dir, 'dem13', 'n42', 'usgs-tnm-dem13-n42w092.json'))
+    assert File.exist?(File.join(@metadata_dir, 's1m', 'n04e15', 'usgs-tnm-s1m-n0450e1510.json'))
   end
 
   def test_changed_product_updates_its_record

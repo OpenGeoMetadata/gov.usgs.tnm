@@ -191,6 +191,33 @@ class MapperTest < Minitest::Test
     assert_nil Mapper.shared_description([package.new([])])
   end
 
+  def test_dem_tiles_are_named_for_the_degrees_they_cover_and_preview_from_their_cog
+    record = map('usgs-tnm-dem13-n42w092')
+    refs = JSON.parse(record['dct_references_s'])
+    current = "#{S3}/Elevation/13/TIFF/current/n42w092/USGS_13_n42w092"
+
+    assert_equal 'USGS 3DEP 1/3 Arc-Second DEM for 41°–42°N, 91°–92°W (n42w092)', record['dct_title_s']
+    assert_equal 'https://github.com/cogeotiff/cog-spec', refs.keys.first, 'the COG comes first'
+    assert_equal "#{current}.tif", refs['https://github.com/cogeotiff/cog-spec']
+    assert_equal ["#{current}.tif"], refs['http://schema.org/downloadUrl'].map { |download| download['url'] }
+    assert_match(/\AGeoTIFF \(\d+\.\d MB\)\z/, labels('usgs-tnm-dem13-n42w092').first)
+    assert_equal "#{current}.xml", refs['http://www.opengis.net/cat/csw/csdgm']
+    assert_equal "#{current}.jpg", refs['http://schema.org/thumbnailUrl']
+    assert_empty refs.keys.grep(/esri/)
+    assert_equal 'GeoTIFF', record['dct_format_s']
+    assert_equal ['Digital elevation models', 'Raster data'], record['gbl_resourceType_sm']
+    assert_equal ['The National Map', '3D Elevation Program', '1 x 1 degree'], record['dcat_keyword_sm']
+    assert_match(/\AThis tile of the 3D Elevation Program \(3DEP\) seamless products is /, record['dct_description_sm'].first)
+    refute record.key?('dct_spatial_sm')
+  end
+
+  def test_s1m_cells_are_named_for_their_cell_and_where_it_is
+    record = map('usgs-tnm-s1m-n0450e1510')
+
+    assert_equal 'USGS 3DEP Seamless 1-Meter DEM (S1M) for Cell n0450e1510, near 25.97°N, 80.95°W', record['dct_title_s']
+    assert_equal ['The National Map', '3D Elevation Program', '10 x 10 kilometer'], record['dcat_keyword_sm']
+  end
+
   # Alaska's box crosses the antimeridian, so its center is in the western Aleutians' half of the way round
   def test_a_box_crossing_the_antimeridian_is_centered_across_it
     package = Package.group(Snapshot.read(FIXTURE, 'products.jsonl'), log: StringIO.new)

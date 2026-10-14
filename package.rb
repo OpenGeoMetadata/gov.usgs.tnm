@@ -17,7 +17,8 @@ class Package
     gdb: ['File geodatabase', 'Geodatabase'],
     shp: ['Shapefile', 'Shapefile'],
     txt: ['Text (pipe-delimited)', 'Tabular Data'],
-    raster: ['Rasters (GeoTIFF)', 'GeoTIFF']
+    raster: ['Rasters (GeoTIFF)', 'GeoTIFF'],
+    cog: ['GeoTIFF', 'GeoTIFF']
   }.freeze
 
   # The suffixes and folder names that say what format a file is in
@@ -67,7 +68,13 @@ class Package
     # A quadrangle outside any state has "None" for its state's code
     'vector' => [[/\AVECTOR_(?<name>.+)_(?<code>[A-Z]{2}|None)_7_5_Min_#{FORMAT}\.zip\z/, :quadrangle],
                  # Retired 1 x 1 degree packages, whose formats are told apart only by their folders
-                 [/\AVECTOR_(?<number>\d+)_(?<name>.+)_1X1\.zip\z/, :degree]]
+                 [/\AVECTOR_(?<number>\d+)_(?<name>.+)_1X1\.zip\z/, :degree]],
+    # 3DEP's seamless tiles, each named for its north-west corner and the date of its version. S1M's are cells of
+    # a 10-kilometer grid in Albers, named for their upper-left corners in kilometers.
+    'dem13' => [[/\AUSGS_13_(?<tile>[ns]\d{2}[ew]\d{3})(?:_(?<date>\d{8}))?\.tif\z/, :dem_tile, :cog]],
+    'dem1' => [[/\AUSGS_1_(?<tile>[ns]\d{2}[ew]\d{3})(?:_(?<date>\d{8}))?\.tif\z/, :dem_tile, :cog]],
+    'dem2' => [[/\AUSGS_2_(?<tile>[ns]\d{2}[ew]\d{3})(?:_(?<date>\d{8}))?\.tif\z/, :dem_tile, :cog]],
+    's1m' => [[/\AS1M_(?<code>[ns]\d{4}[ew]\d{4})_(?<date>\d{8})\.tif\z/, :s1m_cell, :cog]]
   }.freeze
 
   # What a product title says that its file name doesn't: a quadrangle's GNIS cell, and the place a contour tile
@@ -93,6 +100,7 @@ class Package
 
       urls(product).each do |url|
         unit, format = parse(dataset, url, product)
+        url = current(url) if unit[:kind] == :dem_tile
         unrecognized[dataset.slug] += 1 if unit[:kind] == :other
         key = [dataset.slug, unit_key(unit)]
         (groups[key] ||= new(dataset, unit)).add(product, url, format, unit)
@@ -107,6 +115,13 @@ class Package
   def self.urls(product)
     ([product['downloadURL']] + (product['urls'] || {}).values).compact.map(&:strip).reject(&:empty?)
                                                                 .map { |url| url.gsub(/%25(\h\h)/, '%\\1') }.uniq
+  end
+
+  # The catalog lists each of 3DEP's seamless tiles as the dated versions under historical/, but USGS also keeps
+  # an undated copy of the latest version under current/, at a URL that doesn't change from one version to the
+  # next. Every copy there is a Cloud Optimized GeoTIFF, which versions from before 2022 aren't.
+  def self.current(url)
+    url.sub('/historical/', '/current/').sub(/_\d{8}(\.tif)\z/, '\1')
   end
 
   # @return [Array(Hash, Symbol)] what the file name says about the area it covers, and the file's format
@@ -154,7 +169,7 @@ class Package
     return "kind=quadrangle|cell=#{unit[:cell]}" if unit[:kind] == :quadrangle && unit[:cell]
 
     shared = unit.except(:place, :cell)
-    shared = shared.except(:date) if unit[:kind] == :hydrologic_unit
+    shared = shared.except(:date) if %i[hydrologic_unit dem_tile s1m_cell].include?(unit[:kind])
     shared.sort.map { |key, value| "#{key}=#{value}" }.join('|')
   end
 
@@ -174,6 +189,8 @@ class Package
       when :tile then [unit[:code]&.downcase || 'other', slug(unit[:name]), unit[:number]].compact.join('-')
       when :quadrangle then unit[:cell] || [unit[:code]&.downcase, slug(unit[:name])].compact.join('-')
       when :degree then "1x1-#{unit[:number]}"
+      when :dem_tile then unit[:tile]
+      when :s1m_cell then unit[:code]
       else slug(unit[:stem])
       end
     "#{dataset.slug}-#{suffix}"
@@ -201,8 +218,9 @@ class Package
     @files = {}
   end
 
-  # Keeps one file per format: the one from the product published last, should a format be listed twice. The
-  # package is named for its latest product, which matters for a quadrangle its formats name differently.
+  # Keeps one file per format: the one from the product published last, should a format be listed twice, or a
+  # tile's versions all be one file. The package is named for its latest product, which matters for a quadrangle
+  # its formats name differently.
   def add(product, url, format, unit = nil)
     published = product['publicationDate'].to_s
     if unit && published > @latest.to_s
@@ -211,7 +229,10 @@ class Package
     end
 
     current = @files[format]
-    return if current && current[:url] != url && current[:product]['publicationDate'].to_s >= published
+    if current
+      previous = current[:product]['publicationDate'].to_s
+      return if previous > published || (previous == published && current[:url] != url)
+    end
 
     @files[format] = { url: url, product: product }
   end

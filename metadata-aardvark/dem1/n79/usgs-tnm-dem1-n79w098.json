@@ -1,0 +1,59 @@
+{
+  "id": "usgs-tnm-dem1-n79w098",
+  "dct_title_s": "USGS 3DEP 1 Arc-Second DEM for 78°–79°N, 97°–98°W (n79w098)",
+  "dct_description_sm": [
+    "This tile of the 3D Elevation Program (3DEP) seamless products is 1 arc-second resolution. 3DEP data serve as the elevation layer of The National Map, and provide basic elevation information for Earth science studies and mapping applications in the United States. Scientists and resource managers use 3DEP data for global change research, hydrologic modeling, resource monitoring, mapping and visualization, and many other applications. 3DEP data compose an elevation dataset that consists of seamless layers and a high resolution layer. Each of these layers consists of the best available raster elevation data of the conterminous United States, Alaska, Hawaii, territorial islands, Mexico and Canada. 3DEP data are updated continually as new data become available. Seamless 3DEP data are derived from diverse source data that are processed to a common coordinate system and unit of vertical measure. These data are distributed in geographic coordinates in units of decimal degrees, and in conformance with the North American Datum of 1983 (NAD 83). All elevation values are in meters and, over the conterminous United States, are referenced to the North American Vertical Datum of 1988 (NAVD 88). The vertical reference will vary in other areas. Seamless 3DEP data are available nationally (except for Alaska) at resolutions of 1 arc-second (approximately 30 meters) and 1/3 arc-second (approximately 10 meters). In most of Alaska, only lower resolution source data are available. As a result, most seamless 3DEP data for Alaska are at 2 arc-second (approximately 60 meters) grid spacing. Part of Alaska is available at the 1 and 1/3 arc-second resolutions from interferometric synthetic aperture radar (ifsar) collections starting in 2010. Plans are in place for collection of statewide ifsar in Alaska. All 3DEP products are public domain."
+  ],
+  "dct_creator_sm": [
+    "Geological Survey (U.S.)"
+  ],
+  "dct_publisher_sm": [
+    "Geological Survey (U.S.)"
+  ],
+  "dct_issued_s": "2013-01-01",
+  "dct_temporal_sm": [
+    "2013"
+  ],
+  "gbl_indexYear_im": [
+    2013
+  ],
+  "dct_language_sm": [
+    "eng"
+  ],
+  "schema_provider_s": "U.S. Geological Survey",
+  "dct_identifier_sm": [
+    "https://www.sciencebase.gov/catalog/item/5df0524de4b02caea0f510fd"
+  ],
+  "gbl_resourceClass_sm": [
+    "Datasets"
+  ],
+  "gbl_resourceType_sm": [
+    "Digital elevation models",
+    "Raster data"
+  ],
+  "dcat_theme_sm": [
+    "Elevation"
+  ],
+  "dcat_keyword_sm": [
+    "The National Map",
+    "3D Elevation Program",
+    "1 x 1 degree"
+  ],
+  "dct_format_s": "GeoTIFF",
+  "locn_geometry": "ENVELOPE(-98.00166667, -96.99833333, 79.00166667, 77.99833333)",
+  "dcat_bbox": "ENVELOPE(-98.00166667, -96.99833333, 79.00166667, 77.99833333)",
+  "dcat_centroid": "78.5,-97.5",
+  "pcdm_memberOf_sm": [
+    "usgs-tnm-dem1"
+  ],
+  "dct_rights_sm": [
+    "USGS-authored or produced data and information are considered to be in the U.S. Public Domain."
+  ],
+  "dct_license_sm": [
+    "https://creativecommons.org/publicdomain/mark/1.0/"
+  ],
+  "dct_accessRights_s": "Public",
+  "gbl_mdModified_dt": "2021-12-01T06:18:38Z",
+  "gbl_mdVersion_s": "Aardvark",
+  "dct_references_s": "{\"https://github.com/cogeotiff/cog-spec\":\"https://prd-tnm.s3.amazonaws.com/StagedProducts/Elevation/1/TIFF/current/n79w098/USGS_1_n79w098.tif\",\"http://schema.org/downloadUrl\":[{\"url\":\"https://prd-tnm.s3.amazonaws.com/StagedProducts/Elevation/1/TIFF/current/n79w098/USGS_1_n79w098.tif\",\"label\":\"GeoTIFF (30.5 MB)\"}],\"http://www.opengis.net/cat/csw/csdgm\":\"https://prd-tnm.s3.amazonaws.com/StagedProducts/Elevation/1/TIFF/current/n79w098/USGS_1_n79w098.xml\",\"http://schema.org/url\":\"https://www.sciencebase.gov/catalog/item/5df0524de4b02caea0f510fd\",\"http://schema.org/thumbnailUrl\":\"https://prd-tnm.s3.amazonaws.com/StagedProducts/Elevation/1/TIFF/current/n79w098/USGS_1_n79w098.jpg\"}"
+}

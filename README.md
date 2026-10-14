@@ -1,6 +1,6 @@
 # gov.usgs.tnm
 
-This repository contains [OpenGeoMetadata Aardvark](https://opengeometadata.org/ogm-aardvark/) records for the vector data that the U.S. Geological Survey distributes through [The National Map](https://www.usgs.gov/programs/national-geospatial-program/national-map): boundaries, hydrography, transportation, structures, geographic names, contours, map indices and woodland, and the combined vector data behind every US Topo map. There is one record per downloadable package, plus a collection record for each of the 13 datasets.
+This repository contains [OpenGeoMetadata Aardvark](https://opengeometadata.org/ogm-aardvark/) records for the vector data that the U.S. Geological Survey distributes through [The National Map](https://www.usgs.gov/programs/national-geospatial-program/national-map): boundaries, hydrography, transportation, structures, geographic names, contours, map indices and woodland, and the combined vector data behind every US Topo map, along with the seamless elevation models of the 3D Elevation Program (3DEP). There is one record per downloadable package, plus a collection record for each of the 17 datasets and an [index map](#index-maps) of each elevation model's tiles.
 
 The records are generated from The National Map's catalog and checked against its download server. This repository is not an official USGS product.
 
@@ -25,8 +25,14 @@ The National Map lists each format of a package as a separate product. The harve
 | Watershed Boundary Dataset (WBD) | `usgs-tnm-wbd` | HU-2 region, national | GeoPackage, file geodatabase, shapefile | `wbd` map service |
 | Small-scale Datasets (1:1,000,000) | `usgs-tnm-smallscale` | National | File geodatabase, shapefile | None |
 | 3D Hydrography Program (3DHP) | `usgs-tnm-3dhp` | Conterminous U.S. and Alaska, by annual edition | GeoPackage, file geodatabase | `3DHP_all` map service |
+| 3DEP Seamless 1-Meter DEM (S1M) | `usgs-tnm-s1m` | 10 x 10 kilometer cell | GeoTIFF | The cell's COG |
+| 3DEP 1 Arc-Second DEM | `usgs-tnm-dem1` | 1 x 1 degree tile | GeoTIFF | The tile's COG |
+| 3DEP 1/3 Arc-Second DEM | `usgs-tnm-dem13` | 1 x 1 degree tile | GeoTIFF | The tile's COG |
+| 3DEP 2 Arc-Second DEM (Alaska) | `usgs-tnm-dem2` | 1 x 1 degree tile | GeoTIFF | The tile's COG |
 
 Map services are The National Map's own ArcGIS services at `carto.nationalmap.gov` and `hydro.nationalmap.gov`. They draw the whole country, so a record's preview shows the dataset everywhere in view, not just within the package.
+
+Each elevation model's tiles are Cloud Optimized GeoTIFFs, so a viewer previews a tile's record from the tile itself, and nothing else.
 
 ## File Structure
 
@@ -49,11 +55,22 @@ metadata-aardvark/
     47/
       usgs-tnm-vector-47611.json           quadrangles, by the thousands of their GNIS cell
       ...
+  dem13/
+    usgs-tnm-index-dem13.json            the index map's record
+    n42/
+      usgs-tnm-dem13-n42w092.json          tiles, by their degree of latitude
+      ...
+  s1m/
+    n04e15/
+      usgs-tnm-s1m-n0450e1510.json         cells, by the 100-kilometer square they're in
+      ...
   ...
+index-maps/
+  usgs-tnm-index-dem13.geojson           an index map
 withdrawn.json                             records that have left the repository
 ```
 
-Each dataset has a directory. NHD, the contours and Topo Map Vector Data have thousands of packages each, so their records are bucketed further, which keeps every directory within GitHub's 1,000-entry listing limit.
+Each dataset has a directory. NHD, the contours, Topo Map Vector Data and the elevation models have thousands of packages each, so their records are bucketed further, which keeps every directory within GitHub's 1,000-entry listing limit.
 
 ## Metadata
 
@@ -78,12 +95,20 @@ The National Map names each file for the area it covers, in a scheme that differ
 - **Quadrangles:** a quadrangle is its GNIS cell, not its file name. In a few cells the GeoPackage names the quadrangle differently from the other formats, or spells it differently; the record is named from the most recently published product.
 - **URLs:** the catalog encodes a few file names twice, an apostrophe as `%2527` rather than `%27`, so URLs are decoded once more before use.
 - **Editions:** NHDPlus HR file names sometimes carry the date of their edition. A subregion's files are one package whatever their dates. 3DHP's annual editions stay available side by side, so each is a package of its own.
+- **Elevation tiles:** the catalog lists every dated version of each 3DEP tile, e.g. `historical/n42w092/USGS_13_n42w092_20250101.tif`. A tile is one package, named for the latest version, and its file is the undated copy of that version USGS keeps under `current/`. Every copy there is a COG; versions from before 2022 aren't.
 - **Missing files:** files that aren't on the download server are left out. A package with none left gets no record; as of October 2026 there are 82, including the 62 GNIS gazetteer files.
 - **Names:** a file whose name matches no pattern still becomes a package, named for its file, and the harvester reports how many there were.
 
 ### Collections
 
 Each dataset has a collection record, e.g. `usgs-tnm-nhd`, with USGS's description of the dataset, its map service, and an extent, years and modification date summarizing its packages.
+
+### Index Maps
+
+Each elevation model has an [OpenIndexMaps](https://openindexmaps.org/specification/1.0.0) index map: a GeoJSON file in `index-maps/` outlining every tile with a record, and a record of its own beside the model's collection record, e.g. `usgs-tnm-index-dem13`. Tiles are named only by grid references, so the index map is how to find one.
+- **Outlines:** a 1 x 1 degree tile is outlined by its degree. S1M's cells are squares in an Albers grid, so each is outlined by its four corners, which the harvester works out from the cell's name.
+- **Properties:** each outline's `label` is the tile's name, e.g. `n42w092`. It also has the record's `title` and id as `recId`, the year of its version as `datePub`, and links to its COG as `download`, its thumbnail as `thumbUrl` and its ScienceBase page as `websiteUrl`.
+- **License:** the index maps are made here rather than by USGS, so they're dedicated to the public domain under CC0.
 
 ## Withdrawn Records
 
@@ -114,6 +139,7 @@ These environment variables change how it runs:
 - `SOURCE=tmp/snapshot` uses a previous run's snapshot instead of fetching anything.
 - `DRY_RUN=1` reports what would change without writing anything.
 - `FORCE=1` allows a run that would withdraw more than 2% of the records, or that finds a dataset empty.
+- `INDEX_MAP_URL=http://localhost:8000/index-maps` changes where index map records say their GeoJSON is, to try them in a viewer before the files are on GitHub. Don't commit records written this way.
 
 To run the tests:
 
@@ -138,4 +164,5 @@ ruby extents.rb
 For problems with the records, open an issue in this repository. Every record is regenerated from The National Map's catalog daily, so edits to the files would be overwritten:
 - **How fields are mapped:** change `mapper.rb`, `datasets.rb` and `places.rb`.
 - **How files are grouped into packages:** change the patterns in `package.rb`.
+- **Index maps:** change `index_map.rb`, and `tiles.rb` for how tiles are outlined.
 - **The catalog's own data:** corrections have to be made by USGS.

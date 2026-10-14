@@ -4,6 +4,7 @@ require_relative 'extent'
 require_relative 'hydrologic_units'
 require_relative 'package'
 require_relative 'places'
+require_relative 'tiles'
 
 # Maps one package of The National Map's vector data to an OGM Aardvark record, and builds the collection record
 # each dataset's packages are members of. Conventions follow gov.usgs.htmc, so that the two repositories' records
@@ -42,12 +43,7 @@ class Mapper
   # The record for one dataset, which every one of its packages is a member of. Its extent, years and modification
   # date summarize the packages, so it only changes when they do.
   def self.collection(dataset, packages)
-    extent = Extent.new
-    packages.filter_map(&:bounds).each { |bounds| extent.add(*bounds) }
-    west, east = extent.longitudes
-    envelope = format_envelope(west, east, extent.north, extent.south)
-    years = packages.filter_map { |package| package.published&.[](0, 4)&.to_i }.minmax
-    modified = packages.filter_map(&:last_updated).max
+    envelope, years, modified = summary(packages)
     compact(
       'id' => collection_id(dataset),
       'dct_title_s' => dataset.name,
@@ -73,6 +69,17 @@ class Mapper
       'gbl_mdVersion_s' => 'Aardvark',
       'dct_references_s' => dataset.services.merge('http://schema.org/url' => dataset.url).to_json
     )
+  end
+
+  # What a set of packages covers between them: the envelope of their extent, their first and last years of
+  # publication, and when the last of them changed
+  # @return [Array(String, Array<Integer>, Time)]
+  def self.summary(packages)
+    extent = Extent.new
+    packages.filter_map(&:bounds).each { |bounds| extent.add(*bounds) }
+    west, east = extent.longitudes
+    years = packages.filter_map { |package| package.published&.[](0, 4)&.to_i }.minmax
+    [format_envelope(west, east, extent.north, extent.south), years, packages.filter_map(&:last_updated).max]
   end
 
   # The summary most of a dataset's packages share. Ties go to the first alphabetically, so that the choice doesn't
@@ -179,6 +186,8 @@ class Mapper
     when :tile then "for #{tile_name}, #{tile_place || unit[:code]} (1 x 1 Degree)"
     when :quadrangle then "for #{[spaced(unit[:name]), unit[:code]].compact.join(', ')}"
     when :degree then "for #{degree_title[:name]}, #{degree_title[:place]} (1 x 1 Degree)"
+    when :dem_tile then "for #{Tiles.degree_label(unit[:tile])} (#{unit[:tile]})"
+    when :s1m_cell then "for Cell #{unit[:code]}, near #{Tiles.cell_label(unit[:code])}"
     else "for #{spaced(unit[:stem])}"
     end
   end
@@ -285,6 +294,8 @@ class Mapper
       when :names then GNIS_SERIES[unit[:series]]
       when :tile, :degree then '1 x 1 degree'
       when :quadrangle then '7.5 x 7.5 minute'
+      when :dem_tile then '1 x 1 degree'
+      when :s1m_cell then '10 x 10 kilometer'
       end
     ['The National Map', dataset.keyword, level].compact.uniq
   end
@@ -316,14 +327,15 @@ class Mapper
     published && "#{published.length == 4 ? "#{published}-01-01" : published}T00:00:00Z"
   end
 
-  # Services first, as gov.usgs.htmc puts its COG first: they're what a viewer previews
+  # What a viewer previews first, as gov.usgs.htmc puts its COG first: a DEM's own COG, or the dataset's services
   def references
     downloads = package.downloads.map do |download|
       label = Package::FORMATS.fetch(download.format, [download.format.to_s]).first
       { 'url' => download.url, 'label' => download.size ? "#{label} (#{self.class.size_label(download.size)})" : label }
     end
+    cog = package.downloads.find { |download| download.format == :cog }
     self.class.compact(
-      dataset.services.merge(
+      { 'https://github.com/cogeotiff/cog-spec' => cog&.url }.merge(dataset.services).merge(
         'http://schema.org/downloadUrl' => downloads,
         'http://www.opengis.net/cat/csw/csdgm' => package.metadata_url,
         'http://schema.org/url' => package.primary['metaUrl'],
