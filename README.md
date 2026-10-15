@@ -81,10 +81,11 @@ Each dataset has a directory. NHD, the contours, Topo Map Vector Data and the el
 
 ### Source
 
-The harvester reads three things on each run:
+The harvester reads four things on each run:
 - **The catalog:** every product listed under each dataset's tag in the [TNM Access API](https://tnmaccess.nationalmap.gov/api/v1/docs). One query can't page past about 166,000 products, so Topo Map Vector Data's 195,000 are fetched a format at a time, and the parts are checked against the dataset's total.
 - **The download server:** a listing of the folders of USGS's `prd-tnm` S3 bucket that the catalog's files are in. It gives each file's size, which the catalog often gets wrong, and shows which files are gone: the catalog lists a few dozen files that no longer exist.
 - **Files elsewhere:** GNIS's 2017 state gazetteer files are on `geonames.usgs.gov`, which can't be listed, so each is checked with a `HEAD` request. A redirect to anything but the same file counts as gone.
+- **The datasets' FGDC:** USGS publishes an FGDC record for each dataset as a whole, as a file on the dataset's ScienceBase collection item: the item that's its landing page, or for the datasets whose landing page is a USGS program page (NHDPlus HR, 3DHP, Contours and the elevation models), one named in `datasets.rb`. ScienceBase serves a file at a URL made from its contents rather than its name, which changes whenever USGS revises it, so each run looks it up from the item. Every dataset has one but Small-scale Datasets, whose item holds none.
 
 What it fetched is saved in `tmp/snapshot/`.
 
@@ -101,13 +102,14 @@ The National Map names each file for the area it covers, in a scheme that differ
 
 ### Collections
 
-Each dataset has a collection record, e.g. `usgs-tnm-nhd`, with USGS's description of the dataset, its map service, and an extent, years and modification date summarizing its packages.
+Each dataset has a collection record, e.g. `usgs-tnm-nhd`, with USGS's description of the dataset, its map service, a link to USGS's FGDC record for the dataset where there is one, and an extent, years and modification date summarizing its packages.
 
 ### Index Maps
 
 Each elevation model has an [OpenIndexMaps](https://openindexmaps.org/specification/1.0.0) index map: a GeoJSON file in `index-maps/` outlining every tile with a record, and a record of its own beside the model's collection record, e.g. `usgs-tnm-index-dem13`. Tiles are named only by grid references, so the index map is how to find one.
 - **Outlines:** a 1 x 1 degree tile is outlined by its degree. S1M's cells are squares in an Albers grid, so each is outlined by its four corners, which the harvester works out from the cell's name.
 - **Properties:** each outline's `label` is the tile's name, e.g. `n42w092`. It also has the record's `title` and id as `recId`, the year of its version as `datePub`, and links to its COG as `download`, its thumbnail as `thumbUrl` and its ScienceBase page as `websiteUrl`.
+- **Metadata:** the index map's record links the elevation model's own FGDC, e.g. `USGS_3DEP_13_Collection.xml`, as the model's collection record does. Its vertical datum and units can be used by the viewer to create a legend.
 - **License:** the index maps are made here rather than by USGS, so they're dedicated to the public domain under CC0.
 
 ## Withdrawn Records

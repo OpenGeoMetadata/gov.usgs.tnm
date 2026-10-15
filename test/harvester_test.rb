@@ -11,6 +11,7 @@ class HarvesterTest < Minitest::Test
   PRODUCTS = Snapshot.read(FIXTURE, 'products.jsonl')
   OBJECTS = Snapshot.read(FIXTURE, 'bucket.jsonl')
   REMOTE = Snapshot.read(FIXTURE, 'remote.jsonl')
+  FGDC = Snapshot.read(FIXTURE, 'collection-fgdc.jsonl')
   TODAY = Date.new(2026, 10, 2)
 
   # Three of the fixture's packages are gone from the download server: Brandon W's contours and Albany E's
@@ -33,11 +34,13 @@ class HarvesterTest < Minitest::Test
     FileUtils.rm_rf(@tmp_dir)
   end
 
-  # A snapshot directory holding the given products, bucket listing and checks of files elsewhere
-  def snapshot(products = PRODUCTS, objects = OBJECTS, remote = REMOTE)
+  # A snapshot directory holding the given products, bucket listing, checks of files elsewhere and the elevation
+  # models' own FGDC records
+  def snapshot(products = PRODUCTS, objects = OBJECTS, remote = REMOTE, fgdc = FGDC)
     dir = File.join(@tmp_dir, "snapshot-#{@sources += 1}")
     FileUtils.mkdir_p(dir)
-    { 'products.jsonl' => products, 'bucket.jsonl' => objects, 'remote.jsonl' => remote }.each do |name, rows|
+    { 'products.jsonl' => products, 'bucket.jsonl' => objects, 'remote.jsonl' => remote,
+      'collection-fgdc.jsonl' => fgdc }.each do |name, rows|
       File.write(File.join(dir, name), rows.map { |row| "#{JSON.generate(row)}\n" }.join)
     end
     dir
@@ -130,6 +133,36 @@ class HarvesterTest < Minitest::Test
                  JSON.parse(record['dct_references_s'])['https://openindexmaps.org']
     assert File.exist?(File.join(@metadata_dir, 'dem13', 'n42', 'usgs-tnm-dem13-n42w092.json'))
     assert File.exist?(File.join(@metadata_dir, 's1m', 'n04e15', 'usgs-tnm-s1m-n0450e1510.json'))
+  end
+
+  # Where a viewer reads what the tiles' values measure, which the index map itself can't say
+  def test_an_index_maps_record_links_its_models_own_fgdc
+    harvest(snapshot)
+    refs = JSON.parse(record_at('dem13', 'usgs-tnm-index-dem13')['dct_references_s'])
+
+    assert_equal FGDC.to_h.fetch('dem13'), refs['http://www.opengis.net/cat/csw/csdgm']
+  end
+
+  def test_a_collection_record_links_its_datasets_own_fgdc
+    harvest(snapshot)
+
+    %w[nbd dem13 contours].each do |slug|
+      refs = JSON.parse(record_at(slug, "usgs-tnm-#{slug}")['dct_references_s'])
+      assert_equal FGDC.to_h.fetch(slug), refs['http://www.opengis.net/cat/csw/csdgm'], slug
+    end
+    # Small-scale Datasets' collection item holds no FGDC
+    refute JSON.parse(record_at('smallscale', 'usgs-tnm-smallscale')['dct_references_s']).key?('http://www.opengis.net/cat/csw/csdgm')
+  end
+
+  def test_an_index_map_whose_model_publishes_no_fgdc_links_none
+    harvest(snapshot(PRODUCTS, OBJECTS, REMOTE, FGDC.reject { |slug, _url| slug == 'dem2' }))
+    refs = JSON.parse(record_at('dem2', 'usgs-tnm-index-dem2')['dct_references_s'])
+
+    refute refs.key?('http://www.opengis.net/cat/csw/csdgm')
+  end
+
+  def record_at(slug, id)
+    JSON.parse(File.read(File.join(@metadata_dir, slug, "#{id}.json")))
   end
 
   def test_changed_product_updates_its_record

@@ -6,10 +6,31 @@ module Datasets
   CARTO = 'https://carto.nationalmap.gov/arcgis/rest/services'
   HYDRO = 'https://hydro.nationalmap.gov/arcgis/rest/services'
 
+  # A ScienceBase item's page, which is most datasets' landing page
+  SCIENCEBASE_ITEM = %r{\Ahttps://www\.sciencebase\.gov/catalog/item/(\h+)\z}
+
+  # The ScienceBase collection items of the datasets whose landing page is somewhere else: USGS's page for the
+  # program behind them, 3DEP's or 3DHP's. Small-scale Datasets' landing page is its item, which holds no FGDC.
+  COLLECTION_ITEMS = {
+    'nhdplushr' => '57645ff2e4b07657d19ba8e8',
+    '3dhp' => '67890afcd34e637252b872a5',
+    'contours' => '4f70ab22e4b058caae3f8deb',
+    'dem13' => '4f70aa9fe4b058caae3f8de5',
+    'dem1' => '4f70aa71e4b058caae3f8de1',
+    'dem2' => '4f70aaece4b058caae3f8de9',
+    's1m' => '67af83c1d34e5020fb91f170'
+  }.freeze
+
   # The National Map won't page past about 166,000 products in one query, so a dataset with more is fetched
   # in parts, one query per value of a query parameter
   Dataset = Data.define(:slug, :tags, :name, :keyword, :description, :themes, :resource_types, :services, :url,
-                        :partitions)
+                        :partitions) do
+    # The dataset's collection item on ScienceBase, where USGS keeps the FGDC record describing it as a whole, or
+    # nil for a dataset with none known: its landing page when that's an item, and otherwise one named above
+    def sciencebase_item
+      url[SCIENCEBASE_ITEM, 1] || COLLECTION_ITEMS[slug]
+    end
+  end
 
   # Each description is The National Map's own description of the dataset, word for word, in its paragraphs. It
   # describes NHD, NHDPlus HR and WBD only as what 3DHP replaces, contours and the DEMs only as part of 3DEP, and

@@ -51,5 +51,5 @@
   "dct_accessRights_s": "Public",
   "gbl_mdModified_dt": "2026-10-01T02:35:34Z",
   "gbl_mdVersion_s": "Aardvark",
-  "dct_references_s": "{\"urn:x-esri:serviceType:ArcGIS#DynamicMapLayer\":\"https://carto.nationalmap.gov/arcgis/rest/services/geonames/MapServer\",\"http://schema.org/url\":\"https://www.sciencebase.gov/catalog/item/4f70b292e4b058caae3f8e1d\"}"
+  "dct_references_s": "{\"urn:x-esri:serviceType:ArcGIS#DynamicMapLayer\":\"https://carto.nationalmap.gov/arcgis/rest/services/geonames/MapServer\",\"http://schema.org/url\":\"https://www.sciencebase.gov/catalog/item/4f70b292e4b058caae3f8e1d\",\"http://www.opengis.net/cat/csw/csdgm\":\"https://www.sciencebase.gov/catalog/file/get/4f70b292e4b058caae3f8e1d?f=__disk__45%2F07%2Fef%2F4507ef2f995183849128e5e4655c557fdd5490ad\"}"
 }

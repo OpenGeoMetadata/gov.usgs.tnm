@@ -61,5 +61,5 @@
   "dct_accessRights_s": "Public",
   "gbl_mdModified_dt": "2026-02-11T22:08:43Z",
   "gbl_mdVersion_s": "Aardvark",
-  "dct_references_s": "{\"urn:x-esri:serviceType:ArcGIS#DynamicMapLayer\":\"https://hydro.nationalmap.gov/arcgis/rest/services/NHDPlus_HR/MapServer\",\"http://schema.org/url\":\"https://www.usgs.gov/3d-hydrography-program\"}"
+  "dct_references_s": "{\"urn:x-esri:serviceType:ArcGIS#DynamicMapLayer\":\"https://hydro.nationalmap.gov/arcgis/rest/services/NHDPlus_HR/MapServer\",\"http://schema.org/url\":\"https://www.usgs.gov/3d-hydrography-program\",\"http://www.opengis.net/cat/csw/csdgm\":\"https://www.sciencebase.gov/catalog/file/get/57645ff2e4b07657d19ba8e8?f=__disk__88%2Ff5%2F3c%2F88f53ce73117b426701a29a570613691f7af0ce8\"}"
 }

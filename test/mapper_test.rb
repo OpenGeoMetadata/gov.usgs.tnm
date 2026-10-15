@@ -169,7 +169,16 @@ class MapperTest < Minitest::Test
     assert_equal 'https://carto.nationalmap.gov/arcgis/rest/services/govunits/MapServer',
                  refs['urn:x-esri:serviceType:ArcGIS#DynamicMapLayer']
     assert_equal 'https://www.sciencebase.gov/catalog/item/4f70b219e4b058caae3f8e19', refs['http://schema.org/url']
+    refute refs.key?('http://www.opengis.net/cat/csw/csdgm'), 'a dataset with no FGDC of its own is linked to none'
     refute record.key?('pcdm_memberOf_sm')
+  end
+
+  def test_a_collection_record_links_its_datasets_own_fgdc
+    fgdc = 'https://www.sciencebase.gov/catalog/file/get/4f70b219e4b058caae3f8e19?f=__disk__0b%2F2e'
+    packages = PACKAGES.values.select { |package| package.dataset.slug == 'nbd' }
+    refs = JSON.parse(Mapper.collection(Datasets.fetch('nbd'), packages, fgdc)['dct_references_s'])
+
+    assert_equal fgdc, refs['http://www.opengis.net/cat/csw/csdgm']
   end
 
   # The National Map describes NHD only as what 3DHP replaces, so its collection takes its packages' summary

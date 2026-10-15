@@ -76,5 +76,14 @@ class IndexMapTest < Minitest::Test
     assert_equal url, refs['https://openindexmaps.org']
     assert_equal [{ 'url' => url, 'label' => 'GeoJSON (2 KB)' }], refs['http://schema.org/downloadUrl']
     assert_equal 'ENVELOPE(-92.00055556, -89.99944444, 42.00055556, 40.99944444)', record['dcat_bbox']
+    refute refs.key?('http://www.opengis.net/cat/csw/csdgm'), 'a model with no FGDC of its own is linked to none'
+  end
+
+  def test_an_index_maps_record_links_its_models_own_fgdc
+    url = 'https://raw.githubusercontent.com/OpenGeoMetadata/gov.usgs.tnm/main/index-maps/usgs-tnm-index-dem13.geojson'
+    fgdc = 'https://www.sciencebase.gov/catalog/file/get/4f70aa9fe4b058caae3f8de5?f=__disk__e4%2F8a'
+    refs = JSON.parse(INDEX_MAPS.fetch('dem13').record(url, 2_000, fgdc)['dct_references_s'])
+
+    assert_equal fgdc, refs['http://www.opengis.net/cat/csw/csdgm']
   end
 end

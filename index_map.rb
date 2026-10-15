@@ -44,7 +44,8 @@ class IndexMap
 
   # @param url [String] where the GeoJSON is published
   # @param bytes [Integer] the GeoJSON's size
-  def record(url, bytes)
+  # @param fgdc_url [String, nil] the elevation model's own FGDC, which says what its tiles' values measure
+  def record(url, bytes, fgdc_url = nil)
     noun = DATASETS.fetch(dataset.slug)
     envelope, years, modified = Mapper.summary(packages)
     Mapper.compact(
@@ -73,8 +74,9 @@ class IndexMap
       'gbl_mdVersion_s' => 'Aardvark',
       'dct_references_s' => {
         'https://openindexmaps.org' => url,
-        'http://schema.org/downloadUrl' => [{ 'url' => url, 'label' => "GeoJSON (#{Mapper.size_label(bytes)})" }]
-      }.to_json
+        'http://schema.org/downloadUrl' => [{ 'url' => url, 'label' => "GeoJSON (#{Mapper.size_label(bytes)})" }],
+        'http://www.opengis.net/cat/csw/csdgm' => fgdc_url
+      }.compact.to_json
     )
   end
 

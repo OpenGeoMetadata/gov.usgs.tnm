@@ -61,5 +61,5 @@
   "dct_accessRights_s": "Public",
   "gbl_mdModified_dt": "2026-09-10T02:32:50Z",
   "gbl_mdVersion_s": "Aardvark",
-  "dct_references_s": "{\"http://schema.org/url\":\"https://www.sciencebase.gov/catalog/item/5135fc88e4b03b8ec4025bc9\"}"
+  "dct_references_s": "{\"http://schema.org/url\":\"https://www.sciencebase.gov/catalog/item/5135fc88e4b03b8ec4025bc9\",\"http://www.opengis.net/cat/csw/csdgm\":\"https://www.sciencebase.gov/catalog/file/get/5135fc88e4b03b8ec4025bc9?f=__disk__15%2Fbe%2F63%2F15be63822c90a5e5c52f5c48e8066fa71e506871\"}"
 }

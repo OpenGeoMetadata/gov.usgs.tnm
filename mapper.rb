@@ -42,7 +42,8 @@ class Mapper
 
   # The record for one dataset, which every one of its packages is a member of. Its extent, years and modification
   # date summarize the packages, so it only changes when they do.
-  def self.collection(dataset, packages)
+  # @param fgdc_url [String, nil] USGS's FGDC record for the dataset as a whole; see CollectionFgdc
+  def self.collection(dataset, packages, fgdc_url = nil)
     envelope, years, modified = summary(packages)
     compact(
       'id' => collection_id(dataset),
@@ -67,7 +68,8 @@ class Mapper
       'dct_accessRights_s' => 'Public',
       'gbl_mdModified_dt' => modified&.strftime('%Y-%m-%dT%H:%M:%SZ'),
       'gbl_mdVersion_s' => 'Aardvark',
-      'dct_references_s' => dataset.services.merge('http://schema.org/url' => dataset.url).to_json
+      'dct_references_s' => dataset.services.merge('http://schema.org/url' => dataset.url,
+                                                   'http://www.opengis.net/cat/csw/csdgm' => fgdc_url).compact.to_json
     )
   end
 

@@ -23,3 +23,4 @@ The files are plain JSON lines, which the harvester reads like a full snapshot's
 - `products.jsonl`: the catalog's products, one per line.
 - `bucket.jsonl`: `[key, size]` for each listed object: the packages' files and the thumbnails and metadata beside them, and the DEM tiles' copies under `current/`.
 - `remote.jsonl`: `[url, available, size]` for each file checked elsewhere.
+- `collection-fgdc.jsonl`: `[slug, url]` for each dataset's own FGDC, as ScienceBase listed them on 2026-10-15.

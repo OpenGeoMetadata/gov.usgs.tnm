@@ -58,5 +58,5 @@
   "dct_accessRights_s": "Public",
   "gbl_mdModified_dt": "2026-10-06T02:20:08Z",
   "gbl_mdVersion_s": "Aardvark",
-  "dct_references_s": "{\"urn:x-esri:serviceType:ArcGIS#DynamicMapLayer\":\"https://carto.nationalmap.gov/arcgis/rest/services/contours/MapServer\",\"http://schema.org/url\":\"https://www.usgs.gov/3d-elevation-program/about-3dep-products-services\"}"
+  "dct_references_s": "{\"urn:x-esri:serviceType:ArcGIS#DynamicMapLayer\":\"https://carto.nationalmap.gov/arcgis/rest/services/contours/MapServer\",\"http://schema.org/url\":\"https://www.usgs.gov/3d-elevation-program/about-3dep-products-services\",\"http://www.opengis.net/cat/csw/csdgm\":\"https://www.sciencebase.gov/catalog/file/get/4f70ab22e4b058caae3f8deb?f=__disk__b2%2Fd8%2Fc7%2Fb2d8c70692c71cc84047817191f8bd4c22acdbd2\"}"
 }

@@ -4,6 +4,7 @@ require 'json'
 require 'set'
 require_relative 'bucket'
 require_relative 'catalog'
+require_relative 'collection_fgdc'
 require_relative 'datasets'
 require_relative 'extents'
 require_relative 'http_client'
@@ -82,7 +83,7 @@ class Harvester
 
   # @return [Hash] counts of what the run did
   def run
-    catalog, bucket = sources
+    catalog, bucket, fgdc = sources
     packages = Package.group(catalog.products, log: log).map { |package| package.resolve(bucket) }
     circling = Extents.correct(packages.select(&:available?))
     check_complete(packages)
@@ -96,8 +97,8 @@ class Harvester
       record = Mapper.map(package, distinguish: shared_titles.include?(title_key(package)))
       counts[write_json(record_path(package.id), record)] += 1
     end
-    collections = write_collections(published, counts)
-    IndexMap.build(published).each { |index_map| counts[:"index_maps_#{write_index_map(index_map)}"] += 1 }
+    collections = write_collections(published, fgdc, counts)
+    IndexMap.build(published).each { |index_map| counts[:"index_maps_#{write_index_map(index_map, fgdc)}"] += 1 }
     unavailable = packages.reject(&:available?).to_h { |package| [package.id, package] }
     counts.merge!(withdraw(removals(existing, published, unavailable), published.map(&:id).to_set | collections))
 
@@ -109,14 +110,16 @@ class Harvester
   private
 
   def sources
-    return [Catalog.load(source), Bucket.load(source)] if source
+    return [Catalog.load(source), Bucket.load(source), CollectionFgdc.load(source)] if source
 
     http = @http || HttpClient.new(interval: INTERVALS)
     catalog = Catalog.fetch(http: http, log: log)
     bucket = Bucket.fetch(catalog.urls, downloads: catalog.download_urls, http: http, log: log)
+    fgdc = CollectionFgdc.fetch(http: http, log: log)
     catalog.save(snapshot_dir)
     bucket.save(snapshot_dir)
-    [catalog, bucket]
+    fgdc.save(snapshot_dir)
+    [catalog, bucket, fgdc]
   end
 
   # A dataset the catalog says nothing about means the catalog came back broken, not that USGS withdrew it
@@ -178,21 +181,23 @@ class Harvester
     end.reject { |id, _path| collection_ids.include?(id) || id.start_with?(IndexMap::ID_PREFIX) }
   end
 
+  # @param fgdc [CollectionFgdc] each dataset's own FGDC, which its collection record links
   # @return [Set] the ids of the collections written
-  def write_collections(published, counts)
+  def write_collections(published, fgdc, counts)
     published.group_by(&:dataset).to_h do |dataset, packages|
-      status = write_json(collection_path(dataset), Mapper.collection(dataset, packages))
+      status = write_json(collection_path(dataset), Mapper.collection(dataset, packages, fgdc.url(dataset.slug)))
       counts[:"collections_#{status}"] += 1
       [Mapper.collection_id(dataset), status]
     end.keys.to_set
   end
 
   # Writes an index map's GeoJSON, and the record that points to it, beside its dataset's collection record
+  # @param fgdc [CollectionFgdc] each dataset's own FGDC, which the record links like the dataset's collection record
   # @return [Symbol] :created, :updated, or :unchanged, for whichever of the two changed most
-  def write_index_map(index_map)
+  def write_index_map(index_map, fgdc)
     geojson = index_map.geojson
     file = "#{index_map.id}.geojson"
-    record = index_map.record("#{index_map_url}/#{file}", geojson.bytesize)
+    record = index_map.record("#{index_map_url}/#{file}", geojson.bytesize, fgdc.url(index_map.dataset.slug))
     statuses = [write_file(File.join(index_map_dir, file), geojson),
                 write_json(File.join(metadata_dir, index_map.dataset.slug, "#{index_map.id}.json"), record)]
     %i[created updated unchanged].find { |status| statuses.include?(status) }
@@ -307,7 +312,7 @@ if __FILE__ == $0
   begin
     Harvester.run(source: ENV['SOURCE'].to_s.empty? ? nil : ENV['SOURCE'], dry_run: !ENV['DRY_RUN'].to_s.empty?,
                   force: !ENV['FORCE'].to_s.empty?, index_map_url: ENV.fetch('INDEX_MAP_URL', Harvester::INDEX_MAP_URL))
-  rescue Harvester::Error, Catalog::Error, Bucket::Error, Snapshot::Error, HttpClient::Error => e
+  rescue Harvester::Error, Catalog::Error, Bucket::Error, CollectionFgdc::Error, Snapshot::Error, HttpClient::Error => e
     warn "Harvest stopped: #{e.message}"
     exit 1
   end
