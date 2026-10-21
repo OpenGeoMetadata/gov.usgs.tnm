@@ -53,7 +53,7 @@
     "https://creativecommons.org/publicdomain/mark/1.0/"
   ],
   "dct_accessRights_s": "Public",
-  "gbl_mdModified_dt": "2021-12-01T06:28:33Z",
+  "gbl_mdModified_dt": "2026-10-21T02:10:25Z",
   "gbl_mdVersion_s": "Aardvark",
   "dct_references_s": "{\"https://github.com/cogeotiff/cog-spec\":\"https://prd-tnm.s3.amazonaws.com/StagedProducts/Elevation/13/TIFF/current/n55w165/USGS_13_n55w165.tif\",\"http://schema.org/downloadUrl\":[{\"url\":\"https://prd-tnm.s3.amazonaws.com/StagedProducts/Elevation/13/TIFF/current/n55w165/USGS_13_n55w165.tif\",\"label\":\"GeoTIFF (162.6 MB)\"}],\"http://www.opengis.net/cat/csw/csdgm\":\"https://prd-tnm.s3.amazonaws.com/StagedProducts/Elevation/13/TIFF/current/n55w165/USGS_13_n55w165.xml\",\"http://schema.org/url\":\"https://www.sciencebase.gov/catalog/item/6194a208d34eb622f68fc13e\",\"http://schema.org/thumbnailUrl\":\"https://prd-tnm.s3.amazonaws.com/StagedProducts/Elevation/13/TIFF/current/n55w165/USGS_13_n55w165.jpg\"}"
 }
