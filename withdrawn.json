@@ -1,0 +1,144 @@
+{
+  "$schema": "https://opengeometadata.org/schema/ogm-withdrawals-1.0.json",
+  "ogm_version": "1.0",
+  "withdrawn": [
+    {
+      "id": "usgs-tnm-s1m-n1300e0860",
+      "date": "2026-10-22",
+      "reason": "quality",
+      "note": "The National Map still lists this package, but none of its files are on its download server."
+    },
+    {
+      "id": "usgs-tnm-s1m-n1300e0870",
+      "date": "2026-10-22",
+      "reason": "quality",
+      "note": "The National Map still lists this package, but none of its files are on its download server."
+    },
+    {
+      "id": "usgs-tnm-s1m-n1310e0850",
+      "date": "2026-10-22",
+      "reason": "quality",
+      "note": "The National Map still lists this package, but none of its files are on its download server."
+    },
+    {
+      "id": "usgs-tnm-s1m-n1310e0860",
+      "date": "2026-10-22",
+      "reason": "quality",
+      "note": "The National Map still lists this package, but none of its files are on its download server."
+    },
+    {
+      "id": "usgs-tnm-s1m-n1310e0870",
+      "date": "2026-10-22",
+      "reason": "quality",
+      "note": "The National Map still lists this package, but none of its files are on its download server."
+    },
+    {
+      "id": "usgs-tnm-s1m-n1320e0820",
+      "date": "2026-10-22",
+      "reason": "quality",
+      "note": "The National Map still lists this package, but none of its files are on its download server."
+    },
+    {
+      "id": "usgs-tnm-s1m-n1320e0830",
+      "date": "2026-10-22",
+      "reason": "quality",
+      "note": "The National Map still lists this package, but none of its files are on its download server."
+    },
+    {
+      "id": "usgs-tnm-s1m-n1320e0840",
+      "date": "2026-10-22",
+      "reason": "quality",
+      "note": "The National Map still lists this package, but none of its files are on its download server."
+    },
+    {
+      "id": "usgs-tnm-s1m-n1320e0850",
+      "date": "2026-10-22",
+      "reason": "quality",
+      "note": "The National Map still lists this package, but none of its files are on its download server."
+    },
+    {
+      "id": "usgs-tnm-s1m-n1320e0860",
+      "date": "2026-10-22",
+      "reason": "quality",
+      "note": "The National Map still lists this package, but none of its files are on its download server."
+    },
+    {
+      "id": "usgs-tnm-s1m-n1320e0870",
+      "date": "2026-10-22",
+      "reason": "quality",
+      "note": "The National Map still lists this package, but none of its files are on its download server."
+    },
+    {
+      "id": "usgs-tnm-s1m-n1330e0820",
+      "date": "2026-10-22",
+      "reason": "quality",
+      "note": "The National Map still lists this package, but none of its files are on its download server."
+    },
+    {
+      "id": "usgs-tnm-s1m-n1330e0830",
+      "date": "2026-10-22",
+      "reason": "quality",
+      "note": "The National Map still lists this package, but none of its files are on its download server."
+    },
+    {
+      "id": "usgs-tnm-s1m-n1330e0840",
+      "date": "2026-10-22",
+      "reason": "quality",
+      "note": "The National Map still lists this package, but none of its files are on its download server."
+    },
+    {
+      "id": "usgs-tnm-s1m-n1330e0850",
+      "date": "2026-10-22",
+      "reason": "quality",
+      "note": "The National Map still lists this package, but none of its files are on its download server."
+    },
+    {
+      "id": "usgs-tnm-s1m-n1330e0860",
+      "date": "2026-10-22",
+      "reason": "quality",
+      "note": "The National Map still lists this package, but none of its files are on its download server."
+    },
+    {
+      "id": "usgs-tnm-s1m-n1340e0820",
+      "date": "2026-10-22",
+      "reason": "quality",
+      "note": "The National Map still lists this package, but none of its files are on its download server."
+    },
+    {
+      "id": "usgs-tnm-s1m-n1340e0830",
+      "date": "2026-10-22",
+      "reason": "quality",
+      "note": "The National Map still lists this package, but none of its files are on its download server."
+    },
+    {
+      "id": "usgs-tnm-s1m-n1340e0850",
+      "date": "2026-10-22",
+      "reason": "quality",
+      "note": "The National Map still lists this package, but none of its files are on its download server."
+    },
+    {
+      "id": "usgs-tnm-s1m-n1340e0860",
+      "date": "2026-10-22",
+      "reason": "quality",
+      "note": "The National Map still lists this package, but none of its files are on its download server."
+    },
+    {
+      "id": "usgs-tnm-s1m-n1380e0880",
+      "date": "2026-10-22",
+      "reason": "quality",
+      "note": "The National Map still lists this package, but none of its files are on its download server."
+    },
+    {
+      "id": "usgs-tnm-s1m-n1390e0870",
+      "date": "2026-10-22",
+      "reason": "quality",
+      "note": "The National Map still lists this package, but none of its files are on its download server."
+    },
+    {
+      "id": "usgs-tnm-s1m-n1390e0880",
+      "date": "2026-10-22",
+      "reason": "quality",
+      "note": "The National Map still lists this package, but none of its files are on its download server."
+    }
+  ]
+}

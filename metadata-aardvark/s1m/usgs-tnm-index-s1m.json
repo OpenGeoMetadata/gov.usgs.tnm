@@ -50,7 +50,7 @@
     "https://creativecommons.org/publicdomain/zero/1.0/"
   ],
   "dct_accessRights_s": "Public",
-  "gbl_mdModified_dt": "2026-10-21T02:15:29Z",
+  "gbl_mdModified_dt": "2026-10-22T02:12:33Z",
   "gbl_mdVersion_s": "Aardvark",
-  "dct_references_s": "{\"https://openindexmaps.org\":\"https://raw.githubusercontent.com/OpenGeoMetadata/gov.usgs.tnm/main/index-maps/usgs-tnm-index-s1m.geojson\",\"http://schema.org/downloadUrl\":[{\"url\":\"https://raw.githubusercontent.com/OpenGeoMetadata/gov.usgs.tnm/main/index-maps/usgs-tnm-index-s1m.geojson\",\"label\":\"GeoJSON (11.1 MB)\"}],\"http://www.opengis.net/cat/csw/csdgm\":\"https://www.sciencebase.gov/catalog/file/get/67af83c1d34e5020fb91f170?f=__disk__56%2F00%2Fe4%2F5600e47a75c6a517d1a3f25c04b227ca925b7df7\"}"
+  "dct_references_s": "{\"https://openindexmaps.org\":\"https://raw.githubusercontent.com/OpenGeoMetadata/gov.usgs.tnm/main/index-maps/usgs-tnm-index-s1m.geojson\",\"http://schema.org/downloadUrl\":[{\"url\":\"https://raw.githubusercontent.com/OpenGeoMetadata/gov.usgs.tnm/main/index-maps/usgs-tnm-index-s1m.geojson\",\"label\":\"GeoJSON (11.2 MB)\"}],\"http://www.opengis.net/cat/csw/csdgm\":\"https://www.sciencebase.gov/catalog/file/get/67af83c1d34e5020fb91f170?f=__disk__56%2F00%2Fe4%2F5600e47a75c6a517d1a3f25c04b227ca925b7df7\"}"
 }
