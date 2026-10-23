@@ -139,6 +139,16 @@
       "date": "2026-10-22",
       "reason": "quality",
       "note": "The National Map still lists this package, but none of its files are on its download server."
+    },
+    {
+      "id": "usgs-tnm-s1m-n1370e0870",
+      "date": "2026-10-23",
+      "reason": "upstream-removed"
+    },
+    {
+      "id": "usgs-tnm-s1m-n1380e0870",
+      "date": "2026-10-23",
+      "reason": "upstream-removed"
     }
   ]
 }
