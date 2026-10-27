@@ -62,7 +62,7 @@
     "https://creativecommons.org/publicdomain/zero/1.0/"
   ],
   "dct_accessRights_s": "Public",
-  "gbl_mdModified_dt": "2026-10-22T02:10:16Z",
+  "gbl_mdModified_dt": "2026-10-27T02:10:19Z",
   "gbl_mdVersion_s": "Aardvark",
   "dct_references_s": "{\"https://openindexmaps.org\":\"https://raw.githubusercontent.com/OpenGeoMetadata/gov.usgs.tnm/main/index-maps/usgs-tnm-index-dem13.geojson\",\"http://schema.org/downloadUrl\":[{\"url\":\"https://raw.githubusercontent.com/OpenGeoMetadata/gov.usgs.tnm/main/index-maps/usgs-tnm-index-dem13.geojson\",\"label\":\"GeoJSON (0.9 MB)\"}],\"http://www.opengis.net/cat/csw/csdgm\":\"https://www.sciencebase.gov/catalog/file/get/4f70aa9fe4b058caae3f8de5?f=__disk__e4%2F8a%2F44%2Fe48a449b2bd8220668aac4959e107fe9aaa657dc\"}"
 }

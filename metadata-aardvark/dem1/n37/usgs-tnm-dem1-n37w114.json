@@ -10,19 +10,19 @@
   "dct_publisher_sm": [
     "Geological Survey (U.S.)"
   ],
-  "dct_issued_s": "2025-08-07",
+  "dct_issued_s": "2026-10-23",
   "dct_temporal_sm": [
-    "2025"
+    "2026"
   ],
   "gbl_indexYear_im": [
-    2025
+    2026
   ],
   "dct_language_sm": [
     "eng"
   ],
   "schema_provider_s": "U.S. Geological Survey",
   "dct_identifier_sm": [
-    "https://www.sciencebase.gov/catalog/item/68955c81d4be02742084cd57"
+    "https://www.sciencebase.gov/catalog/item/6ae007fe1ba49b6dbbc35c34"
   ],
   "gbl_resourceClass_sm": [
     "Datasets"
@@ -40,8 +40,8 @@
     "1 x 1 degree"
   ],
   "dct_format_s": "GeoTIFF",
-  "locn_geometry": "ENVELOPE(-114.00055556, -112.99944444, 37.00055556, 35.99944444)",
-  "dcat_bbox": "ENVELOPE(-114.00055556, -112.99944444, 37.00055556, 35.99944444)",
+  "locn_geometry": "ENVELOPE(-114.00166667, -112.99833333, 37.00166667, 35.99833333)",
+  "dcat_bbox": "ENVELOPE(-114.00166667, -112.99833333, 37.00166667, 35.99833333)",
   "dcat_centroid": "36.5,-113.5",
   "pcdm_memberOf_sm": [
     "usgs-tnm-dem1"
@@ -53,7 +53,7 @@
     "https://creativecommons.org/publicdomain/mark/1.0/"
   ],
   "dct_accessRights_s": "Public",
-  "gbl_mdModified_dt": "2025-08-08T02:10:28Z",
+  "gbl_mdModified_dt": "2026-10-27T02:10:08Z",
   "gbl_mdVersion_s": "Aardvark",
-  "dct_references_s": "{\"https://github.com/cogeotiff/cog-spec\":\"https://prd-tnm.s3.amazonaws.com/StagedProducts/Elevation/1/TIFF/current/n37w114/USGS_1_n37w114.tif\",\"http://schema.org/downloadUrl\":[{\"url\":\"https://prd-tnm.s3.amazonaws.com/StagedProducts/Elevation/1/TIFF/current/n37w114/USGS_1_n37w114.tif\",\"label\":\"GeoTIFF (53.4 MB)\"}],\"http://www.opengis.net/cat/csw/csdgm\":\"https://prd-tnm.s3.amazonaws.com/StagedProducts/Elevation/1/TIFF/current/n37w114/USGS_1_n37w114.xml\",\"http://schema.org/url\":\"https://www.sciencebase.gov/catalog/item/68955c81d4be02742084cd57\",\"http://schema.org/thumbnailUrl\":\"https://prd-tnm.s3.amazonaws.com/StagedProducts/Elevation/1/TIFF/current/n37w114/USGS_1_n37w114.jpg\"}"
+  "dct_references_s": "{\"https://github.com/cogeotiff/cog-spec\":\"https://prd-tnm.s3.amazonaws.com/StagedProducts/Elevation/1/TIFF/current/n37w114/USGS_1_n37w114.tif\",\"http://schema.org/downloadUrl\":[{\"url\":\"https://prd-tnm.s3.amazonaws.com/StagedProducts/Elevation/1/TIFF/current/n37w114/USGS_1_n37w114.tif\",\"label\":\"GeoTIFF (53.4 MB)\"}],\"http://www.opengis.net/cat/csw/csdgm\":\"https://prd-tnm.s3.amazonaws.com/StagedProducts/Elevation/1/TIFF/current/n37w114/USGS_1_n37w114.xml\",\"http://schema.org/url\":\"https://www.sciencebase.gov/catalog/item/6ae007fe1ba49b6dbbc35c34\",\"http://schema.org/thumbnailUrl\":\"https://prd-tnm.s3.amazonaws.com/StagedProducts/Elevation/1/TIFF/current/n37w114/USGS_1_n37w114.jpg\"}"
 }
