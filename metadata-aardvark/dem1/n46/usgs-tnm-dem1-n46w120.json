@@ -10,7 +10,7 @@
   "dct_publisher_sm": [
     "Geological Survey (U.S.)"
   ],
-  "dct_issued_s": "2026-02-02",
+  "dct_issued_s": "2026-10-27",
   "dct_temporal_sm": [
     "2026"
   ],
@@ -22,7 +22,7 @@
   ],
   "schema_provider_s": "U.S. Geological Survey",
   "dct_identifier_sm": [
-    "https://www.sciencebase.gov/catalog/item/6981bb70b66b0193caec8536"
+    "https://www.sciencebase.gov/catalog/item/6ae54dff1ba49bd48b78a2cf"
   ],
   "gbl_resourceClass_sm": [
     "Datasets"
@@ -53,7 +53,7 @@
     "https://creativecommons.org/publicdomain/mark/1.0/"
   ],
   "dct_accessRights_s": "Public",
-  "gbl_mdModified_dt": "2026-02-03T09:10:20Z",
+  "gbl_mdModified_dt": "2026-10-31T02:10:08Z",
   "gbl_mdVersion_s": "Aardvark",
-  "dct_references_s": "{\"https://github.com/cogeotiff/cog-spec\":\"https://prd-tnm.s3.amazonaws.com/StagedProducts/Elevation/1/TIFF/current/n46w120/USGS_1_n46w120.tif\",\"http://schema.org/downloadUrl\":[{\"url\":\"https://prd-tnm.s3.amazonaws.com/StagedProducts/Elevation/1/TIFF/current/n46w120/USGS_1_n46w120.tif\",\"label\":\"GeoTIFF (53.7 MB)\"}],\"http://www.opengis.net/cat/csw/csdgm\":\"https://prd-tnm.s3.amazonaws.com/StagedProducts/Elevation/1/TIFF/current/n46w120/USGS_1_n46w120.xml\",\"http://schema.org/url\":\"https://www.sciencebase.gov/catalog/item/6981bb70b66b0193caec8536\",\"http://schema.org/thumbnailUrl\":\"https://prd-tnm.s3.amazonaws.com/StagedProducts/Elevation/1/TIFF/current/n46w120/USGS_1_n46w120.jpg\"}"
+  "dct_references_s": "{\"https://github.com/cogeotiff/cog-spec\":\"https://prd-tnm.s3.amazonaws.com/StagedProducts/Elevation/1/TIFF/current/n46w120/USGS_1_n46w120.tif\",\"http://schema.org/downloadUrl\":[{\"url\":\"https://prd-tnm.s3.amazonaws.com/StagedProducts/Elevation/1/TIFF/current/n46w120/USGS_1_n46w120.tif\",\"label\":\"GeoTIFF (53.7 MB)\"}],\"http://www.opengis.net/cat/csw/csdgm\":\"https://prd-tnm.s3.amazonaws.com/StagedProducts/Elevation/1/TIFF/current/n46w120/USGS_1_n46w120.xml\",\"http://schema.org/url\":\"https://www.sciencebase.gov/catalog/item/6ae54dff1ba49bd48b78a2cf\",\"http://schema.org/thumbnailUrl\":\"https://prd-tnm.s3.amazonaws.com/StagedProducts/Elevation/1/TIFF/current/n46w120/USGS_1_n46w120.jpg\"}"
 }
