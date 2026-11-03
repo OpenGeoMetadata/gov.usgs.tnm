@@ -10,7 +10,7 @@
   "dct_publisher_sm": [
     "Geological Survey (U.S.)"
   ],
-  "dct_issued_s": "2026-09-02",
+  "dct_issued_s": "2026-11-02",
   "dct_temporal_sm": [
     "2026"
   ],
@@ -56,7 +56,7 @@
     "https://creativecommons.org/publicdomain/mark/1.0/"
   ],
   "dct_accessRights_s": "Public",
-  "gbl_mdModified_dt": "2026-09-03T02:35:21Z",
+  "gbl_mdModified_dt": "2026-11-03T03:36:05Z",
   "gbl_mdVersion_s": "Aardvark",
   "dct_references_s": "{\"urn:x-esri:serviceType:ArcGIS#DynamicMapLayer\":\"https://carto.nationalmap.gov/arcgis/rest/services/geonames/MapServer\",\"http://schema.org/downloadUrl\":[{\"url\":\"https://prd-tnm.s3.amazonaws.com/StagedProducts/GeographicNames/FederalCodes/FedCodes_NM_Text.zip\",\"label\":\"Text (pipe-delimited) (0.1 MB)\"}],\"http://www.opengis.net/cat/csw/csdgm\":\"https://prd-tnm.s3.amazonaws.com/StagedProducts/GeographicNames/FederalCodes/FedCodes_NM_Text.xml\",\"http://schema.org/url\":\"https://www.sciencebase.gov/catalog/item/643702f1d34ee8d4addcc2ca\",\"http://schema.org/thumbnailUrl\":\"https://prd-tnm.s3.amazonaws.com/StagedProducts/GeographicNames/FederalCodes/FedCodes_NM_Text.jpg\"}"
 }
