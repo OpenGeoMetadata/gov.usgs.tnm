@@ -7,6 +7,12 @@
       "date": "2026-11-17",
       "reason": "quality",
       "note": "The National Map still lists this package, but none of its files are on its download server."
+    },
+    {
+      "id": "usgs-tnm-s1m-n2380e1840",
+      "date": "2026-11-24",
+      "reason": "quality",
+      "note": "The National Map still lists this package, but none of its files are on its download server."
     }
   ]
 }

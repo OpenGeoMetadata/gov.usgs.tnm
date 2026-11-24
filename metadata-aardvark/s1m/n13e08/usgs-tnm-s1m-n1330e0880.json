@@ -10,7 +10,7 @@
   "dct_publisher_sm": [
     "Geological Survey (U.S.)"
   ],
-  "dct_issued_s": "2026-02-18",
+  "dct_issued_s": "2026-11-23",
   "dct_temporal_sm": [
     "2026"
   ],
@@ -22,7 +22,7 @@
   ],
   "schema_provider_s": "U.S. Geological Survey",
   "dct_identifier_sm": [
-    "https://www.sciencebase.gov/catalog/item/69a2688db66b01bb54c938b0"
+    "https://www.sciencebase.gov/catalog/item/6b0500171ba49b8665af0373"
   ],
   "gbl_resourceClass_sm": [
     "Datasets"
@@ -53,7 +53,7 @@
     "https://creativecommons.org/publicdomain/mark/1.0/"
   ],
   "dct_accessRights_s": "Public",
-  "gbl_mdModified_dt": "2026-02-28T04:01:18Z",
+  "gbl_mdModified_dt": "2026-11-24T03:10:18Z",
   "gbl_mdVersion_s": "Aardvark",
-  "dct_references_s": "{\"https://github.com/cogeotiff/cog-spec\":\"https://prd-tnm.s3.amazonaws.com/StagedProducts/Elevation/S1M/n13e08/n1330e0880/S1M_n1330e0880_20260218.tif\",\"http://schema.org/downloadUrl\":[{\"url\":\"https://prd-tnm.s3.amazonaws.com/StagedProducts/Elevation/S1M/n13e08/n1330e0880/S1M_n1330e0880_20260218.tif\",\"label\":\"GeoTIFF (348.0 MB)\"}],\"http://www.opengis.net/cat/csw/csdgm\":\"https://prd-tnm.s3.amazonaws.com/StagedProducts/Elevation/S1M/n13e08/n1330e0880/S1M_n1330e0880_20260218.xml\",\"http://schema.org/url\":\"https://www.sciencebase.gov/catalog/item/69a2688db66b01bb54c938b0\",\"http://schema.org/thumbnailUrl\":\"https://prd-tnm.s3.amazonaws.com/StagedProducts/Elevation/S1M/n13e08/n1330e0880/S1M_n1330e0880_20260218.jpg\"}"
+  "dct_references_s": "{\"https://github.com/cogeotiff/cog-spec\":\"https://prd-tnm.s3.amazonaws.com/StagedProducts/Elevation/S1M/n13e08/n1330e0880/S1M_n1330e0880_20261123.tif\",\"http://schema.org/downloadUrl\":[{\"url\":\"https://prd-tnm.s3.amazonaws.com/StagedProducts/Elevation/S1M/n13e08/n1330e0880/S1M_n1330e0880_20261123.tif\",\"label\":\"GeoTIFF (348.1 MB)\"}],\"http://www.opengis.net/cat/csw/csdgm\":\"https://prd-tnm.s3.amazonaws.com/StagedProducts/Elevation/S1M/n13e08/n1330e0880/S1M_n1330e0880_20261123.xml\",\"http://schema.org/url\":\"https://www.sciencebase.gov/catalog/item/6b0500171ba49b8665af0373\",\"http://schema.org/thumbnailUrl\":\"https://prd-tnm.s3.amazonaws.com/StagedProducts/Elevation/S1M/n13e08/n1330e0880/S1M_n1330e0880_20261123.jpg\"}"
 }
